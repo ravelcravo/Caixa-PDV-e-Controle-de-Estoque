@@ -22,7 +22,7 @@ namespace AppControleDeEstoque.Controller
 
                 string sql = "";
 
-                sql = "insert into CaixaPDV..Produto (CODIGODEBARRAS,NOME,PRECO,QUANTIDADE,DCRPRODUTO,DATCADASTRO) values(" + codBarras + " ,'" + nome + "'," + preco + "," + qtd + ",'" + dcrProduto + "',GETDATE())";
+                sql = "insert into CaixaPDV..Produto (CODBARRAS,NOME,PRECO,QUANTIDADE,DCRPRODUTO,DATCADASTRO) values(" + codBarras + " ,'" + nome + "'," + preco + "," + qtd + ",'" + dcrProduto + "',GETDATE())";
 
                 o.ExecSql(sql);
 
@@ -36,14 +36,6 @@ namespace AppControleDeEstoque.Controller
 
             MessageBox.Show("Produto Adicionado com Sucesso.");
             return true;
-        }
-        public DataTable CarregaDados()
-        {
-           
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter("use CaixaPDV select CODIGO AS Cód,CODIGODEBARRAS as [Código de Barras],Nome as [Nome do Produto],PRECO as Preço,QUANTIDADE AS Quantidade,DCRPRODUTO as Descrição, datcadastro as [Data de Cadastro] from Produto", o.conectar());
-                da.Fill(dt);
-                return dt;
         }
 
         

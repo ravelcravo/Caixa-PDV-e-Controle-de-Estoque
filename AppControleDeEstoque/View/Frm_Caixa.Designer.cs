@@ -189,6 +189,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 489F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1038, 529);
             this.tableLayoutPanel2.TabIndex = 4;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // tableLayoutPanel9
             // 

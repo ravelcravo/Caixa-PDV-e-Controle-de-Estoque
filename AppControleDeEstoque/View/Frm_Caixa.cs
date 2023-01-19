@@ -73,7 +73,6 @@ namespace AppControleDeEstoque
                     BuscarProduto();
                     txbCodBarras.Text = "";
                     
-                
 
                 goto inicio;
 
@@ -98,6 +97,11 @@ namespace AppControleDeEstoque
             lblTroco.Text = "";
             lblValorRecebido.Text = "";
             lblTotal.Text = "";
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

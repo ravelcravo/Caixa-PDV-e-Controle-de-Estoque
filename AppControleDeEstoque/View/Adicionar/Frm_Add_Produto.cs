@@ -1,6 +1,7 @@
 ﻿using AppControleDeEstoque.Controller;
 using AppControleDeEstoque.Model;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,9 +28,14 @@ namespace AppControleDeEstoque.View
 
         private void btGravar_Click(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+            {
+                return;
+            }
+
             try
             {
-                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text));
+                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text.Replace(",", ".")), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text));
 
                 LimparCampos();
             }
@@ -38,14 +44,14 @@ namespace AppControleDeEstoque.View
                 MessageBox.Show(ex + "Erro não tratado no método Gravar/Novo");
 
             }
-
+            txbNomeProduto.Focus();
         }
 
         private void btGravarSair_Click(object sender, EventArgs e)
         {
             try
             {
-                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text));
+                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text.Replace(",",".")), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text));
 
                 LimparCampos();
                 Close();
@@ -78,5 +84,49 @@ namespace AppControleDeEstoque.View
 
             }
         }
+
+        private bool ValidarCampos()
+        {
+            if (txbNomeProduto.Text == "")
+            {
+                MessageBox.Show("Informe o nome do produto.");
+                txbNomeProduto.Focus();
+                return false;
+            }
+            if (txbQtdProdutoCadastrar.Text == "")
+            {
+                MessageBox.Show("Informe a quantidade a ser cadastrada no banco.");
+                txbQtdProdutoCadastrar.Focus();
+                return false;
+            }
+            if (txbCodBarras.Text == "")
+            {
+                MessageBox.Show("Informe o código de barras do produto.");
+                txbCodBarras.Focus();
+                return false;
+            }
+            if(txbDescricaoProduto.Text == "")
+            {
+                MessageBox.Show("Informe a descrição do produto.");
+                txbDescricaoProduto.Focus();
+                return false;
+            }
+           
+            if (txbPrecoProduto.Text == "")
+            {
+                MessageBox.Show("Informe o preço do produto.");
+                txbPrecoProduto.Focus();
+                return false;
+            }
+           
+
+            return true;
+        }
+        private void Frm_Add_Produto_Load(object sender, EventArgs e)
+        {
+            Combos.GetCategorias(cboCategoria,"S");
+
+        }
+
     }
 }

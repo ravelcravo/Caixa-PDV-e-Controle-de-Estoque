@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblTotalRows = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
-            this.GridResultado = new ADGV.AdvancedDataGridView();
+            this.GridResultado = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.GridResultado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +42,7 @@
             this.btBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btBuscar.Location = new System.Drawing.Point(922, 549);
+            this.btBuscar.Location = new System.Drawing.Point(922, 579);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(104, 41);
             this.btBuscar.TabIndex = 3;
@@ -76,7 +76,7 @@
             this.btNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btNovo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btNovo.Location = new System.Drawing.Point(805, 549);
+            this.btNovo.Location = new System.Drawing.Point(805, 579);
             this.btNovo.Name = "btNovo";
             this.btNovo.Size = new System.Drawing.Size(111, 41);
             this.btNovo.TabIndex = 7;
@@ -86,14 +86,12 @@
             // 
             // GridResultado
             // 
-            this.GridResultado.AutoGenerateContextFilters = true;
             this.GridResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridResultado.DateWithTime = false;
-            this.GridResultado.Location = new System.Drawing.Point(16, 74);
+            this.GridResultado.Location = new System.Drawing.Point(12, 83);
             this.GridResultado.Name = "GridResultado";
-            this.GridResultado.Size = new System.Drawing.Size(1010, 469);
+            this.GridResultado.Size = new System.Drawing.Size(1014, 490);
             this.GridResultado.TabIndex = 8;
-            this.GridResultado.TimeFilter = false;
+            this.GridResultado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridResultado_CellClick_1);
             // 
             // Frm_List_Estoque
             // 
@@ -111,6 +109,7 @@
             this.MinimumSize = new System.Drawing.Size(1038, 632);
             this.Name = "Frm_List_Estoque";
             this.Text = "Frm_List_Estoque";
+            this.Load += new System.EventHandler(this.Frm_List_Estoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,6 +122,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTotalRows;
         private System.Windows.Forms.Button btNovo;
-        private ADGV.AdvancedDataGridView GridResultado;
+        private System.Windows.Forms.DataGridView GridResultado;
     }
 }
