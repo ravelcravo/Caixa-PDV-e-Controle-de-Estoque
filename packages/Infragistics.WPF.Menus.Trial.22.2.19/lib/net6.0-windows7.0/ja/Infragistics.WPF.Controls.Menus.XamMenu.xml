@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>Infragistics.WPF.Controls.Menus.XamMenu</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.AutomationPeers.XamContextMenuAutomationPeer">
+            <summary>XamContextMenu のタイプを UI オートメーションに公開します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamContextMenuAutomationPeer.#ctor(Infragistics.Controls.Menus.XamContextMenu)">
+            <summary><see cref="T:Infragistics.AutomationPeers.XamContextMenuAutomationPeer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">オーナー。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamContextMenuAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamContextMenuAutomationPeer.GetChildrenCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> によって呼び出されます。</summary>
+            <returns>子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamContextMenuAutomationPeer.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamContextMenuAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamContextMenuAutomationPeer.CreateItemAutomationPeer(System.Object)">
+            <summary>派生クラスでオーバーライドされたときに、この System.Windows.Controls.ItemsControl の System.Windows.Controls.ItemsControl.Items コレクションのデータ項目に System.Windows.Automation.Peers.ItemAutomationPeer の新しいインスタンスを作成します。</summary>
+            <param name="item">この System.Windows.Automation.Peers.ItemAutomationPeer と関連付けられたデータ項目。</param>
+            <returns>新しく作成された System.Windows.Automation.Peers.ItemAutomationPeer。</returns>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.XamMenuAutomationPeer">
+            <summary>XamMenu の型を UI オートメーションに公開します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuAutomationPeer.#ctor(Infragistics.Controls.Menus.XamMenu)">
+            <summary><see cref="T:Infragistics.AutomationPeers.XamMenuAutomationPeer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">オーナー。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuAutomationPeer.GetChildrenCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> によって呼び出されます。</summary>
+            <returns>子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuAutomationPeer.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuAutomationPeer.CreateItemAutomationPeer(System.Object)">
+            <summary>派生クラスでオーバーライドされたときに、この System.Windows.Controls.ItemsControl の System.Windows.Controls.ItemsControl.Items コレクションのデータ項目に System.Windows.Automation.Peers.ItemAutomationPeer の新しいインスタンスを作成します。</summary>
+            <param name="item">この System.Windows.Automation.Peers.ItemAutomationPeer と関連付けられたデータ項目。</param>
+            <returns>新しく作成された System.Windows.Automation.Peers.ItemAutomationPeer。</returns>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.XamMenuItemAutomationPeer">
+            <summary>XamMenuItem の型を UI オートメーションに公開します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.#ctor(Infragistics.Controls.Menus.XamMenuItem)">
+            <summary><see cref="T:Infragistics.AutomationPeers.XamMenuItemAutomationPeer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">オーナー。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.GetChildrenCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> によって呼び出されます。</summary>
+            <returns>子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.CreateItemAutomationPeer(System.Object)">
+            <summary>派生クラスでオーバーライドされたときに、この System.Windows.Controls.ItemsControl の System.Windows.Controls.ItemsControl.Items コレクションのデータ項目に System.Windows.Automation.Peers.ItemAutomationPeer の新しいインスタンスを作成します。</summary>
+            <param name="item">この System.Windows.Automation.Peers.ItemAutomationPeer と関連付けられたデータ項目。</param>
+            <returns>新しく作成された System.Windows.Automation.Peers.ItemAutomationPeer。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.RaiseExpandCollapseStatePropertyChangedEvent(System.Windows.Automation.ExpandCollapseState,System.Windows.Automation.ExpandCollapseState)">
+            <summary>ExpandCollapseStatePropertyChanged イベントを発生します。</summary>
+            <param name="oldValue"><c>true</c> に設定する場合、古い値。</param>
+            <param name="newValue"><c>true</c> に設定されている場合は、新しい値。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.RaiseToggleStatePropertyChangedEvent(System.Windows.Automation.ToggleState,System.Windows.Automation.ToggleState)">
+            <summary>ToggleStatePropertyChanged イベントを発生します。</summary>
+            <param name="oldValue"><c>true</c> に設定する場合、古い値。</param>
+            <param name="newValue"><c>true</c> に設定されている場合は、新しい値。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.OwningMenuItem_Checked(System.Object,System.EventArgs)">
+            <summary>XamMenuItem として OwningMenuItem  プロパティの Checked イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.OwningMenuItem_SubmenuClosed(System.Object,System.EventArgs)">
+            <summary>XamMenuItem として OwningMenuItem  プロパティの SubmenuClosed イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.OwningMenuItem_SubmenuOpened(System.Object,System.EventArgs)">
+            <summary>XamMenuItem として OwningMenuItem  プロパティの SubmenuOpened イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.OwningMenuItem_Unchecked(System.Object,System.EventArgs)">
+            <summary>XamMenuItem として OwningMenuItem  プロパティの Unchecked イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.Collapse">
+            <summary>コントロールの子孫であるすべてのノード、コントロールまたはコンテンツを非表示にします。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.Expand">
+            <summary>コントロールの子であるノード、コントロールまたはコンテンツを表示します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.Invoke">
+            <summary>コントロールをアクティブ化して、単一で明確な操作を開始する要求を送信します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.Toggle">
+            <summary>コントロールのトグル状態の間を循環します。</summary>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.ExpandCollapseState">
+            <summary>コントロールの状態 (展開または縮小) を取得します。</summary>
+            <value></value>
+            <returns>コントロールの状態 (展開または縮小) 。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamMenuItemAutomationPeer.ToggleState">
+            <summary>コントロールのトグル状態を取得します。</summary>
+            <value></value>
+            <returns>列挙体の値としてのコントロールのトグル状態。 </returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.ContextMenuManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を表示するのにシステムの実装を提供します。</summary><seealso cref="T:Infragistics.Controls.Menus.XamContextMenu" /><seealso cref="T:Infragistics.Controls.Menus.ContextMenuService" /></member>
+        <member name="M:Infragistics.Controls.Menus.ContextMenuManager.#ctor">
+          <summary>
+            新しい <see cref="T:Infragistics.Controls.Menus.ContextMenuManager"/> を初期化します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.ContextMenuManager.ContextMenuProperty">
+            <summary>ContextMenu 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.ContextMenuManager.ModifierKeysProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.ContextMenuManager.ModifierKeys" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.ContextMenuManager.OpenModeProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.ContextMenuManager.OpenMode" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.ContextMenuManager.ContextMenu">
+            <summary>ContextMenu プロパティの値を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.ContextMenuManager.ContextMenuProperty" /><seealso cref="T:Infragistics.Controls.Menus.XamContextMenu" /></member>
+        <member name="P:Infragistics.Controls.Menus.ContextMenuManager.ModifierKeys">
+            <summary>ContextMenuManager の ModifierKeys を取得または設定します。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> は、マウスクリックと Ctrl キーなどの修飾キーの組み合わせで開きます。</remarks><seealso cref="F:Infragistics.Controls.Menus.ContextMenuManager.ModifierKeysProperty" /><seealso cref="P:Infragistics.Controls.Menus.ContextMenuManager.OpenMode" /></member>
+        <member name="P:Infragistics.Controls.Menus.ContextMenuManager.OpenMode">
+            <summary>ContextMenuManager の OpenMode を取得または設定します。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> は、マウスクリックと Ctrl キーなどの修飾キーの組み合わせで開きます。</remarks><seealso cref="F:Infragistics.Controls.Menus.ContextMenuManager.OpenModeProperty" /><seealso cref="P:Infragistics.Controls.Menus.ContextMenuManager.ModifierKeys" /></member>
+        <member name="T:Infragistics.Controls.Menus.ContextMenuService">
+            <summary>WPF アプリケーションで <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を要素にアタッチするために使用されるシステム実装を提供します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.ContextMenuService.ManagerProperty">
+            <summary>Manager 添付依存プロパティを識別します。</summary><seealso cref="M:Infragistics.Controls.Menus.ContextMenuService.GetManager(System.Windows.DependencyObject)" /><seealso cref="M:Infragistics.Controls.Menus.ContextMenuService.SetManager(System.Windows.DependencyObject,Infragistics.Controls.Menus.ContextMenuManager)" /></member>
+        <member name="M:Infragistics.Controls.Menus.ContextMenuService.GetManager(System.Windows.DependencyObject)">
+            <summary><see cref="T:Infragistics.Controls.Menus.ContextMenuManager" /> 添付プロパティの値を取得します。</summary>
+            <param name="element"><see cref="T:Infragistics.Controls.Menus.ContextMenuManager" /> プロパティについてクエリするオブジェクト。</param>
+            <returns><see cref="T:Infragistics.Controls.Menus.ContextMenuManager" /> プロパティの値。</returns><seealso cref="F:Infragistics.Controls.Menus.ContextMenuService.ManagerProperty" /><seealso cref="M:Infragistics.Controls.Menus.ContextMenuService.SetManager(System.Windows.DependencyObject,Infragistics.Controls.Menus.ContextMenuManager)" /><seealso cref="T:Infragistics.Controls.Menus.ContextMenuManager" /></member>
+        <member name="M:Infragistics.Controls.Menus.ContextMenuService.SetManager(System.Windows.DependencyObject,Infragistics.Controls.Menus.ContextMenuManager)">
+            <summary><see cref="T:Infragistics.Controls.Menus.ContextMenuManager" /> 添付プロパティの値を設定します。</summary>
+            <param name="element">プロパティが設定されるオブジェクト。</param>
+            <param name="value">設定する値。</param><seealso cref="F:Infragistics.Controls.Menus.ContextMenuService.ManagerProperty" /><seealso cref="M:Infragistics.Controls.Menus.ContextMenuService.GetManager(System.Windows.DependencyObject)" /><seealso cref="T:Infragistics.Controls.Menus.ContextMenuManager" /></member>
+        <member name="M:Infragistics.Controls.Menus.ContextMenuService.IsMenuOpenForElement(System.Windows.DependencyObject)">
+          <summary>
+            指定した要素の <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が開いたかどうかを決定します。
+          </summary>
+          <param name="obj"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.ContextMenuService.CloseActiveContextMenu">
+          <summary>
+            アクティブなコンテキスト メニューを閉じます。
+          </summary>
+          <returns>成功した場合は True。ユーザーが閉じるをキャンセルする場合は False。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.MenuItemRole">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> が使用できるさまざまなロールを定義します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemRole.TopLevelItem">
+            <summary>クリック イベントを発生できる最上位レベルのメニュー項目。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemRole.TopLevelHeader">
+            <summary>最上位レベルのメニューのヘッダー。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemRole.SubmenuItem">
+            <summary>クリック イベントを発生できるサブメニューのメニュー項目。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemRole.SubmenuHeader">
+            <summary>サブメニューのヘッダー。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.MenuItemPosition">
+            <summary>サブメニュー項目の利用可能なカスタム位置を定義します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemPosition.Auto">
+            <summary>メニューはそのポップアップの位置を処理します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemPosition.Top">
+            <summary>優先位置は項目の上です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemPosition.Bottom">
+            <summary>優先位置は項目の下です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemPosition.Left">
+            <summary>優先位置は項目の左です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.MenuItemPosition.Right">
+            <summary>優先位置は項目の右です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.PlacementMode">
+            <summary>画面上で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールが表示される位置を示します。<see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の対象領域は、<see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTarget" /> との相対の <see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementRectangle" /> です。<see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTarget" /> が設定されていない場合、コンテキスト メニューが添付されている要素がターゲットとして使用されています。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.MouseClick">
+            <summary>マウス位置と相対し、<see cref="P:Infragistics.Controls.Menus.XamContextMenu.HorizontalOffset" /> および <see cref="P:Infragistics.Controls.Menus.XamContextMenu.VerticalOffset" /> プロパティ値で定義されるオフセットの <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedAbove">
+            <summary>下端をターゲットの上端に配置し、左端をターゲットの左端に配置する <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedBelow">
+            <summary>上端をターゲットの下端に配置し、左端をターゲットの左端に配置する <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedToTheLeft">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロール。その右端がターゲットの左端に揃い、上端がターゲットの上端に揃います。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedToTheRight">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。その左端がターゲットの右端に揃い、上端がターゲットの上端に揃います。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.Center">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。ターゲット上の中央に表示されます。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.Manual">
+            <summary>ターゲットの左上隅と相対し、<see cref="P:Infragistics.Controls.Menus.XamContextMenu.HorizontalOffset" /> と <see cref="P:Infragistics.Controls.Menus.XamContextMenu.VerticalOffset" /> プロパティ値に定義されるオフセットの <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedTop">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。その上端がターゲットの上端に揃い、左端がターゲットの左端に揃います。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedBottom">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。その下端がターゲットの下端に揃い、左端がターゲットの左端に揃います。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedLeft">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。その左端がターゲットの左端に揃い、上端がターゲットの上端に揃います。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.PlacementMode.AlignedRight">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> コントロールの位置。その右端がターゲットの右端に揃い、上端がターゲットの上端に揃います。画面の端で <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が見えなくなる場合、コントロール自身により画面の端に合わせて位置が変更されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.OpenMode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を開くイベントを指定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.OpenMode.None">
+            <summary>ユーザーがマウス ボタンをクリックしたとき、<see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を開きません。この場合では、コンテキスト メニューを開くのに <seealso cref="T:Infragistics.Controls.Menus.Primitives.OpenCommand" /> を使用できます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.OpenMode.LeftClick">
+            <summary>マウスの左ボタンで <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を開きます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.OpenMode.RightClick">
+            <summary>マウスの右ボタンで <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を開きます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamContextMenuCommand">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> オブジェクトの使用可能なコマンドの列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenuCommand.Open">
+            <summary>XamContextMenu を開きます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenuCommand.Close">
+            <summary>XamContextMenu を閉じます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.ItemClickedEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuBase" /> コントロールの <see cref="E:Infragistics.Controls.Menus.XamMenuBase.ItemClicked"></see> イベントにデータを提供します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.ItemClickedEventArgs.Item">
+            <summary>クリックされた <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.OpenedEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の <see cref="E:Infragistics.Controls.Menus.XamContextMenu.Opened" /> イベントにデータを提供します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.OpenedEventArgs.GetClickedElements``1">
+            <summary>メニューが開いたときのマウスの座標にある指定したタイプの表示/非表示の要素を返します。</summary>
+            <typeparam name="T">要素のタイプ。</typeparam>
+            <returns>メニューが開いたときのマウスの座標にある指定したタイプの表示/非表示の要素のリスト。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.OpenedEventArgs.MouseClickLocation">
+            <summary>マウス クリック位置を取得します。</summary>
+            <remarks>ポイントは、マウス クリックで <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が開く場合にだけ有効です。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.OpenedEventArgs.ContextMenuLocation">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の位置を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.OpeningEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の <seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opening" /> イベントのデータを提供します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.OpeningEventArgs.GetClickedElements``1">
+            <summary>メニューが開かれているときのマウスの座標にある指定したタイプの表示/非表示の要素を返します。</summary>
+            <typeparam name="T">要素のタイプ。</typeparam>
+            <returns>メニューが開かれているときのマウスの座標にある指定したタイプの表示/非表示の要素のリスト。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.OpeningEventArgs.MouseClickLocation">
+            <summary>マウス クリック位置を取得します。</summary>
+            <remarks>ポイントは、マウス クリックで <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が開く場合にだけ有効です。</remarks>
+        </member>
+        <member name="T:Infragistics.HeaderedItemContainerGenerator">
+            <summary>HeaderedItemContainerGenerator は、XamHeaderedItemsControl とその生成されたコンテナーの間にマップする便利なユーティリティを提供します。</summary>
+        </member>
+        <member name="F:Infragistics.HeaderedItemContainerGenerator._itemsHost">
+            <summary>ItemsControl の ItemsHost として使用される Panel。このプロパティは、ツリーで ItemsControl がアクティブで、その項目のコンテナーが生成された場合のみ有効になります。</summary>
+        </member>
+        <member name="F:Infragistics.HeaderedItemContainerGenerator._scrollHost">
+            <summary>ItemsHost の項目のスクロールに使用される ScrollViewer。</summary>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.#ctor(System.Windows.Controls.ItemsControl)">
+            <summary>HeaderedItemContainerGenerator の新しいインスタンスを初期化します。</summary>
+            <param name="control">HeaderedItemContainerGenerator によって追跡されている ItemsControl。</param>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.OnApplyTemplate">
+            <summary>ItemsControl にコントロール テンプレートを適用します。</summary>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object,System.Windows.Style)">
+            <summary>指定した項目を表示するために指定したコンテナー を準備します。</summary>
+            <param name="element">指定された項目を表示するために使用されるコンテナー要素。</param>
+            <param name="item">表示する指定された項目。</param>
+            <param name="parentItemContainerStyle">親 ItemsControl の ItemContainerStyle。</param>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.HasDefaultValue(System.Windows.Controls.Control,System.Windows.DependencyProperty)">
+            <summary>コントロールがプロパティのデフォルト値を持つかどうかを確認します。</summary>
+            <param name="control">確認するコントロール。</param>
+            <param name="property">確認するプロパティ。</param>
+            <returns>プロパティはデフォルト値を持つ場合は True、そうでない場合は False。</returns>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.PrepareHeaderedItemsControlContainer(Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl,System.Object,System.Windows.Controls.ItemsControl,System.Windows.Style,Infragistics.Controls.HierarchicalDataTemplate)">
+            <summary>項目の PrepareHeaderedItemsControlContainer コンテナーを準備します。</summary>
+            <param name="control">準備するコンテナー。</param>
+            <param name="item">コンテナーに配置する項目。</param>
+            <param name="parentItemsControl">親 ItemsControl。</param>
+            <param name="parentItemContainerStyle"> 親 ItemsControl の ItemContainerStyle。 </param>
+            <param name="hierarchicalTemplate">コンテナーの HierarchicalTemplate</param>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>PrepareContainerForItemOverride の効果を取り消します。</summary>
+            <param name="element">コンテナー 要素。</param>
+            <param name="item">含まれている項目。</param>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.UpdateItemContainerStyle(System.Windows.Style)">
+            <summary>ItemContainerStyle が変更されるときに生成された項目のスタイルを更新します。</summary>
+            <param name="itemContainerStyle">ItemContainerStyle。</param>
+        </member>
+        <member name="M:Infragistics.HeaderedItemContainerGenerator.ScrollIntoView(System.Windows.FrameworkElement)">
+            <summary>必要な要素を ScollHost のビューポートにスクロールします。</summary>
+            <param name="element">ビューにスクロールする要素。</param>
+        </member>
+        <member name="P:Infragistics.HeaderedItemContainerGenerator._itemsControl">
+            <summary>HeaderedItemContainerGenerator によって追跡されている ItemsControl を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.HeaderedItemContainerGenerator.ItemsHost">
+            <summary>ItemsControl の ItemsHost として使用される Panel を取得します。このプロパティは、ツリーで ItemsControl がアクティブで、その項目のコンテナーが生成された場合のみ有効になります。</summary>
+        </member>
+        <member name="P:Infragistics.HeaderedItemContainerGenerator.ScrollHost">
+            <summary>ItemsHost 項目のスクロールに使用される ScrollViewer を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.IconContentControl">
+            <summary>XamMenuItem テンプレート内のアイコンおよび UI コンテントを表示するために使用する内部コンテンツ コントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.IconContentControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.IconContentControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Properties.Resources">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Properties.Resources.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Properties.Resources.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+        <member name="T:Infragistics.Resources">
+            <summary>ローカライズされた文字列を検索するなどのために使用されるリソース クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Resources.GetString(System.String)">
+            <summary>リソース文字列を返します。</summary>
+            <param name="resourceName">リソースの名前。</param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamContextMenu">
+            <summary>コントロールで、コントロールのコンテキスト固有の機能を提供できるようにするための、ポップアップ メニューを表します。</summary>
+            <remarks>コンテキスト メニュー (ショートカット メニューやポップアップ メニューとも呼びます) は、マウスの右クリックなどのユーザー操作で表示される、グラフィカル ユーザー インターフェイス (GUI) 中のメニューです。コンテキスト メニューは、オペレーティング システムまたはアプリケーションの現在の状態 (コンテキスト) で使用可能な限定的な選択肢を提供します。</remarks>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamMenuBase">
+            <summary>ユーザーが選択可能な選択肢を定義するコントロールを表します。</summary>
+            <remarks>MenuBase は、ユーザーが選択可能な選択肢を定義するコントロールの基本クラスです。<see cref="T:Infragistics.Controls.Menus.XamMenu" /> および <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> は MenuBase から継承します。</remarks>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl">
+            <summary>複数項目を含んでいて、ヘッダーのあるコントロールを表します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.#ctor">
+            <summary>HeaderedItemsControl クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HierarchicalItemTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HierarchicalItemTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.DefaultItemsContainerProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.DefaultItemsContainer" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HeaderProperty">
+            <summary>Header 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.OnHeaderPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>HeaderProperty プロパティが変更されるハンドラー。</summary>
+            <param name="d">その Header を変更した HeaderedItemsControl。</param>
+            <param name="e">イベント引数。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HeaderTemplateProperty">
+            <summary>HeaderTemplate 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.OnHeaderTemplatePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>HeaderTemplateProperty プロパティが変更されるハンドラー。</summary>
+            <param name="d">その HeaderTemplate を変更された HeaderedItemsControl。</param>
+            <param name="e">イベント引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.OnApplyTemplate">
+            <summary>コントロールにコントロール テンプレートを適用します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>指定した項目を表示するために指定したコンテナー を準備します。</summary>
+            <param name="element">指定された項目を表示するために使用されるコンテナー要素。</param>
+            <param name="item">表示する指定された項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>PrepareContainerForItemOverride の効果を取り消します。</summary>
+            <param name="element">コンテナー 要素。</param>
+            <param name="item">含まれている項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.OnItemContainerStyleChanged(System.Windows.Style,System.Windows.Style)">
+            <summary>XamHeaderedItemsControl が ItemContainerStyle 内の変更に応答することを許可します</summary>
+            <param name="oldItemContainerStyle">以前関連付けられたスタイル</param>
+            <param name="newItemContainerStyle">新しく設定されたスタイル</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.OnHeaderChanged(System.Object,System.Object)">
+            <summary>HeaderedItemsControl の Header プロパティが変更される時に呼び出されます。</summary>
+            <param name="oldHeader">Header プロパティの古い値。</param>
+            <param name="newHeader">Header プロパティの新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.OnHeaderTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)">
+            <summary>HeaderTemplate プロパティが変更されたときに呼び出されます。</summary>
+            <param name="oldHeaderTemplate">HeaderTemplate プロパティの古い値。</param>
+            <param name="newHeaderTemplate">HeaderTemplate プロパティの新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.FinishedLoadingPersistence">
+            <summary>読み込んだ後で、オブジェクトが操作の実行を許可します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HierarchicalItemTemplate">
+            <summary>この <see cref="T:Infragistics.Controls.HierarchicalDataTemplate" /> の <see cref="T:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl" /> を取得または設定します。この項目のビジュアル ツリーを説明して、その子がどのプロパティであるかを説明します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.DefaultItemsContainer">
+            <summary>項目を作成する時にコンテナーとして使用する DataTemplate を取得または設定します。</summary>
+            <remarks>
+            <p class="body">このプロパティは、コントロールのネイティブコンテナー<b>ではない</b>項目のみに反映されます。たとえば、<see cref="T:Infragistics.Controls.Menus.XamMenu" /> によって項目として TextBlock を追加する場合は、コントロールは項目を <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> コンテナーでラップします。このメニュー項目コンテナーの生成のために、コントロールはこのプロパティに提供される DataTemplate を使用します。 </p>
+            <p class="note"><b>DefaultItemsContainer</b> に提供されるテンプレートのルーツ要素はコントロールのネイティブ コンテナーである必要があります。<see cref="T:Infragistics.Controls.Menus.XamMenu" /> によって、<see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> です。DataTemplate のルート コンテンツが XamMenuItem でない場合、このプロパティを無視して空の XamMenuItem が代わりに使用されます。</p>
+            <p class="note"> XamMenuItem の <see cref="T:Infragistics.Controls.Menus.XamMenu" /> が明示的に設定されない限り、この DataTemplate を <see cref="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.DefaultItemsContainer" /> の各 XamMenuItem に使用します。</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.Header">
+            <summary>HeaderedContentControl を分類するオブジェクトを取得または設定します。デフォルト値は Null です。ヘッダーは文字列、UIElement、または他のコンテンツに設定できます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HeaderTemplate">
+            <summary>コントロールのヘッダーを表示するテンプレートを取得または設定します。デフォルトは null です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HeaderIsItem">
+            <summary>Header プロパティは ItemsControl の項目に設定されるかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.HeaderedItemContainerGenerator">
+            <summary>この コントロールに関連付けられた HeaderedItemContainerGenerator を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.PropertiesToIgnore">
+            <summary>PersistenceManager がプロパティを保存するときに保存しないプロパティの List 取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.XamHeaderedItemsControl.PriorityProperties">
+            <summary>オブジェクトの他のプロパティを調べようとする前に、適用する必要のあるプロパティのリストを取得します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuBase" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.GetContainerForItemOverride">
+            <summary>新しいコンテナーが必要なときにフレームワークの起動をオーバーライドします。</summary>
+            <returns>新しい <see cref="T:Infragistics.Controls.Menus.XamMenuItem" />。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>項目がコンテナーであるかどうかを確認するためにフレームワークの起動をオーバーライドします。</summary>
+            <param name="item">コンテナーであるかどうかを確認するオブジェクト。</param>
+            <returns>項目がすでに <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> の場合に True を返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>指定した項目を表示するために指定したコンテナー を準備します。</summary>
+            <param name="element">指定された項目を表示するために使用されるコンテナー要素。</param>
+            <param name="item">表示する指定された項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>PrepareContainerForItemOverride の効果を取り消します。</summary>
+            <param name="element">コンテナー 要素。</param>
+            <param name="item">含まれている項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>MouseDown イベントを発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuBase.CurrentOpenProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuBase.CurrentOpen" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.OnCurrentOpenItemChanged(Infragistics.Controls.Menus.XamMenuItem,Infragistics.Controls.Menus.XamMenuItem)">
+            <summary>現在開いているメニュー項目が変更されたときに呼び出されます。</summary>
+            <param name="oldItem">古い項目。</param>
+            <param name="newItem">新しい項目。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuBase.CurrentSelectedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuBase.CurrentSelected" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.OnItemClicked(Infragistics.Controls.Menus.ItemClickedEventArgs)">
+            <summary>ユーザーはマウスの左ボタンでメニュー項目をクリックしたときに <see cref="E:Infragistics.Controls.Menus.XamMenuBase.ItemClicked" /> を発生します。</summary>
+            <param name="e">イベント引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.OnBeforeUnload">
+            <summary>ブラウザーからメニューをアンロードする前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.RegisterResources(System.String,System.Reflection.Assembly)">
+            <summary>コントロールがリソースをプルする追加の Resx を追加します。</summary>
+            <param name="name">使用されるリソースを含む組み込み resx ファイルの名前。</param>
+            <param name="assembly">resx ファイルが埋め込まれるアセンブリ。</param>
+            <remarks>ファイルの拡張子を含まないでください。ただし、アセンブリのデフォルト名前空間でプレフィックスしてください。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuBase.UnregisterResources(System.String)">
+            <summary>以前登録した resx ファイルを削除します。</summary>
+            <param name="name">登録に使用された埋め込み resx ファイルの名前。</param>
+            <remarks>注：これは、すでにビューに存在し、文字列を表示しているコントロールには影響ありません。作成された新規コントロールにのみ影響を与えます。</remarks>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamMenuBase.ItemClicked">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> がクリックされたときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnCreateAutomationPeer">
+            <summary>派生したクラスで実装する場合、オートメーションのインフラストラクチャーのクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnItemClicked(Infragistics.Controls.Menus.ItemClickedEventArgs)">
+            <summary>ユーザーはマウスの左ボタンでメニュー項目をクリックしたときに <see cref="E:Infragistics.Controls.Menus.XamMenuBase.ItemClicked" /> を発生します。</summary>
+            <param name="e">イベント引数。</param>
+            <remarks><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> は、クリックされた <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> にサブ項目がない場合に必ず閉じます。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.LostFocus" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnBeforeUnload">
+            <summary>ブラウザーからメニューをアンロードする前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.KeyDown" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.IsOpenProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.IsOpen" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.PlacementProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.Placement" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.PlacementTargetProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTarget" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.PlacementRectangleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementRectangle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.HorizontalOffsetProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.HorizontalOffset" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.VerticalOffsetProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.VerticalOffset" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.ShouldRightClickBeHandledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.ShouldRightClickBeHandled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.PopupParentProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.PopupParent" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamContextMenu.AllowsTransparencyProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamContextMenu.AllowsTransparency" /> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnOpening(Infragistics.Controls.Menus.OpeningEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamContextMenu.Opening" /> イベントを発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opening" /><seealso cref="T:Infragistics.Controls.Menus.OpeningEventArgs" /><seealso cref="T:Infragistics.Controls.Menus.XamContextMenu" /></member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnClosing(Infragistics.CancellableEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamContextMenu.Closing" /> イベントを発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closing" /><seealso cref="T:Infragistics.CancellableEventArgs" /><seealso cref="T:Infragistics.Controls.Menus.XamContextMenu" /></member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnClosed(System.EventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamContextMenu.Closed" /> イベントを発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closed" /><seealso cref="T:System.EventArgs" /><seealso cref="T:Infragistics.Controls.Menus.XamContextMenu" /></member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.OnOpened(Infragistics.Controls.Menus.OpenedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamContextMenu.Opened" /> イベントを発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opened" /><seealso cref="T:Infragistics.Controls.Menus.OpenedEventArgs" /><seealso cref="T:Infragistics.Controls.Menus.XamContextMenu" /></member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.GetParameter(Infragistics.Controls.CommandSource)">
+            <summary>コマンドを実行するために必要なパラメーターを定義するオブジェクトを取得します。</summary>
+            <param name="source">実行するコマンドを定義する CommandSource オブジェクト。</param>
+            <returns>コマンドを完了するために必要なオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenu.SupportsCommand(System.Windows.Input.ICommand)">
+            <summary>オブジェクトは指定されたコマンド タイプをサポートするかどうかを取得します。</summary>
+            <param name="command">検証されるコマンド。</param>
+            <returns>コマンドがオブジェクトで実行可能な場合 True です。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.PropertiesToIgnore">
+            <summary>PersistenceManager がプロパティを保存するときに保存しないプロパティの List 取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.IsOpen">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が表示可能であるかどうかを示す値を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.IsOpenProperty" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opening" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opened" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closing" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closed" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.Placement">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が画面上に表示される方法を制御するモードを取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.PlacementProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTarget">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> が開いたときに相対的に配置されるターゲット要素を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.PlacementTargetProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTargetResolved">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTarget" /> プロパティの有効な値を取得します。</summary>
+            <remarks><see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTarget" /> プロパティ。 </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.PlacementRectangle">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の位置を計算するために使用する、<see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTarget" /> と相対的な矩形を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.PlacementRectangleProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.HorizontalOffset">
+            <summary>ターゲットの基点と <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> 配置のポイントの間の水平距離を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.HorizontalOffsetProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.VerticalOffset">
+            <summary>ターゲットの基点と <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> 配置のポイントの間の垂直距離を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.VerticalOffsetProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.MouseClickLocation">
+            <summary>マウス クリックを使用して <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を開く場合はマウス位置を取得します。そうでない場合、この値は無効です。</summary><seealso cref="T:Infragistics.Controls.Menus.OpenMode" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.ContextMenuLocation">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の位置を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.ShouldRightClickBeHandled">
+            <summary>ContextMenu を表示するときに RightClick を処理するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.PopupParent">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> を含む Popup を含む Panel を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.PopupParentProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenu.AllowsTransparency">
+          <summary>
+            Popup をホストする <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の AllowsTransparency プロパティを取得または設定します。
+          </summary>
+          <seealso cref="F:Infragistics.Controls.Menus.XamContextMenu.PopupParentProperty"/>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamContextMenu.Opening">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の特定のインスタンスが開く前に発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opened" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closing" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closed" /></member>
+        <member name="E:Infragistics.Controls.Menus.XamContextMenu.Opened">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の特定のインスタンスが開いた後に発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opening" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closing" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closed" /></member>
+        <member name="E:Infragistics.Controls.Menus.XamContextMenu.Closing">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の特定のインスタンスが閉じる前に発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closed" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opening" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opened" /></member>
+        <member name="E:Infragistics.Controls.Menus.XamContextMenu.Closed">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> の特定のインスタンスが閉じた後に発生します。</summary><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Closing" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opening" /><seealso cref="E:Infragistics.Controls.Menus.XamContextMenu.Opened" /></member>
+        <member name="T:Infragistics.Controls.Menus.XamContextMenuCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> オブジェクトのコマンド ソース オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamContextMenuCommandSource.ResolveCommand">
+            <summary>コマンドを実行する <see cref="T:System.Windows.Input.ICommand" /> オブジェクトを作成します。</summary>
+            <returns>コマンドを実行するオブジェクト。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamContextMenuCommandSource.CommandType">
+            <summary>コマンドで実行される XamContextMenuCommand を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.XamContextMenuCommandBase">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> と関連付けられるすべてのコマンドの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamContextMenuCommandBase.CanExecute(System.Object)">
+            <summary>入力されたオブジェクトでコマンドを実行する可能性があるかどうかを示します。</summary>
+            <param name="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートする場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamContextMenuCommandBase.Execute(System.Object)">
+            <summary>コマンドを実行します。</summary>
+            <param name="parameter">実行される <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamContextMenuCommandBase.ExecuteCommand(Infragistics.Controls.Menus.XamContextMenu)">
+            <summary>指定されたコマンドを指定された <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> で実行します。</summary>
+            <param name="contextMenu">ターゲット XamContextMenu</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.XamContextMenuCommandBase.CanExecuteCommand(Infragistics.Controls.Menus.XamContextMenu)">
+            <summary>指定されたコマンドを指定された <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> で実行します。</summary>
+            <param name="contextMenu">ターゲット XamContextMenu</param>
+            <returns>オブジェクトがコマンドを実行する場合は <c>true</c>。それ以外は <c>false</c>。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.OpenCommand">
+            <summary>XamContextMenu を開く <see cref="T:Infragistics.CommandBase" /> オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.OpenCommand.ExecuteCommand(Infragistics.Controls.Menus.XamContextMenu)">
+            <summary>XamContextMenu を開きます。</summary>
+            <param name="contextMenu">開かれる <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.OpenCommand.CanExecuteCommand(Infragistics.Controls.Menus.XamContextMenu)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> に対して OpenCommand を実行することができるかどうかを報告します。</summary>
+            <param name="contextMenu">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートする場合は True です。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.CloseCommand">
+            <summary>XamContextMenu を閉じる <see cref="T:Infragistics.CommandBase" /> オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.CloseCommand.ExecuteCommand(Infragistics.Controls.Menus.XamContextMenu)">
+            <summary>XamContextMenu を閉じます。</summary>
+            <param name="contextMenu">閉じられる <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.CloseCommand.CanExecuteCommand(Infragistics.Controls.Menus.XamContextMenu)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Menus.XamContextMenu" /> に対して CloseCommand を実行することができるかどうかを報告します。</summary>
+            <param name="contextMenu">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートする場合は True です。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamMenu">
+            <summary>WPF アプリケーションにメニューを表示します。</summary>
+            <remarks>
+            <p class="body"><b>XamMenu</b> コントロールは WPF アプリケーションにメニューを表示するのに使用されます。<b>XamMenu</b> コントロールは以下の機能を提供します:<ul>
+                    <li>コントロールのメニュー項目を階層データ ソースにバインドすることを可能にするデータ バインディング。</li>
+                    <li>動的にメニューの作成、メニュー項目の生成、プロパティの設定などするための <b>XamMenu</b> オブジェクト モデルへのプログラムでのアクセス。</li>
+                    <li>スタイルおよびユーザーに定義されるテンプレートによってカスタマイズ可能な外観。</li>
+                </ul>
+            </p>
+            <p class="body"><b>XamMenu</b> は ItemsControl です。コンテンツ プロパティは Items および ItemsSource です。ItemsControl の詳細は、WPF ヘルプを参照ください。</p>
+            <p class="body"><b>XamMenu</b> コントロールは WPF アプリケーション用のコマンドまたはオプションを指定する項目のリストがあります。一般的にメニューの項目をクリックすることによって、サブメニューを開くまたはアプリケーションがコマンドを実行します。 </p>
+            <p class="body">メニューの項目は、ItemCollection に追加できたら、なんでもいいです。もっとも一般的な XamMenu の項目は <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> です。<see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> は子項目を含む可能です。ユーザーは親である <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> を選択したときに、子項目はサブメニューに表示されます。</p>
+            <p class="body">メニューの方向を変更するのに、<see cref="P:Infragistics.Controls.Menus.XamMenu.MenuOrientation" /> プロパティを Horizontal または Vertical に設定します。メニューのサブメニューの開き方を変更するのに、<see cref="P:Infragistics.Controls.Menus.XamMenu.ExpandOnHover" /> プロパティを使用します。</p>
+            </remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenu" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenu" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.ArrangeOverride(System.Windows.Size)">
+            <summary>オート コンプリート コントロールおよびそのコンテンツを配置してサイズを設定します。</summary>
+            <param name="finalSize">提供される配置境界オブジェクト。</param>
+            <returns>変更されていない配置境界を返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.OnBeforeUnload">
+            <summary>ブラウザーからメニューをアンロードする前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.OnCreateAutomationPeer">
+            <summary>派生したクラスで実装する場合、オートメーションのインフラストラクチャーのクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.OnCurrentOpenItemChanged(Infragistics.Controls.Menus.XamMenuItem,Infragistics.Controls.Menus.XamMenuItem)">
+            <summary>現在開いているメニュー項目が変更されたときに呼び出されます。</summary>
+            <param name="oldItem">古い項目。</param>
+            <param name="newItem">新しい項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.LostFocus" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenu.OnApplyTemplate">
+            <summary>派生クラスでオーバーライドされると、アプリケーション コードまたは内部プロセスが System.Windows.FrameworkElement.ApplyTemplate() を呼び出すときに常に呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenu.MenuOrientationProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenu.MenuOrientation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenu.ExpandOnHoverProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenu.ExpandOnHover" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenu.NavigationElementProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenu.NavigationElement" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenu.MenuOrientation">
+            <summary>メニューの方向を決定します。水平または垂直に配置できます。</summary>
+            <remarks>メニューは StackPanel を使用してその項目を配置します。ItemsPanelTemplate を StackPanel 以外の値に変更する場合、このプロパティはメニューでは無視されます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenu.ExpandOnHover">
+            <summary>マウスが項目の上に移動したときにルート項目のサブメニューを開く、またはサブメニューを開くためにルート項目をクリックする必要があるかどうかを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenu.NavigationElement">
+            <summary>ナビゲーションに使用されるコントロールを取得または設定します。</summary>
+            <remarks>      
+            <p class="note">ここで設定する要素は Frame および Page のみです。ナビゲーションをサポートするのは、これらのコントロールだけです。</p>
+            <p class="body">このプロパティを設定すると、メニューのすべての <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> はナビゲーション処理にこのプロパティを使用します。<see cref="P:Infragistics.Controls.Menus.XamMenuItem.NavigationElement" /> を明示的に設定した場合は、このプロパティは無視されます。</p>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamMenuItem">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenu" /> コントロール内選択可能の項目を表します。</summary>
+            <remarks>
+            <p class="body"><b>XamMenuItem</b> はサブメニューを含むことが可能です。<b>XamMenuItem</b> のサブメニューは <b>XamMenuItem</b> の ItemCollection 内のオブジェクトでできています。<b>XamMenuItem</b> はほかの <b>XamMenuItem</b> オブジェクトを含むことによって、ネストされるサブメニューを作成します。</p>
+            </remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.ArrangeOverride(System.Windows.Size)">
+            <summary>オート コンプリート コントロールおよびそのコンテンツを配置してサイズを設定します。</summary>
+            <param name="finalSize">提供される配置境界オブジェクト。</param>
+            <returns>変更されていない配置境界を返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.MeasureOverride(System.Windows.Size)">
+          <summary>
+            要素およびその子を計測するために呼び出されます。
+          </summary>
+          <param name="constraint">この要素が子要素に提供できる空き領域を反映したサイズ。</param>
+          <returns>
+            望ましい要素サイズを表す <see cref="T:System.Windows.Size"/>。
+          </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnApplyTemplate">
+            <summary>要素のテンプレートが適用されているときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnCreateAutomationPeer">
+            <summary>派生したクラスで実装する場合、オートメーションのインフラストラクチャーのクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.GetContainerForItemOverride">
+            <summary>オブジェクトを表示するために使用される新しい XamMenuItem を作成します。</summary>
+            <returns>新しい XamMenuItem。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>項目がすでにコンテナーであるかどうかを確認するフレームワークの起動をオーバーライドします。</summary>
+            <param name="item">テストされる項目。</param>
+            <returns>すでに <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> または <see cref="T:Infragistics.Controls.Menus.XamMenuSeparator" /> である場合 True を返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>指定した項目を表示するために指定した要素を準備します。</summary>
+            <param name="element">指定された項目を表示するために使用される要素。</param>
+            <param name="item">指定された項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>PrepareContainerForItemOverride の効果を取り消します。</summary>
+            <param name="element">コンテナー 要素。</param>
+            <param name="item">含まれている項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>ツリーのオブジェクトで項目が追加または削除されたときにフレームワークの起動をオーバーライドします。</summary>
+            <param name="e">変更された項目についてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseEnter" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeave" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>ユーザーがマウスの左ボタンをクリックしたときにフレームワークの起動をオーバーライドします。</summary>
+            <param name="e">mousedown イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>ユーザーがマウスの左ボタンを離すときにフレームワークの起動をオーバーライドします。</summary>
+            <param name="e">マウスの左ボタンを離すイベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>デリゲートを関連付けなくても、派生クラスでイベントを処理するために、<see cref="E:System.Windows.UIElement.LostMouseCapture" /> イベントが発生する前に呼び出されます。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseEventArgs" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)">
+            <summary>この要素に意味のあるアクセス キーが呼び出されるときのクラス処理を提供します。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>ユーザーがキーを押したときにフレームワークの起動をオーバーライドします。</summary>
+            <param name="e">keydown イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.LostFocus" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>処理されない <see cref="E:System.Windows.UIElement.GotFocus" /> イベントがそのルート中にこの要素に到達するたびに呼び出されます。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.RoutedEventArgs" />。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.CommandProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamMenuItem.Command"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.CommandParameterProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamMenuItem.CommandParameter"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.CommandTargetProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamMenuItem.CommandTarget"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsKeyboardNavigableProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsKeyboardNavigable" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.CheckBoxVisibilityResolvedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.CheckBoxVisibilityResolved" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IconProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.Icon" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IconVisibilityResolvedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IconVisibilityResolved" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.InputGestureTextProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.InputGestureText" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsCheckableProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsCheckable" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsCheckedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsChecked" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsHighlightedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsHighlighted" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsSubmenuOpenProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsSubmenuOpen" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.MenuOrientationProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.MenuOrientation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.HasChildrenProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.HasChildren" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.SubmenuPreferredLocationProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.SubmenuPreferredLocation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.StaysOpenOnClickProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.StaysOpenOnClick" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.RoleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.Role" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsSelectedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsSelected" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsMouseOverProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsMouseOver" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.IsMouseOverSublingProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsMouseOverSubling" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.ManipulateSubmenu(System.Boolean,System.Boolean)">
+            <summary>サブメニューの open または close を呼び出す前に発生するヘルパー メソッド。</summary>
+            <param name="isOpen">True の場合、サブメニューが開きます。False の場合、サブメニューを閉じます。</param>
+            <param name="isImmediately">True の場合、サブメニューの操作をすぐに実行されます。False の場合、アニメーションを使用してサブメニューの操作を実行します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnChecked(System.EventArgs)">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsChecked" /> プロパティを False から True に変更するときに Checked イベントを発生します。</summary>
+            <param name="e">イベント引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnUnchecked(System.EventArgs)">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.IsChecked" /> プロパティを True から False に変更するときに Unchecked イベントを発生します。</summary>
+            <param name="e">イベント引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnClick(System.EventArgs)">
+            <summary>ユーザーがマウスの左ボタンをクリックした時に Click イベントを発生します。</summary>
+            <param name="e">イベント引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnSubmenuClosed(System.EventArgs)">
+            <summary>サブメニューが閉じるときに SubmenuClosed イベントを発生します。</summary>
+            <param name="e">イベント データ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnSubmenuOpened(System.EventArgs)">
+            <summary>サブメニューが開かれるときに SubmenuOpened イベントを発生します。</summary>
+            <param name="e">イベント データ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.ControlIsEnabledChanged(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>IsEnabled プロパティの変更を処理します。</summary>
+            <param name="sender">ソースのオブジェクト。</param>
+            <param name="e">イベント データ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.UpdateRoleState">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> の Role に基づき、コントロールの視覚状態を設定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.ChangeVisualState(System.Boolean)">
+            <summary>現在の設定を表すためにコントロールの VisualStates を設定します。</summary>
+            <param name="useTransitions"></param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.NavigationElementProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.NavigationElement" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.NavigationUriProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.NavigationUri" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.NavigationParameterProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.NavigationParameter" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuItem.NavigationOnClickProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuItem.NavigationOnClick" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuItem.OnPropertyChanged(System.String)">
+            <summary>PropertyChanged イベントを発生させます。</summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IsEnabledCore">
+          <summary>
+            項目が有効かどうかを示す値を取得します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.Command">
+          <summary>
+            メニュー項目に関連付けられたコマンドを取得または設定します。
+          </summary>
+          <seealso cref="F:Infragistics.Controls.Menus.XamMenuItem.CommandProperty"/>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.CommandParameter">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamMenuItem.Command"/> に渡されたパラメーターを取得または設定します。
+          </summary>
+          <seealso cref="F:Infragistics.Controls.Menus.XamMenuItem.CommandParameterProperty"/>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.CommandTarget">
+          <summary>
+            Command が RoutedCommand の場合、<see cref="P:Infragistics.Controls.Menus.XamMenuItem.Command"/> が実行される要素を返すか、設定します。
+          </summary>
+          <seealso cref="F:Infragistics.Controls.Menus.XamMenuItem.CommandTargetProperty"/>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IsKeyboardNavigable">
+            <summary>エンド ユーザーがキーボードでこの <see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> にアクセスできるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.CheckBoxVisibilityResolved">
+            <summary>チェックボックスを表示するかどうかを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.Icon">
+            <summary>メニュー項目のテキストの隣に表示される画像のデータを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IconVisibilityResolved">
+            <summary>アイコンを表示するかどうかを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.InputGestureText">
+            <summary>指定された項目に関連付けるコマンドを呼び出す入力動作を説明するテキストを設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IsCheckable">
+            <summary>XamMenuItem がチェックできるかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IsChecked">
+            <summary>XamMenuItem がチェックできるかどうかを示す値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IsHighlighted">
+            <summary>XamMenuItem がハイライトされるかどうかを示す値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IsSubmenuOpen">
+            <summary>XamMenuItem のサブメニューが開くかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.MenuOrientation">
+            <summary>メニューが配置される方向を決定します。水平または垂直に配置できます。</summary>
+            <remarks>
+            <p class="body">項目を配置するのに、メニューは ItemsPanel に提供されるプロパティを使用します。デフォルトは StackPanel です。それを使用すると、項目を垂直にまたは水平に配置することは可能です。別のタイプ パネル (たとえば Grid) を設定する場合は、MenuOrientation プロパティは自動的に無視されます。Grid はレイアウト ロジックによって項目を配置するのに管理します。 </p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.HasChildren">
+            <summary>この XamMenuItem が子 XamMenuItem を持つかどうかを示します (読み取り専用）</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.ParentXamMenuItem">
+            <summary>この XamMenuItem の親 XamMenuItem への参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.SubmenuPreferredLocation">
+            <summary>ユーザーが設定するこのメニュー項目のポップアップ メニューの配置を決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.StaysOpenOnClick">
+            <summary>この項目がクリックされたときにこの MenuItem に位置するサブメニューが閉じられないことを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.Role">
+            <summary>メニューで XamMenuItem のロールを示す値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IsInContextMenu">
+            <summary>XamMenuItem の親 XamMenu への値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.ParentItemsControl">
+            <summary>XamMenuItem の親 ItemsControl への参照を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.ParentXamMenu">
+            <summary>XamMenuItem の親 XamMenu への参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.IgnorePropertyChange">
+            <summary>保留中の変更のハンドラーの呼び出しを無視するかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamMenuItem.Click">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> がクリックされたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamMenuItem.Checked">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> がチェックされたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamMenuItem.Unchecked">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> のチェックが解除されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamMenuItem.SubmenuClosed">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> のサブメニューが閉じられるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamMenuItem.SubmenuOpened">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> のサブメニューが開かれるときに発生します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.NavigationElement">
+            <summary>ナビゲーションに使用されるコントロールを取得または設定します。</summary>
+            <remarks>      
+            <p class="note">ここで設定する要素は Frame および Page のみです。ナビゲーションをサポートするのは、これらのコントロールだけです。</p>
+            <p class="body">このプロパティが設定されていない場合、ナビゲーション処理に <see cref="P:Infragistics.Controls.Menus.XamMenu.NavigationElement" /> を使用します。</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.NavigationUri">
+            <summary>ナビゲートするコンテンツの URI。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.NavigationParameter">
+            <summary>NavigationService.Navigate メソッドに渡されるパラメーターを取得または設定します。</summary>
+            <remarks>
+            <p class="body">NavigationContext.QueryString プロパティは、ナビゲーションが完了した後で使用するパラメーターを含む文字列です。書式は /param1/param2…/paramN である必要があります。各パラメーターは「/」で区切る必要があります。</p>
+            <para class="note">パラメーターが 1 つだけの場合、「/」の必要はありません。</para>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuItem.NavigationOnClick">
+            <summary>ユーザーがクリックした時に、<see cref="T:Infragistics.Controls.Menus.XamMenuItem" /> が <see cref="P:Infragistics.Controls.Menus.XamMenuItem.NavigationUri" /> プロパティで指定されたコンテキストに移動するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamMenuItem.PropertyChanged">
+            <summary>このオブジェクトのプロパティが変更される生成されるイベント。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamMenuSeparator">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenu" /> コントロールでメニュー項目を分離するために使用されるコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuSeparator.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamMenuSeparator" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamMenuSeparator.OnApplyTemplate">
+            <summary>新しいコントロール テンプレートが適用されるときに XamMenuSeparator コントロールのビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamMenuSeparator.SeparatorOrientationProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamMenuSeparator.SeparatorOrientation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamMenuSeparator.SeparatorOrientation">
+            <summary>セパレーターが配置される方向を決定します。水平または垂直に配置できます。</summary>
+        </member>
+      <member name="F:Infragistics.Controls.Menus.XamContextMenu.PlacementTargetResolvedProperty">
+        <summary>
+          <see cref="P:Infragistics.Controls.Menus.XamContextMenu.PlacementTargetResolved"/> 依存プロパティを識別します。
+        </summary>
+      </member>
+    </members>
+</doc>

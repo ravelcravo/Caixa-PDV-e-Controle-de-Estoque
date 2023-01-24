@@ -34,8 +34,8 @@ namespace AppControleDeEstoque.Model
             combo.DataSource = null;
             da.Fill(dtResultado);
             combo.DataSource = dtResultado;
-            combo.ValueMember = "CATEGORIA";
-            combo.DisplayMember = "CATEGORIA";
+            combo.ValueMember = "COD";
+            combo.DisplayMember = "NOME";
             combo.SelectedItem = "";
             if (tipo == "S") { combo.Text = "Selecione"; }
             combo.Refresh();
@@ -44,7 +44,7 @@ namespace AppControleDeEstoque.Model
 
         public static void GetCategorias(System.Windows.Forms.ComboBox combo, string Tipo,string sql ="")
         {
-            MontarCombos(combo, Tipo, "use CaixaPDV select * from Nicho");
+            MontarCombos(combo, Tipo, "USE CaixaPDV EXEC BuscaCategorias '%'");
         }
 
 

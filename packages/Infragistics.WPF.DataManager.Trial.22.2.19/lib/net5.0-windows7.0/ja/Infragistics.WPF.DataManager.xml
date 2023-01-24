@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>Infragistics.WPF.DataManager</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.Collections.BindableItemCollection`1">
+            <summary>DataSource にバインドされる項目を含む Collection。注: コレクションで一度にすべての項目を存在しない可能性があります。項目をオンデマンドで取得します。</summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.#ctor(Infragistics.IProvideDataItems{`0})">
+            <summary><see cref="T:Infragistics.Collections.BindableItemCollection`1" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">コレクションの項目を実際に提供するオブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.GetCount">
+            <summary>コレクションの項目数を取得します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.GetItem(System.Int32)">
+            <summary>指定したインデックスにある項目を取得します。</summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.AddBoundItem(System.Int32,`0)">
+            <summary>指定したインデックスに項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.AddItem(System.Int32,`0)">
+            <summary>指定されたインデックスにバインドされていない項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.InsertItem(System.Int32,`0)">
+            <summary>指定されたインデックスでコレクションに項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.RemoveItem(System.Int32)">
+            <summary>指定したインデックスにある項目を削除します。</summary>
+            <param name="index"></param>
+            <returns>項目が削除した場合は True。</returns>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.CreateItem">
+            <summary>デフォルトの基本データ オブジェクトを持つ新しいオブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.CreateItem(System.Object)">
+            <summary>入力したデータ オブジェクトを使用して新しいオブジェクトを作成します。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Collections.BindableItemCollection`1.RemoveRange(System.Collections.Generic.IList{`0})">
+            <summary>指定した項目のリストを削除します。</summary>
+            <param name="itemsToRemove"></param>
+        </member>
+        <member name="T:Infragistics.FormattingRuleCollection`1">
+            <summary>データ バインディング処理のときにデータを集める IRule オブジェクトのコレクション。</summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Infragistics.FormattingRuleCollection`1.GetRulesForStage(Infragistics.EvaluationStage)">
+            <summary>指定された段階で処理する必要のあるルールのコレクションを返します。</summary>
+            <param name="stage"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.FilterContext">
+            <summary> フィルターを表す表現を取得するために</summary>
+        </member>
+        <member name="M:Infragistics.FilterContext.CreateGenericFilter(Infragistics.CachedTypedInfo,System.Type,System.Boolean,System.Boolean)">
+            <summary>処理するデータのオブジェクト タイプと同じタイプの FilterContext を作成します。</summary>
+            <param name="cachedTypeInfo">処理されるデータ オブジェクト タイプ。</param>
+            <param name="fieldDataType">処理されるフィールド データ型。</param>
+            <param name="caseSensitive">大文字と小文字が区別される場合 True。文字列の fieldDataTypes のみに使用されます。</param>
+            <param name="fromDateColumn">このフィルターが DateColulmn で作成され、時間でフィルターする追加の操作を実行する場合は True です。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext.CreateExpression(System.String,Infragistics.ComparisonOperator,System.Object,System.Boolean)">
+            <summary>新しい <see cref="T:System.Linq.Expressions.Expression" /> を作成します</summary>
+            <param name="fieldName"></param>
+            <param name="op"></param>
+            <param name="value"></param>
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext.CreateExpression(System.String,Infragistics.ComparisonOperator,System.Object,System.Object)">
+            <summary>新しい <see cref="T:System.Linq.Expressions.Expression" /> を作成します</summary>
+            <param name="fieldName"></param>
+            <param name="op"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext.CreateExpression(Infragistics.ConditionCollection,System.Object)">
+            <summary>新しい <see cref="T:System.Linq.Expressions.Expression" /> を作成します</summary>
+            <param name="conditionGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext.CreateExpression(Infragistics.RecordFilterCollection)">
+            <summary>新しい <see cref="T:System.Linq.Expressions.Expression" /> を作成します</summary>
+            <param name="conditionGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.FilterContext.CaseSensitive">
+            <summary>作成されているフィルターで大文字と小文字を区別するかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.FilterContext.FieldDataType">
+            <summary>フィルターされているフィールドの <see cref="T:System.Type" />。</summary>
+        </member>
+        <member name="P:Infragistics.FilterContext.FromDateColumn">
+            <summary>フィルターが Date 列のために作成されているかどうかを取得します。その場合では、フィルターを作成するときに範囲ロジックを使用します。Date 列は時間をサポートしません。</summary>
+        </member>
+        <member name="P:Infragistics.FilterContext.CachedTypedInfo">
+            <summary>操作の CachedTypedInfo。</summary>
+        </member>
+        <member name="T:Infragistics.FilterContext`1">
+            <summary>特定のオブジェクト タイプの <see cref="T:Infragistics.FilterContext" /> オブジェクト。</summary>
+            <typeparam name="TDataObject">処理されるオブジェクトのタイプ。</typeparam>
+        </member>
+        <member name="F:Infragistics.FilterContext`1.EqualsMethod">
+          <summary>
+            Object.Equals メソッドを説明する情報を取得します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.#ctor(System.Type,System.Boolean,System.Boolean,Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.FilterContext" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="fieldDataType"></param>
+            <param name="caseSensitive"></param>
+            <param name="fromDateColumn"></param>
+            <param name="cti"></param>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.OrElseExpression``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>2 つの <see cref="T:System.Linq.Expressions.Expression" /> オブジェクトを OR 式で結合します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns>2 つの入力を結合した <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.AndAlsoExpression``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>2 つの <see cref="T:System.Linq.Expressions.Expression" /> オブジェクトを AND 式によって組み合わせます。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns>2 つの入力を結合した <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.ExclusiveOrExpression``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>2 つの <see cref="T:System.Linq.Expressions.Expression" /> オブジェクトを XOR 式で結合します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns>2 つの入力を結合した <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDateTimeTimeExcludedEqualsExpression``1(System.String,System.Object)">
+            <summary>等しいかどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateEqualsExpression``1(System.String,System.Object)">
+            <summary>等しいかどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateNotEqualsExpression``1(System.String,System.Object)">
+            <summary>等しくないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateGreaterThanExpression``1(System.String,System.Object)">
+            <summary>入力値よりも大きいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateGreaterThanOrEqualsExpression``1(System.String,System.Object)">
+            <summary>入力値よりも大きい、または等しいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateLessThanExpression``1(System.String,System.Object)">
+            <summary>入力値よりも小さいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateLessThanOrEqualsExpression``1(System.String,System.Object)">
+            <summary>入力値よりも小さい、または等しいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringExpression``1(System.String,System.Linq.Expressions.Expression{System.Func{System.String,System.Boolean}})">
+            <summary>文字列を解析するための式を構築します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="booleanStringExpression"> 文字列を分析する 。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateEqualsCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>入力値と大文字と小文字が等しいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateNotEqualsCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>入力値と大文字と小文字が等しくないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStartsWithExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値で始まることを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStartsWithCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値で始まることを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateEndsWithExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値で終わることを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateEndsWithCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値で終わることを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateContainsExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値を包むことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateContainsCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値を含むことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDoesNotContainExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値を含まないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDoesNotContainCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値を含まないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringGreaterThanExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値よりも大きいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringGreaterThanCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値よりも大きいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringGreaterThanOrEqualExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値よりも大きいか等しいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringGreaterThanOrEqualCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値よりも大きいか等しいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringLessThanExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値よりも小さいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringLessThanCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値よりも小さいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringLessThanOrEqualExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値よりも小さいか等しいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringLessThanOrEqualCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値よりも小さいか等しいことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringEmptyExpression``1(System.String,System.String)">
+            <summary>空文字列値を評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringNotEmptyExpression``1(System.String,System.String)">
+            <summary>非空文字列値を評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDoesNotStartWithExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値で始まらないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDoesNotStartWithCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値で始まらないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDoesNotEndWithExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別し、入力値で終わらないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDoesNotEndWithCaseInsensitiveExpression``1(System.String,System.String)">
+            <summary>大文字と小文字を区別せず、入力値で終わらないことを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="value">分析される値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+      <member name="M:Infragistics.FilterContext`1.CreateGenericStringExpression(System.String,System.String,System.String,System.Boolean,System.Boolean)">
+        <summary>
+          入力された値を指定した条件に基づいて評価する <see cref="T:System.Linq.Expressions.Expression"/> を作成します。
+        </summary>
+        <param name="fieldName">評価対象のプロパティ。</param>
+        <param name="value">分析される値。</param>
+        <param name="methodName">評価で使用されるメソッド。</param>
+        <param name="isFalse">false が正しい値かどうか。</param>
+        <param name="caseSensitive">比較で大文字と小文字を区別します。</param>
+        <returns>
+          条件を評価する <see cref="T:System.Linq.Expressions.Expression"/>。
+        </returns>
+      </member>
+      <member name="M:Infragistics.FilterContext`1.CreateComparisonStringExpression(System.String,System.String,System.Int32,System.Boolean,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})">
+        <summary>
+          入力された値を string.Compare メソッドに基づいて評価する <see cref="T:System.Linq.Expressions.Expression"/> を作成します。
+        </summary>
+        <param name="fieldName">評価対象のプロパティ。</param>
+        <param name="value">分析される値。</param>
+        <param name="compareValue">比較対象の値。</param>
+        <param name="caseSensitive">比較で大文字と小文字を区別します。</param>
+        <param name="comparisonExpression">比較で使用する式。</param>
+        <returns>
+          条件に基づいて比較する <see cref="T:System.Linq.Expressions.Expression"/>。
+        </returns>
+      </member>
+      <member name="M:Infragistics.FilterContext`1.CreateContainsStringExpression(System.String,System.String,System.Boolean,System.Boolean)">
+        <summary>
+          フィールドが入力値を含むかどうかを評価する <see cref="T:System.Linq.Expressions.Expression"/> を作成します。
+        </summary>
+        <param name="fieldName">評価対象のプロパティ。</param>
+        <param name="value">分析される値。</param>
+        <param name="doesNotContain">「～を含まない」を確認するかどうか。</param>
+        <param name="caseSensitive">比較で大文字と小文字を区別します。</param>
+        <returns>
+          条件に基づいて比較する <see cref="T:System.Linq.Expressions.Expression"/>。
+        </returns>
+      </member>
+        <member name="M:Infragistics.FilterContext`1.CreateExpression(Infragistics.ConditionCollection,System.Object)">
+            <summary><see cref="T:Infragistics.ConditionCollection" /> のすべての条件に基づいて <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <param name="conditionGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateExpression(Infragistics.RecordFilterCollection)">
+            <summary><see cref="T:Infragistics.RecordFilterCollection" /> から <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <param name="conditionGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateExpression(System.String,Infragistics.ComparisonOperator,System.Object,System.Object)">
+            <summary><see cref="T:Infragistics.ComparisonOperator" /> に基づいて式を作成します。</summary>
+            <param name="fieldName"></param>
+            <param name="op"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateExpression(System.String,Infragistics.ComparisonOperator,System.Object,System.Boolean)">
+            <summary>新しい <see cref="T:System.Linq.Expressions.Expression" /> を作成します</summary>
+            <param name="fieldName"></param>
+            <param name="op"></param>
+            <param name="value"></param>
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringExpression(System.String,Infragistics.ComparisonOperator,System.Object,System.Boolean,System.Object)">
+            <summary>文字列操作のための <see cref="T:System.Linq.Expressions.Expression" /> を返します。</summary>
+            <param name="fieldName"></param>
+            <param name="op"></param>
+            <param name="value"></param>
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateStringInOperandCaseInsensitiveExpression``1(System.String,System.Collections.IList)">
+          <summary>
+            値のリストと大文字と小文字を区別しない場合に等しいかどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。
+          </summary>
+          <typeparam name="TDataObjectType">
+            <see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。
+          </typeparam>
+          <param name="fieldName">評価対象のプロパティ。</param>
+          <param name="value">解析する値の IList。</param>
+          <returns>
+            条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。
+          </returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateInOperandExpression``1(System.String,System.Collections.IList,System.Boolean,System.Object)">
+          <summary>
+            値のリストと大文字と小文字を区別しない場合に等しいかどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。
+          </summary>
+          <typeparam name="TDataObjectType">
+            <see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。
+          </typeparam>
+          <param name="fieldName">評価対象のプロパティ。</param>
+          <param name="values">解析する値の IList。</param>
+          <param name="isCaseSensitive">文字列比較の場合、大文字と小文字を区別するかどうか。</param>
+          <returns>
+            条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。
+          </returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateObjectExpression(System.String,Infragistics.ComparisonOperator,System.Object,System.Boolean,System.Object)">
+            <summary>オブジェクト操作のための <see cref="T:System.Linq.Expressions.Expression" /> を返します。</summary>
+            <param name="fieldName"></param>
+            <param name="op"></param>
+            <param name="value"></param>
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateThisWeekExpression``1(System.String)">
+            <summary>今週かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateNextWeekExpression``1(System.String)">
+            <summary>来週かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateLastWeekExpression``1(System.String)">
+            <summary>先週かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateThisMonthExpression``1(System.String)">
+            <summary>今月かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateNextMonthExpression``1(System.String)">
+            <summary>来月かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateLastMonthExpression``1(System.String)">
+            <summary>先月かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateThisYearExpression``1(System.String)">
+            <summary>今年かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateNextYearExpression``1(System.String)">
+            <summary>来年かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateLastYearExpression``1(System.String)">
+            <summary>昨年かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateThisQuarterExpression``1(System.String)">
+            <summary>現在の四半期かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateNextQuarterExpression``1(System.String)">
+            <summary>次の四半期かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateLastQuarterExpression``1(System.String)">
+            <summary>前の四半期かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateYearToDateExpression``1(System.String)">
+            <summary>本日までの 1 年間かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateDateRangeExpression``1(System.String,System.DateTime,System.DateTime)">
+            <summary>日付範囲かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="includeStartDate"></param>
+            <param name="excludedEndDate"></param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateMonthExpression``1(System.String,System.Int32)">
+            <summary>オブジェクトの DateTime フィールドについて、特定の月の値かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName">評価対象のプロパティ。</param>
+            <param name="month">フィルタリングする整数型の月の値。</param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="M:Infragistics.FilterContext`1.CreateQuarterYearIndependentExpression``1(System.String,System.Int32)">
+            <summary>オブジェクトの DateTime フィールドについて、特定の四半期かどうかを評価する <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <typeparam name="TDataObjectType"><see cref="T:System.Linq.Expressions.Expression" /> を適用するオブジェクト タイプ。</typeparam>
+            <param name="fieldName"></param>
+            <param name="quarter"></param>
+            <returns>条件を評価する <see cref="T:System.Linq.Expressions.Expression" />。</returns>
+        </member>
+        <member name="T:Infragistics.GroupByContext">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> で使用する GroupBy 機能をカプセル化するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.GroupByContext.CreateGenericCustomGroup(Infragistics.CachedTypedInfo,System.String,System.Object)">
+            <summary><see cref="T:Infragistics.GroupByContext" />の一般的なインスタンスを作成します。</summary>
+            <param name="cti">GroupByContext を作成するデータ型。</param>
+            <param name="propertyName">データがグループ化されるプロパティの名前。</param>
+            <param name="comparer">グループ化を実行するために使用される IEqualityComparer。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.GroupByContext.CreateGenericCustomGroup(Infragistics.CachedTypedInfo,System.Object,System.Windows.Data.IValueConverter,System.Object)">
+            <summary><see cref="T:Infragistics.GroupByContext" />の一般的なインスタンスを作成します。</summary>
+            <param name="cti">GroupByContext を作成するデータ型。</param>
+            <param name="comparer"></param>
+            <param name="converter"></param>
+            <param name="converterParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.GroupByContext.Group``1(System.Linq.IQueryable{``0})">
+            <summary>指定した <see cref="T:System.Linq.IQueryable" /> をこのデータが表すプロパティでグループ化します。</summary>
+            <typeparam name="T">グループ化される必要のあるデータ型。</typeparam>
+            <param name="query">グループ化するデータのコレクション。</param>
+            <returns><see cref="T:Infragistics.GroupByDataContext" /> オブジェクトのコレクション。</returns>
+        </member>
+        <member name="P:Infragistics.GroupByContext.PropertyName">
+            <summary>データがグループ化されるプロパティの名前を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByContext.Summaries">
+            <summary>Children に適用する必要のある サマリーのリストを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.GroupByContext`1">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> で使用する GroupBy 機能をカプセル化するオブジェクト。</summary>
+            <typeparam name="TColumnType">グループ化するデータ型。</typeparam>
+        </member>
+        <member name="M:Infragistics.GroupByContext`1.#ctor(System.String,System.Object,Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.GroupByContext" />の新しいインスタンスを作成します。</summary>
+            <param name="propertyName"></param>
+            <param name="comparer"></param>
+            <param name="cti"></param>
+        </member>
+        <member name="M:Infragistics.GroupByContext`1.#ctor(System.Object,System.Windows.Data.IValueConverter,System.Object,Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.GroupByContext" />の新しいインスタンスを作成します。</summary>
+            <param name="comparer"></param>
+            <param name="converter"></param>
+            <param name="converterParam"></param>
+            <param name="cti"></param>
+        </member>
+        <member name="M:Infragistics.GroupByContext`1.Group``1(System.Linq.IQueryable{``0})">
+            <summary>指定した <see cref="T:System.Linq.IQueryable" /> をこのデータが表すプロパティでグループ化します。</summary>
+            <typeparam name="T">グループ化される必要のあるデータ型。</typeparam>
+            <param name="query">グループ化するデータのコレクション。</param>
+            <returns><see cref="T:Infragistics.GroupByDataContext" /> オブジェクトのコレクション。</returns>
+        </member>
+        <member name="P:Infragistics.GroupByContext`1.Comparer">
+            <summary>グループ化を実行するために使用される Comparer を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByContext`1.Converter">
+            <summary>GroupBy を評価するのに使用される <see cref="T:System.Windows.Data.IValueConverter" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByContext`1.ConverterParameter">
+            <summary><see cref="P:Infragistics.GroupByContext`1.Converter" /> に適用されるパラメーター。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByContext`1.CachedTypedInfo">
+            <summary>操作の CachedTypedInfo。</summary>
+        </member>
+        <member name="T:Infragistics.GroupByDataContext">
+            <summary><see cref="T:Infragistics.GroupByContext" /> によってグループ化されたデータについての情報を含むオブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.Value">
+            <summary>グループ化されているデータ値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.Records">
+            <summary>この特定グループに属すデータのコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.Count">
+            <summary>この特定のグループにあるレコードの合計数を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.DisplayValue">
+            <summary>Count が追加された、値の文字列表現を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.SummaryLookupResults">
+            <summary>列キーを指定して SummaryResults のルックアップ テーブルを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.SummaryResults">
+            <summary>その集計結果は、すべてのフィールドに対して指定されています。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.GroupBySummaryLookupResults">
+            <summary>列キーを指定して GroupBySummaryResults のルックアップ テーブルを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.GroupBySummaryResults">
+            <summary>この GroupByContext が表す特定のフィールドに固有の集計結果。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.Summaries">
+            <summary>Children に適用する必要のある サマリーのリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.GroupBySummaries">
+            <summary>特に GroupBy に対して適用する必要のある集計のリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.GroupByDataContext.TypedInfo">
+            <summary>オブジェクトの TypedInfo を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.InformationContext">
+            <summary>セカンダリ機能のデータからデータを取得するために使用されるコンテキスト オブジェクト。</summary>
+        </member>
+        <member name="F:Infragistics.InformationContext.IsNullOrEmptyMethod">
+            <summary>入力文字列が null または空かどうかを検証するメソッドを含む <see cref="T:System.Reflection.MethodInfo" /> オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.InformationContext.CreateGenericInformationContext(Infragistics.CachedTypedInfo,System.String,System.Boolean,System.Boolean,System.Object,System.Boolean)">
+            <summary>タイプした <see cref="T:Infragistics.InformationContext" /> オブジェクトを作成します。</summary>
+            <param name="cti"></param>
+            <param name="propertyName"></param>
+            <param name="sortAscending"></param>
+            <param name="caseSensitive"></param>
+            <param name="comparer"></param>
+            <param name="fromDateColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext.GetDistinctValues(System.Collections.IEnumerable)">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext.GetDistinctValuesAsync(System.Collections.IEnumerable,System.Threading.CancellationToken,System.Boolean)">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <param name="token"></param>
+            <param name="runAsync"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext.GetCompleteValuesList(System.Collections.IEnumerable)">
+            <summary>この <see cref="T:Infragistics.InformationContext" /> からオブジェクトの <see cref="T:System.Collections.IList" /> を返します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.InformationContext.PropertyName">
+            <summary>情報を取得するために処理するプロパティの名前を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.InformationContext.DataType">
+            <summary>処理されるデータ オブジェクトの Type を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.InformationContext.PropertyType">
+            <summary>プロパティによって提供されるオブジェクトの Type を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.InformationContext.CaseSensitive">
+            <summary>リストを作成するときに大文字と小文字を区別するかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.InformationContext.SortAscending">
+            <summary>作成したリストを並べ替えるかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.InformationContext.Comparer">
+            <summary>並べ替えに使用される Comparer を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.InformationContext.Lambda">
+            <summary>リストを生成するために使用される <see cref="T:System.Linq.Expressions.LambdaExpression" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.InformationContext.FromDateColumn">
+            <summary>一意のリストが Date 列のために作成されているかどうかを取得します。その場合は、一意のリストを作成するときに範囲ロジックを使用します。Date 列は時間をサポートしません。</summary>
+        </member>
+        <member name="T:Infragistics.InformationContext`2">
+            <summary>一般的なタイプのある <see cref="T:Infragistics.InformationContext" /> オブジェクトのクラス。</summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="TColumnType"></typeparam>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.#ctor(System.String,System.Boolean,System.Boolean,System.Object,System.Boolean,Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.InformationContext" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetDistinctValues(System.Collections.IEnumerable)">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetDistinctValuesAsync(System.Collections.IEnumerable,System.Threading.CancellationToken,System.Boolean)">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <param name="token"></param>
+            <param name="runAsync"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetDistinctValues(System.Linq.IQueryable{`0})">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetDistinctValuesAsync(System.Linq.IQueryable{`0},System.Threading.CancellationToken,System.Boolean)">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <param name="token"></param>
+            <param name="runAsync"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetDistinctValuesImpl(System.Linq.IQueryable{`0},System.Threading.CancellationToken,System.Boolean)">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <param name="token"></param>
+            <param name="runAsync"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetDistinctValues(System.Linq.IQueryable)">
+            <summary>入力した <see cref="T:System.Collections.IEnumerable" /> から一意の値の <see cref="T:System.Collections.IList" /> を取得します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetCompleteValuesList(System.Collections.IEnumerable)">
+            <summary>この <see cref="T:Infragistics.InformationContext" /> からオブジェクトの <see cref="T:System.Collections.IList" /> を返します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetCompleteValuesList(System.Linq.IQueryable)">
+            <summary>この <see cref="T:Infragistics.InformationContext" /> からオブジェクトの <see cref="T:System.Collections.IList" /> を返します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.InformationContext`2.GetCompleteValuesList(System.Linq.IQueryable{`0})">
+            <summary>この <see cref="T:Infragistics.InformationContext" /> からオブジェクトの <see cref="T:System.Collections.IList" /> を返します。</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.MergedDataContext">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> で使用する結合データ機能をカプセル化するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.MergedDataContext.CreateGenericCustomMerge(Infragistics.CachedTypedInfo,System.String,System.Object)">
+            <summary><see cref="T:Infragistics.MergedDataContext" />の一般的なインスタンスを作成します。</summary>
+            <param name="cti">MergedDataContext を作成するデータ型。</param>
+            <param name="propertyName">データがマージされるプロパティの名前。</param>
+            <param name="comparer">マージを実行するために使用される IEqualityComparer。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.MergedDataContext.CreateGenericCustomMerge(Infragistics.CachedTypedInfo,System.Object,System.Windows.Data.IValueConverter,System.Object)">
+            <summary><see cref="T:Infragistics.MergedDataContext" />の一般的なインスタンスを作成します。</summary>
+            <param name="cti">MergedDataContext を作成するデータ型。</param>
+            <param name="comparer"></param>
+            <param name="converter"></param>
+            <param name="converterParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.MergedDataContext.Merge(System.Linq.IQueryable,System.Collections.Generic.List{Infragistics.MergedDataContext},Infragistics.SummaryDefinitionCollection)">
+            <summary>指定した <see cref="T:System.Linq.IQueryable" /> をこのデータが表すプロパティでマージします。</summary>
+            <param name="query"></param>
+            <param name="mdcs"></param>
+            <param name="summaries"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.MergedDataContext.Merge(System.Linq.IQueryable,System.Collections.Generic.List{Infragistics.MergedDataContext},Infragistics.MergeDelegate{System.Object,System.Collections.IEnumerable,Infragistics.MergedDataContext,System.Object,Infragistics.MergedColumnInfo,System.Object},Infragistics.MergedColumnInfo)">
+            <summary>指定した <see cref="T:System.Linq.IQueryable" /> をこのデータが表すプロパティでマージします。</summary>
+            <param name="q"></param>
+            <param name="mdcs"></param>
+            <param name="method"></param>
+            <param name="parentMCI"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.MergedDataContext.PropertyName">
+            <summary>データがマージされるプロパティの名前を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedDataContext.SortContext">
+            <summary>データが特定のフィールドでマージされるときに適用する CurrentSort を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedDataContext.SortAscending">
+            <summary>基本データがマージされたフィールドに適用する並べ替え方向を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedDataContext.MergedObject">
+            <summary>マージ操作が実行されるオブジェクト。</summary>
+        </member>
+        <member name="T:Infragistics.MergedDataContext`2">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> に使用されるマージ機能をカプセル化するオブジェクト。</summary>
+            <typeparam name="T">フィールドが属するデータ オブジェクト。</typeparam>
+            <typeparam name="TColumnType">マージされるデータ型。</typeparam>
+        </member>
+        <member name="M:Infragistics.MergedDataContext`2.#ctor(System.String,System.Object,Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.MergedDataContext" />の新しいインスタンスを作成します。</summary>
+            <param name="propertyName"></param>
+            <param name="comparer"></param>
+            <param name="typedInfo"></param>
+        </member>
+        <member name="M:Infragistics.MergedDataContext`2.#ctor(System.Object,System.Windows.Data.IValueConverter,System.Object,Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.MergedDataContext" />の新しいインスタンスを作成します。</summary>
+            <param name="comparer"></param>
+            <param name="converter"></param>
+            <param name="converterParam"></param>
+            <param name="typedInfo"></param>
+        </member>
+        <member name="M:Infragistics.MergedDataContext`2.Merge(System.Linq.IQueryable,System.Collections.Generic.List{Infragistics.MergedDataContext},Infragistics.SummaryDefinitionCollection)">
+            <summary>指定した <see cref="T:System.Linq.IQueryable" /> をこのデータが表すプロパティでマージします。</summary>
+            <param name="query"></param>
+            <param name="mdcs"></param>
+            <param name="summaries"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.MergedDataContext`2.Merge(System.Linq.IQueryable,System.Collections.Generic.List{Infragistics.MergedDataContext},Infragistics.MergeDelegate{System.Object,System.Collections.IEnumerable,Infragistics.MergedDataContext,System.Object,Infragistics.MergedColumnInfo,System.Object},Infragistics.MergedColumnInfo)">
+            <summary>指定した <see cref="T:System.Linq.IQueryable" /> をこのデータが表すプロパティでマージします。</summary>
+            <param name="iquery"></param>
+            <param name="mdcs"></param>
+            <param name="method"></param>
+            <param name="parentMCI"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.MergedDataContext`2.OnGrouping(System.Object,System.Collections.IEnumerable,Infragistics.MergedDataContext,System.Object,Infragistics.MergedColumnInfo)">
+            <summary>GroupBy クエリによって呼び出され、すべての MergeDataContexts を再帰してそれらの merge メソッドを呼び出します。</summary>
+            <param name="key"></param>
+            <param name="list"></param>
+            <param name="nextMergeDataContext"></param>
+            <param name="mergedObject"></param>
+            <param name="parentMCI"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.MergedDataContext`2.AppendColumnInfoToRowInfo(`0,Infragistics.MergedColumnInfo,System.Int32,System.Int32,System.Object)">
+            <summary>指定した MergedColumnInfo を取得し、新しい MergedRowInfo を作成または既存の MergedRowInfo を使用する必要がある場合、それ自身を RowInfo に追加します。</summary>
+            <param name="data"></param>
+            <param name="mci"></param>
+            <param name="index"></param>
+            <param name="lastIndex"></param>
+            <param name="mergedObject"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.MergedDataContext`2.Comparer">
+            <summary>マージを実行するために使用される Comparer を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedDataContext`2.Converter">
+            <summary>マージを評価するために使用される <see cref="T:System.Windows.Data.IValueConverter" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedDataContext`2.ConverterParameter">
+            <summary><see cref="P:Infragistics.MergedDataContext`2.Converter" /> に適用されるパラメーター。</summary>
+        </member>
+        <member name="P:Infragistics.MergedDataContext`2.Summaries">
+            <summary>マージされたグループの各サブセットに適用される集計のコレクション。</summary>
+        </member>
+        <member name="P:Infragistics.MergedDataContext`2.TypedInfo">
+            <summary>オブジェクトの TypedInfo を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.MergedRowInfo">
+            <summary>項目ソースからの特定なデータ行のマージ情報を保存するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.MergedRowInfo.Equals(System.Object)">
+            <summary>MergedRowInfo オブジェクトではなく、基になるデータの等価比較を実行します。</summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.MergedRowInfo.GetHashCode">
+            <summary>このインスタンスにハッシュを返します。</summary>
+            <returns>このインスタンスのハッシュ コードは、ハッシュ アルゴリズムおよびハッシュ テーブルなどのデータ構造で使用されます。</returns>
+        </member>
+        <member name="P:Infragistics.MergedRowInfo.MergedGroups">
+            <summary>この行がマージされている MergeColumnInfo のコレクション。</summary>
+        </member>
+        <member name="P:Infragistics.MergedRowInfo.Data">
+            <summary>この行オブジェクトが表す基本データ オブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.MergedRowInfo.IsLastRowInGroup">
+            <summary>この行がグループの一番最後である MergedColumnInfo の指定したキーがかどうかのルックアップ テーブル。</summary>
+        </member>
+        <member name="P:Infragistics.MergedRowInfo.IsFirstRowInGroup">
+            <summary>この行がグループの一番最初である MergedColumnInfo の指定したキーがかどうかのルックアップ テーブル。</summary>
+        </member>
+        <member name="T:Infragistics.MergedColumnInfo">
+            <summary>データがマージされている特定のフィールドを表すオブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.Key">
+            <summary>この特定のフィールド グループが表す一意のキーを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.Children">
+            <summary>キーとしてフィールドの同じ値をすべて共有する、このグループに属す子行のコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.ParentMergedColumnInfo">
+            <summary>このグループが属す MergedColumnInfo。ルートの場合 null。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.DataType">
+            <summary>基本データ行の型を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.Summaries">
+            <summary>Children に適用する必要のある サマリーのリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.SummaryResultCollection">
+            <summary>このコレクションがアクセスされた場合、子に基づいてこの特定の MergedColumnInfo の集計を遅延実行します。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.MergingObject">
+            <summary>このマージを作成するために使用されるオブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.MergedColumnInfo.TypedInfo">
+            <summary>オブジェクトの TypedInfo を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.MergeDelegate`6">
+            <summary>MergedDataContext に情報を渡すために使用されるカスタムの削除動作。</summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="in1"></param>
+            <param name="in2"></param>
+            <param name="in3"></param>
+            <param name="in4"></param>
+            <param name="in5"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.SortContext">
+            <summary> 並べ替えを表す表現を取得するために</summary>
+        </member>
+        <member name="M:Infragistics.SortContext.CreateGenericSort(Infragistics.CachedTypedInfo,System.String,System.Boolean,System.Boolean,System.Object)">
+            <summary> CurrentSort のタイプとして返します。</summary>
+            <param name="cachedTypeInfo"> 作成する 。</param>
+            <param name="propertyName">作成した並べ替えを並べ替えるプロパティの名前。</param>
+            <param name="sortAscending">並べ替えがプロパティを昇順で並べ替える場合は True。</param>
+            <param name="isCaseSensitiveSort">並べ替えで大文字と小文字を区別する場合は True。文字列のフィールドのみに使用されます。</param>
+            <param name="comparer"> デフォルトの並べ替えのかわりに使用される 。</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:Infragistics.SortContext.CreateGenericSort(Infragistics.CachedTypedInfo,System.Boolean,System.Object,System.Windows.Data.IValueConverter,System.Object)">
+            <summary> CurrentSort のタイプとして返します。</summary>
+            <param name="cachedTypeInfo"> 作成する 。</param>
+            <param name="sortAscending">並べ替えがプロパティを昇順で並べ替える場合は True。</param>
+            <param name="comparer"> デフォルトの並べ替えのかわりに使用される 。</param>
+            <param name="converter"></param>
+            <param name="converterParam"></param>
+            <returns>.</returns>
+        </member>
+        <member name="M:Infragistics.SortContext.Sort``1(System.Linq.IQueryable{``0})">
+            <summary>提供された IQueryable を並べ替えている列に基づいて並べ替えます。</summary>
+            <param name="query">並べ替える IQueryable。</param>		
+            <returns>現在並べ替えたプロパティに基づいて並べ替えた IOrderedQueryable。</returns>
+        </member>
+        <member name="M:Infragistics.SortContext.AppendSort``1(System.Linq.IOrderedQueryable{``0})">
+            <summary>IOrderedQueryable 並べ替えをこの並べ替えに追加します。</summary>
+            <param name="query">常に並べ替えがある既存のクエリ。</param>		
+            <returns>現在並べ替えたプロパティに基づいて並べ替えた IOrderedQueryable。</returns>
+        </member>
+      <member name="M:Infragistics.SortContext.GetComparer``1">
+        <summary>
+          <see cref="T:Infragistics.SortContext`2"/> に関連付けられている比較演算子を提供します。
+        </summary>
+        <typeparam name="T">列タイプ</typeparam>
+        <returns>この並べ替えコンテキストの比較演算子。</returns>
+      </member>
+        <member name="P:Infragistics.SortContext.SortPropertyName">
+            <summary>並べ替える列を説明する文字列を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SortContext.SortAscending">
+            <summary>現在の並べ替えが昇順または降順かを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SortContext.PropertyType">
+            <summary>並べ替えられているプロパティのタイプを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SortContext.DataType">
+            <summary>並べ替えられているオブジェクトのタイプを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SortContext.CaseSensitiveSort">
+            <summary>並べ替えで大文字と小文字を区別するかどうかを取得します。文字列にのみ適用します。</summary>
+        </member>
+        <member name="T:Infragistics.SortContext`2">
+            <summary>オブジェクトのタイプおよび列のタイプに基づいて、プロパティのカスタム並べ替えを説明する一般的なクラス。</summary>
+            <typeparam name="T">この並べ替えで並べ替えるオブジェクトのタイプ。</typeparam>
+            <typeparam name="TColumnType">この並べ替えで並べ替える列のタイプ。</typeparam>
+        </member>
+        <member name="M:Infragistics.SortContext`2.#ctor(System.String,System.Boolean,System.Boolean,System.Object,Infragistics.CachedTypedInfo)">
+            <summary>CurrentSort クラスの新しいインスタンスを初期化します。</summary>
+            <param name="propertyName">並べ替えるプロパティの名前。</param>
+            <param name="sortAscending">プロパティを昇順で並べ替える必要がある場合は True。</param>
+            <param name="caseSensitiveSort">並べ替えで大文字と小文字を区別する場合は True。文字列にのみ適用します。</param>
+            <param name="comparer"> 一般的な列のデータ型がある  オブジェクト。null ではない場合、これは大文字と小文字の識別より優先があります。</param>
+            <param name="cachedTypeInfo" />
+        </member>
+        <member name="M:Infragistics.SortContext`2.#ctor(System.String,System.Boolean,System.Boolean,Infragistics.CachedTypedInfo)">
+            <summary>CurrentSort クラスの新しいインスタンスを初期化します。</summary>
+            <param name="propertyName">並べ替えるプロパティの名前。</param>
+            <param name="sortAscending">プロパティを昇順で並べ替える必要がある場合は True。</param>
+            <param name="caseSensitiveSort">並べ替えで大文字と小文字を区別する場合は True。文字列にのみ適用します。</param>
+            <param name="cachedTypeInfo" />
+        </member>
+        <member name="M:Infragistics.SortContext`2.#ctor(System.Boolean,System.Object,System.Windows.Data.IValueConverter,System.Object,Infragistics.CachedTypedInfo)">
+            <summary>CurrentSort クラスの新しいインスタンスを初期化します。</summary>
+            <param name="sortAscending">プロパティを昇順で並べ替える必要がある場合は True。</param>
+            <param name="comparer"></param>
+            <param name="converter"></param>
+            <param name="converterParam"></param>
+            <param name="cachedTypeInfo"></param>
+        </member>
+        <member name="M:Infragistics.SortContext`2.Sort``1(System.Linq.IQueryable{``0})">
+            <summary>提供された IQueryable を並べ替えている列に基づいて並べ替えます。</summary>
+            <param name="query">並べ替える IQueryable。</param>		
+            <returns>現在並べ替えたプロパティに基づいて並べ替えた IQueryable。</returns>
+        </member>
+        <member name="M:Infragistics.SortContext`2.AppendSort``1(System.Linq.IOrderedQueryable{``0})">
+            <summary>IOrderedQueryable 並べ替えをこの並べ替えに追加します。</summary>
+            <param name="query">常に並べ替えがある既存のクエリ。</param>		
+            <returns>現在並べ替えたプロパティに基づいて並べ替えた IOrderedQueryable。</returns>
+        </member>
+      <member name="M:Infragistics.SortContext`2.GetComparer``1">
+        <summary>
+          <see cref="T:Infragistics.SortContext`2"/> に関連付けられている比較演算子を提供します。
+        </summary>
+        <typeparam name="TComparisonType">列タイプ</typeparam>
+        <returns>この並べ替えコンテキストの比較演算子。</returns>
+      </member>
+        <member name="P:Infragistics.SortContext`2.Lambda">
+            <summary>この並べ替えを説明する現在の LambdaExpression を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SortContext`2.Comparer">
+            <summary> 並べ替えるフィールドの DataType の一般的なタイプがある  オブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.SortContext`2.Converter">
+            <summary> データから値を派生するために使用できるオブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.SortContext`2.ConverterParameter">
+            <summary><see cref="P:Infragistics.SortContext`2.Converter" /> に ConverterParameter として使用されるオブジェクト。</summary>
+        </member>
+        <member name="F:Infragistics.ValObj.ValueProperty">
+            <summary><see cref="P:Infragistics.ValObj.Value" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="T:Infragistics.MultiSortComparer`1">
+            <summary><see cref="T:Infragistics.SortContext" /> のリストに基づいて項目を比較します。&lt;remarks&gt; を参照してください。</summary>
+            <typeparam name="T"></typeparam>
+            <remarks>この比較演算子はバイナリの検索に使用されます。正確な結果を返さない場合があります。項目はまず SortContext.SortProperty および SortContext.SortAscending に基づいて比較されます。項目のプロパティは同じ場合、等しいかどうかを確認します。等しくない場合、-1 を返します。<see cref="M:System.Collections.Generic.List`1.BinarySearch(`0,System.Collections.Generic.IComparer{`0})" /> で使用することを意図しています。</remarks>
+        </member>
+        <member name="M:Infragistics.MultiSortComparer`1.#ctor(System.Collections.Generic.IList{Infragistics.SortContext},Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.MultiSortComparer`1" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="sortContexts">並べ替えコンテキスト。</param>
+        </member>
+        <member name="M:Infragistics.MultiSortComparer`1.BuildCompareExpression(System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.ParameterExpression)">
+            <summary>比較式を作成します。</summary>
+            <param name="resultVar">計算後の変数。</param>
+            <param name="p1">p1。</param>
+            <param name="p2">p2。</param>
+            <param name="sortParams">ParameterExpression としての並べ替えコンテキスト。</param>
+            <returns></returns>
+            <remarks>resultVar は比較の結果を含みます。並べ替えたリストで p1 の位置が p2 の前にある場合、-1。p1 と p2 が等しい場合は 0。並べ替えたリストで p1 の位置が p2 の後にある場合、+1。</remarks>
+        </member>
+        <member name="T:Infragistics.SummaryContext">
+            <summary>オブジェクトの集計を表す一般的ではない抽象クラス。</summary>
+        </member>
+        <member name="M:Infragistics.SummaryContext.CreateGenericSummary(Infragistics.CachedTypedInfo,System.String,Infragistics.LinqSummaryOperator)">
+            <summary>処理するデータのオブジェクト タイプと同じタイプの SummaryContext を作成します。</summary>
+            <param name="cachedTypeInfo">このメソッドのタイプ情報が格納された <see cref="T:Infragistics.CachedTypedInfo" /> オブジェクト。</param>
+            <param name="propertyName">処理されるフィールド データ型。</param>
+            <param name="linqSummary">使用する LINQ 文。</param>
+            <returns></returns>		
+        </member>
+        <member name="M:Infragistics.SummaryContext.Execute(System.Linq.IQueryable)">
+            <summary>入力したクエリに対して LINQ ベースの集計を実行します。</summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext.Maximum(System.Linq.IQueryable)">
+            <summary>LINQ ベースの最大集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext.Minimum(System.Linq.IQueryable)">
+            <summary>LINQ ベースの最小集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext.Sum(System.Linq.IQueryable)">
+            <summary>LINQ ベースの Sum 集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext.Count(System.Linq.IQueryable)">
+            <summary>LINQ ベースの Count 集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext.Average(System.Linq.IQueryable)">
+            <summary>LINQ ベースの平均集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="P:Infragistics.SummaryContext.FieldName">
+            <summary>合計するデータ オブジェクトのプロパティ名を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryContext.LinqSummary">
+            <summary>この <see cref="T:Infragistics.SummaryContext" /> に関連付けられた LinqSummaryOperator を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.SummaryContext`2">
+            <summary>オブジェクトの集計を表す一般的なクラス。</summary>
+            <typeparam name="TObjectType">集計するオブジェクトのタイプ。</typeparam>
+            <typeparam name="TColumnType">集計するフィールドのタイプ。</typeparam>
+        </member>
+        <member name="M:Infragistics.SummaryContext`2.#ctor(System.String,Infragistics.LinqSummaryOperator,Infragistics.CachedTypedInfo)">
+            <summary><see cref="T:Infragistics.SummaryContext" /> の新しいインスタンスを初期化します。</summary>
+            <param name="propertyName"></param>
+            <param name="linqSummary"></param>
+            <param name="cti"></param>
+        </member>
+        <member name="M:Infragistics.SummaryContext`2.Maximum(System.Linq.IQueryable)">
+            <summary>LINQ ベースの最大集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext`2.Minimum(System.Linq.IQueryable)">
+            <summary>LINQ ベースの最小集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext`2.Sum(System.Linq.IQueryable)">
+            <summary>LINQ ベースの Sum 集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext`2.Average(System.Linq.IQueryable)">
+            <summary>LINQ ベースの平均集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="M:Infragistics.SummaryContext`2.Count(System.Linq.IQueryable)">
+            <summary>LINQ ベースの Count 集計を実行します。</summary>
+            <param name="query">集計の実行対象の IQueryable。</param>
+            <returns>集計値。</returns>
+        </member>
+        <member name="P:Infragistics.SummaryContext`2.CachedTypedInfo">
+            <summary>操作の CachedTypedInfo。</summary>
+        </member>
+        <member name="T:Infragistics.DataField">
+            <summary>オブジェクトの提供されたフィールドを表します。</summary>
+        </member>
+        <member name="M:Infragistics.DataField.#ctor(System.String,System.Type)">
+            <summary><see cref="T:Infragistics.DataField" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="name">フィールドの名前。</param>
+            <param name="type">フィールドのタイプ</param>        
+        </member>
+        <member name="P:Infragistics.DataField.Name">
+            <summary>フィールドの名前を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.FieldType">
+            <summary>フィールドのタイプを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.AutoGenerate">
+            <summary>このフィールドが自動的に生成されるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.DisplayName">
+            <summary>フィールドを表示するために使用するテキストを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.GroupName">
+            <summary>グループ化された場合にフィールドに表示されるテキストを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.Order">
+            <summary>AutoGenerated フィールドが表示される順序を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.FormatString">
+            <summary>テキストを表示するフィールドに使用される書式文字列を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.ApplyFormatStringInEditMode">
+            <summary>FormatString が設定される場合、この書式文字列を編集モードで適用するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.NullDisplayText">
+            <summary>フィールドの値が null の場合、代わりに表示されるテキストを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.ConvertEmptyStringToNull">
+            <summary>文字列の値が空の場合、この文字列を null として表示するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.AllowEdit">
+            <summary>フィルターが編集モードで編集可能かどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataField.AllowEditingForAddNew">
+            <summary>フィールドが AddNewRow 編集可能かどうかを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.DataFieldComparer">
+            <summary>Order プロパティの順序で DataFields を並べ替えるために使用されます。</summary>
+        </member>
+        <member name="T:Infragistics.CachedTypedInfo">
+            <summary>タイプを格納するために使用するオブジェクトと、WPF では、タイプの PropertyDescriptors。</summary>
+        </member>
+        <member name="P:Infragistics.CachedTypedInfo.CachedType">
+            <summary>オブジェクトのタイプ。</summary>
+        </member>
+        <member name="P:Infragistics.CachedTypedInfo.PropertyDescriptors">
+            <summary>指定したタイプの PropertyDescriptors。</summary>
+        </member>
+        <member name="T:Infragistics.DataManagerBase">
+            <summary>パフォーマンスを向上するために、IList または IQueryable を使用して項目を取得するために IEnumerable をラップします。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.CreateDataManager(System.Collections.IEnumerable)">
+            <summary>ソースで最初のオブジェクト タイプの一般的なデータ マネージャーを作成します。</summary>
+            <param name="dataSource">作成したマネージャーを管理するソース。</param>
+            <returns>新しい DataManagerBase。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.CreateDataManager(System.Collections.IEnumerable,Infragistics.DataManagerProvider)">
+            <returns></returns>
+            <summary>ソースで最初のオブジェクト タイプの一般的なデータ マネージャーを作成します。</summary>
+            <param name="dataSource">作成したマネージャーを管理するソース。</param>
+            <param name="provider">DataManager を生成するために使用される <see cref="T:Infragistics.DataManagerProvider" />。</param>
+            <returns>新しい DataManagerBase。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveCollectionType(System.Collections.IEnumerable)">
+            <summary>指定したコレクションに含まれる項目のタイプを解決します。</summary>
+            <param name="dataSource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveItemType(System.Collections.IEnumerable)">
+            <summary>指定したコレクションに含まれる項目のタイプを解決します。</summary>
+            <param name="dataSource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.BuildPropertyExpressionFromPropertyName(System.String,System.Linq.Expressions.ParameterExpression)">
+            <summary>Address.Street1 または Items[FirstName] のような複雑なプロパティ名の <see cref="T:System.Linq.Expressions.Expression" /> を構築します。</summary>
+            <param name="propertyName"></param>
+            <param name="paramExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.BuildPropertyExpressionFromPropertyName(System.String,System.Linq.Expressions.ParameterExpression,Infragistics.CachedTypedInfo,System.Type,System.Object)">
+            <summary>Address.Street1 または Items[FirstName] のような複雑なプロパティ名の <see cref="T:System.Linq.Expressions.Expression" /> を構築します。</summary>
+            <param name="propertyName"></param>
+            <param name="paramExpression"></param>
+            <param name="cachedTypedInfo" />
+            <param name="propertyType" />
+            <param name="defaultValue" />
+            <param name="isDataTypePrimitive">データ オブジェクトがプリミティブで、データから取得するプロパティ名がない場合、これを true に設定します。propertyName が null また空の場合、有効な式が返されます。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolvePropertyTypeFromPropertyName(System.String,Infragistics.CachedTypedInfo)">
+            <summary>Address.Street1 のような複雑なプロパティのプロパティ タイプを解決します。</summary>
+            <param name="propertyName"></param>
+            <param name="rootType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveValueFromPropertyPath(System.String,System.Object)">
+            <summary>オブジェクトのプロパティ ツリーをたどって、Address.Street1 または Items[FirstName] などのプロパティを解決します。</summary>
+            <param name="propertyPath"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolvePropertyInfoFromPropertyPath(System.String,System.Object)">
+            <summary>propertyInfo を解決するオブジェクトのプロパティ ツリーをウォーク スルーします。</summary>
+            <param name="propertyPath"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+      <member name="M:Infragistics.DataManagerBase.ResolveProperty(System.Type,System.String)">
+        <summary>指定したプロパティ名のプロパティ情報を提供します。</summary>
+        <param name="type">タイプ。</param>
+        <param name="propertyPath">プロパティの名前。</param>
+        <returns></returns>
+        <remarks>提供した型がインターフェイスの場合、このメソッドはインターフェイスの階層の間に移動します。</remarks>
+      </member>
+        <member name="M:Infragistics.DataManagerBase.FilterItems(System.Collections.IList)">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> で適用されるフィルター オペランドを使用して項目のリストをフィルターします。</summary>
+            <param name="items">項目。</param>
+            <returns>フィルターされたリスト。フィルターを適用できない場合は null 値。</returns>
+            <remarks>並べ替えた/フィルターされたリストで項目を早く追加するには、このメソッドは追加されました。</remarks>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.FilterItems(System.Collections.IEnumerable,Infragistics.RecordFilterCollection)">
+          <summary>提供されたフィルター項目を使用して IEnumerable をフィルターします。</summary>
+          <param name="items">フィルターする項目。</param>
+          <param name="filtersToUse">フィルター操作で使用するフィルター。</param>
+          <returns>フィルターされたリスト。フィルターを適用できない場合は null 値。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.UpdateCachedDataManipulations(System.Object,System.Boolean)">
+            <summary>キャッシュされたデータ操作を更新します。</summary>
+            <param name="item">項目。</param>
+            <param name="isAdding"><c>true</c> に設定される場合、項目はキャッシュされたリストに追加します。それ以外の場合、項目を削除します。</param>
+            <returns>キャッシュが更新された場合は <c>true</c>、そうでない場合は <c>false</c>。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveIndexForInsertOrDelete(System.Object,System.Boolean)">
+            <summary>挿入または削除のインデックスを解決します。フィルターされた DataSource がサポートされない場合、null 値を返します。</summary>
+            <param name="data">データ。</param>
+            <param name="isAdding"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Infragistics.DataManagerBase._updateDataSource">
+          <summary>
+            ApplyClientDataManipulations を呼び出すときに DataSource を更新するかどうかを決定します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.DetachWeekReferences">
+          <summary>
+            DataManager によって使用されるコレクション変更ハンドラーをクリアします。
+          </summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.GenerateNewObject">
+            <summary><see cref="P:Infragistics.DataManagerBase.DataType" /> タイプを持つ新しいオブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.GetRecord(System.Int32)">
+            <summary>並べ替えおよびフィルターを適用した後で、データソースで指定されたインデックスにあるオブジェクトを返します。</summary>
+            <param name="recordIndex">検索する項目のインデックスです。</param>
+            <returns>そのインデックスにあるオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveIndexForRecord(System.Object)">
+            <summary>指定した項目のインデックスをフィルターした DataSource で検索します。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.InsertRecord(System.Int32,System.Object)">
+            <summary>入力されたオブジェクトを指定したインデックスでデータソースに追加します。</summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.AddRecord(System.Object)">
+            <summary>入力したオブジェクトをデータソースに追加します。</summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.RemoveRecord(System.Object)">
+            <summary>データソースからレコードを削除します。</summary>
+            <param name="value"></param>
+            <returns>レコードが削除された場合は true、そうでない場合は false。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.GetDataProperties">
+            <summary>このオブジェクトの異なるフィールドを説明する <see cref="T:Infragistics.DataField" /> の IEnumerable を返します。</summary>
+            <returns>オブジェクトのすべてのプロパティの DataField の IEnumerable。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.Reset">
+            <summary>前の DataSource に関する保存済みの情報を削除します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.UpdateData">
+            <summary>基になるキャッシュ データをクリアして、すべてのデータ操作をトリガーし再度適用します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.CancelEdit">
+            <summary>IEditableCollectionView.CancelEdit メソッドをラップします。</summary>
+            <returns>IEditableCollectionView の場合に True を返します。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.CommitEdit">
+            <summary>IEditableCollectionView.CommitEdit メソッドをラップします。</summary>
+            <returns>IEditableCollectionView の場合に True を返します。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.EditItem(System.Object)">
+            <summary>IEditableCollectionVie.EditItem メソッドをラップします。</summary>
+            <param name="item"></param>
+            <returns>IEditableCollectionView の場合に True を返します。</returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.RefreshSummaries">
+            <summary>この <see cref="T:Infragistics.DataManagerBase" /> にバインドされる ItemsSource のサマリーを再評価します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.UpdateCurrentItem(System.Object)">
+            <summary><see cref="T:System.ComponentModel.ICollectionView" /> の、入力された項目への現在の項目ポインターを移動します。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.GenerateDataField(System.Reflection.PropertyInfo)">
+            <summary>指定したプロパティについての情報を含む <see cref="T:Infragistics.DataField" /> オブジェクトを作成します。</summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.SetDataSource(System.Collections.IEnumerable)">
+            <summary>変更通知を登録して、<see cref="P:Infragistics.DataManagerBase.DataSource" /> を設定します。</summary>
+            <param name="source">DataSource に設定する IEnumerable。</param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.GetDataSource">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> に関連する <see cref="P:Infragistics.DataManagerBase.DataSource" /> を取得します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveCount">
+            <summary>DataSource によってコレクションのサイズを決定します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveRecord(System.Int32)">
+            <summary>提供したインデックスにある指定したレコードを解決します。</summary>
+            <param name="recordIndex"></param>
+            <returns></returns>
+            <remarks> データソースは、IList のタイプではない場合のみにこのメソッドを呼び出されます。</remarks>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ResolveFilteredSortedPagedDataSource">
+            <summary>既存のページング、並べ替え、フィルタリング情報を使用して、DataManagerBase が使用可能なキャッシュ オブジェクトを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.ClearCachedDataSource(System.Boolean)">
+            <summary>マネージャーが保持するキャッシュされた情報を削除します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.OnDataSourceCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>基本データ ソースのデータが変更されたときにトリガーされます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.SetSortedFilteredDataSource(System.Collections.IList)">
+            <summary>並べ替え、フィルター、ページ化、およびグループ化されたデータ ソースを更新するために使用されます。</summary>
+            <param name="source"></param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>CollectionChanged イベントを発生させます。</summary>
+            <param name="e">変更されているコレクションについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.OnResolvingData(Infragistics.DataAcquisitionEventArgs)">
+            <summary><see cref="E:Infragistics.DataManagerBase.ResolvingData" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.OnNewObjectGeneration">
+            <summary><see cref="E:Infragistics.DataManagerBase.NewObjectGeneration" /> イベントを発生します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.OnDataUpdated">
+            <summary><see cref="E:Infragistics.DataManagerBase.DataUpdated" /> イベントを発生します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerBase.OnCurrentItemChanged(System.Object)">
+            <summary><see cref="E:Infragistics.DataManagerBase.CurrentItemChanged" /> イベントを発生します。</summary>
+            <param name="item"></param>
+        </member>
+      <member name="E:Infragistics.DataManagerBase.ListChanged">
+        <summary>
+          データソースが変更されて <see cref="T:System.Collections.Specialized.INotifyCollectionChanged"/> を実装するときに発生します。
+        </summary>
+      </member>
+      <member name="M:Infragistics.DataManagerBase.OnListChanged(System.ComponentModel.ListChangedEventArgs)">
+        <summary>ListChanged イベントを発生させます。</summary>
+        <param name="e">変更されているバインディング リストについてのデータ。</param>
+        <remarks>プロパティ記述子の変更のみにこのイベントを発生します。Add/Remove 通知は OnCollectionChanged イベントによって渡されます。</remarks>
+      </member>
+        <member name="P:Infragistics.DataManagerBase.Sort">
+            <summary>最初の並べ替えから最後の並べ替えまで、並べ替えの表示コレクションを取得します。以前の並べ替えがすべて等しい場合、最初の並べ替えの後の並べ替えのみ適用されます。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.ConditionalFormattingRules">
+            <summary>データをリクエストする条件付き書式ルールのコレクションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.Filters">
+            <summary>データバインドでレコードに適用する <see cref="T:Infragistics.RecordFilterCollection" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.Summaries">
+            <summary>データバインドでレコードに適用する <see cref="T:Infragistics.SummaryDefinitionCollection" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.SummaryResultCollection">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> によって値が設定される <see cref="T:Infragistics.SummaryResult" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.SummaryExecution">
+            <summary>集計を計算するデフォルトの位置を決定する <see cref="P:Infragistics.DataManagerBase.SummaryExecution" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.GroupByObject">
+            <summary>グループ化される必要のあるこの <see cref="T:Infragistics.DataManagerBase" /> が示すデータ内のオブジェクトを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.GroupBySortContext">
+            <summary>データが特定のフィールドでグループ化されるときに適用する CurrentSort を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.GroupBySortAscending">
+            <summary>基本データがグループ化されたフィールドに適用する並べ替え方向を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.CurrentPage">
+            <summary>マネージャーから取得される必要のあるデータ ページのインデックスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.PageSize">
+            <summary>データページを構成しているレコードの数を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.EnablePaging">
+            <summary>ページングがマネージャーで使用される必要があるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.DataSource">
+            <summary>この <see cref="T:Infragistics.DataManagerBase" /> が管理する IEnumerable を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.OriginalDataSource">
+            <summary>この <see cref="T:Infragistics.DataManagerBase" /> が型を変換せずに管理する IEnumerable を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.PageCount">
+            <summary>ページサイズに基づいてデータ ソースで使用可能なページ合計数を取得します。<see cref="P:Infragistics.DataManagerBase.EnablePaging" /> が False の場合、これは 1 をレポートします。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.CollectionType">
+            <summary>コレクションが保持するように設計されている <see cref="T:System.Type" />。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.CachedCollectionType">
+            <summary>CollectionType のキャッシュされたバージョン。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.DataType">
+            <summary>この IEnumerable が表すデータの型を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.CachedType">
+            <summary><see cref="P:Infragistics.DataManagerBase.DataType" /> のキャッシュされたバージョンを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.CachedTypedInfo">
+            <summary><see cref="P:Infragistics.DataManagerBase.DataType" /> のキャッシュされたバージョンを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.TotalRecordCount">
+            <summary>データソースのレコードの合計数を取得します。</summary>
+            <remarks>フィルタリング、ページング、グルーピングは除外されます。</remarks>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.RecordCount">
+            <summary>現在表示できるレコードの数を取得します。</summary>
+            <remarks>フィルタリング、ページング、グルーピングが考慮されます。</remarks>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.ICollectionViewData">
+            <summary>基本データ ソースを <see cref="T:System.ComponentModel.ICollectionView" /> として取得します。データソースが ICollectionView でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.IFilteredCollectionViewData">
+            <summary>基本データ ソースを <see cref="T:Infragistics.IFilteredCollectionView" /> として取得します。データソースが IFilteredCollectionView でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.IPagedCollectionViewData">
+            <summary>基本データ ソースを <see cref="T:Infragistics.IPagedCollectionView" /> として取得します。データソースが IPagedCollectionView でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.IListData">
+            <summary>基本データ ソースを <see cref="T:System.Collections.IList" /> として取得します。データソースが IList でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.IEditableCollectionViewData">
+            <summary>基本データ ソースを <see cref="T:System.ComponentModel.IEditableCollectionView" /> として取得します。データソースが IEditableCollectionView でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.SupportsDataManipulations">
+            <summary>この特定のデータ マネージャーで Sorting などのデータ操作をサポートするかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.SuspendInvalidateDataSource">
+            <summary>複数操作を一度に実行するために、DataManager がキャッシュ データ ストアを無効にしないかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.AllowCollectionViewOverrides">
+            <summary>DataSource が ICollectionView の場合、この <see cref="T:Infragistics.DataManagerBase" /> で並べ替えやグループ化にプロパティ設定を許可するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.MergeDataContexts">
+            <summary>マネージャーがデータを表示する、<see cref="T:Infragistics.MergedDataContext" /> オブジェクトのリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.SupportsEditing">
+            <summary>コレクションで編集がサポートされているかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.SortedFilteredDataSource">
+            <summary>並べ替えた項目のキャッシュ リストを取得または設定します。</summary>		
+        </member>
+        <member name="P:Infragistics.DataManagerBase.IsSortedFilteredDataSourceCalculated">
+            <summary>SortedFilteredDataSource の再計算が必要かどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.Defer">
+            <summary>コントロールが矛盾した状態にあるとき操作できないようにします。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.IBindingListData">
+            <summary>基本データ ソースを <see cref="T:System.ComponentModel.IBindingList" /> として取得します。データソースが IBindingList でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.IBindingLisViewtData">
+            <summary>基本データ ソースを <see cref="T:System.ComponentModel.IBindingListView" /> として取得します。データソースが IBindingListView でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.ITypedListData">
+            <summary>基本データ ソースを <see cref="T:System.ComponentModel.ITypedList" /> として取得します。データソースが ITypedList でない場合、null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManagerBase.SupportsChangeNotification">
+            <summary><see cref="P:Infragistics.DataManagerBase.DataSource" /> が変更通知イベントを発生するかどうか示す値を取得します。</summary>
+            <value>DataSource が変更通知をサポートする場合は <c>True</c>。そうでない場合は <c>False</c>。</value>
+        </member>
+        <member name="E:Infragistics.DataManagerBase.CollectionChanged">
+            <summary>データソースが変更されて <see cref="T:System.Collections.Specialized.INotifyCollectionChanged" /> を実装するときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.DataManagerBase.ResolvingData">
+            <summary>ページング、フィルタリング、並べ替え、グループ化のアクションが変更されたときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.DataManagerBase.NewObjectGeneration">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> が、<see cref="P:Infragistics.DataManagerBase.CachedType" /> オブジェクトの新しいインスタンスを作成しようとしているときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.DataManagerBase.DataUpdated">
+            <summary>基本のデータが変更されるときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.DataManagerBase.CurrentItemChanged">
+            <summary>currentItem が変更されるときに発生するイベント。</summary>
+        </member>
+        <member name="T:Infragistics.TypelessDataManager">
+            <summary>パフォーマンスを向上するために、IList または IQueryable を使用して項目を取得するために IEnumerable をラップします。特定の DataManager は並べ替え、フィルタリング、またはページングをサポートしません。</summary>
+            <remarks>現在、この DataManger は基本のデータが Anonymous タイプである場合のみに使用されます。</remarks>
+        </member>
+        <member name="M:Infragistics.TypelessDataManager.SetDataSource(System.Collections.IEnumerable)">
+            <summary>変更通知を登録して、<see cref="P:Infragistics.DataManagerBase.DataSource" /> を設定します。</summary>
+            <param name="source">DataSource に設定する IEnumerable。</param>
+        </member>
+        <member name="T:Infragistics.DataManager`1">
+            <summary>パフォーマンスを向上するために、IList または IQueryable を使用して項目を取得するために IEnumerable をラップします。</summary>
+            <typeparam name="T"> このデータ マネージャーが管理する 。</typeparam>
+        </member>
+        <member name="M:Infragistics.DataManager`1.#ctor">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManager`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> クラスの新しいインスタンスを初期化して、<see cref="P:Infragistics.DataManagerBase.DataSource" /> を設定します。</summary>
+            <param name="dataSource">この DataManager を管理する DataSource。</param>
+        </member>
+        <member name="M:Infragistics.DataManager`1.RefreshSummaries">
+            <summary>この <see cref="T:Infragistics.DataManagerBase" /> にバインドされる ItemsSource のサマリーを再評価します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManager`1.SetDataSource(System.Collections.IEnumerable)">
+            <summary>変更通知を登録して、<see cref="P:Infragistics.DataManagerBase.DataSource" /> を設定します。</summary>
+            <param name="source">DataSource に設定する IEnumerable。</param>
+        </member>
+        <member name="M:Infragistics.DataManager`1.GetDataSource">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> に関連する <see cref="P:Infragistics.DataManagerBase.DataSource" /> を取得します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManager`1.ResolveRecord(System.Int32)">
+            <summary>提供したインデックスにある指定したレコードを解決します。</summary>
+            <param name="recordIndex"></param>
+            <returns></returns>
+            <remarks> データソースは、IList のタイプではない場合のみにこのメソッドを呼び出されます。</remarks>
+        </member>
+        <member name="M:Infragistics.DataManager`1.ResolveCount">
+            <summary>DataSource によってコレクションのサイズを決定します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManager`1.OnResolvingData(Infragistics.DataAcquisitionEventArgs)">
+            <summary>ResolvingData イベントを発生させます。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.DataManager`1.ClearCachedDataSource(System.Boolean)">
+            <summary>マネージャーが保持するキャッシュされた情報を削除します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManager`1.OnDataSourceCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>基本データ ソースのデータが変更されたときにトリガーされます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.DataManager`1.ResolveFilteredSortedPagedDataSource">
+            <summary>既存のページング、並べ替え、フィルタリング情報を使用して、DataManagerBase が使用可能なキャッシュ オブジェクトを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManager`1.ResolveIndexForInsertOrDelete(System.Object,System.Boolean)">
+            <summary>指定した項目のインデックスをフィルターした DataSource で検索します。</summary>
+            <param name="data"></param>
+            <param name="isAdding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.DataManager`1.UpdateCachedDataManipulations(System.Object,System.Boolean)">
+            <summary>キャッシュされたデータ操作を更新します。</summary>
+            <param name="item">項目。</param>
+            <param name="isAdding"><c>true</c> に設定される場合、項目はキャッシュされたリストに追加します。それ以外の場合、項目を削除します。</param>
+            <returns>キャッシュが更新した場合は <c>true</c>、そうでない場合は <c>false</c>。</returns>
+        </member>
+        <member name="M:Infragistics.DataManager`1.FilterItems(System.Collections.IList)">
+            <summary><see cref="T:Infragistics.DataManagerBase" /> で適用されるフィルター オペランドを使用して項目のリストをフィルターします。</summary>
+            <param name="items">項目。</param>
+            <returns>フィルターされたリスト。フィルターを適用できない場合は null 値。</returns>
+            <remarks>並べ替えた/フィルターされたリストで項目を早く追加するには、このメソッドは追加されました。</remarks>
+        </member>
+        <member name="M:Infragistics.DataManager`1.FilterItems(System.Collections.IEnumerable,Infragistics.RecordFilterCollection)">
+          <summary>提供されたフィルター項目を使用して IEnumerable をフィルターします。</summary>
+          <param name="items">フィルターする項目。</param>
+          <param name="filtersToUse">フィルター操作で使用するフィルター。</param>
+          <returns>フィルターされたリスト。フィルターを適用できない場合は null 値。</returns>
+        </member>
+        <member name="M:Infragistics.DataManager`1.ApplyClientDataManipulations">
+            <summary>並べ替え、ページング、groupBy、フィルタリングなど、すべての Clientside に関連するデータ操作を適用します。</summary>
+        </member>
+        <member name="M:Infragistics.DataManager`1.ApplyClientDataManipulations(System.Boolean)">
+            <summary>並べ替え、ページング、groupBy、フィルタリングなど、すべての Clientside に関連するデータ操作を適用します。</summary>
+            <param name="setSortedFilteredDataSource">内部フィルター データソースを設定する場合は True。</param>
+        </member>
+        <member name="M:Infragistics.DataManager`1.BuildMergedGroupings(System.Collections.Generic.List{Infragistics.MergedRowInfo},System.Collections.ObjectModel.ReadOnlyObservableCollection{System.Object},System.Collections.Generic.List{Infragistics.MergedColumnInfo},Infragistics.MergedDataContext,System.Collections.Generic.Dictionary{Infragistics.MergedColumnInfo,System.Boolean})">
+            <summary>ICollectionView によって返される各グループを調べ、マージされた情報に平面化します。</summary>
+            <param name="mris"></param>
+            <param name="groups"></param>
+            <param name="mcis"></param>
+            <param name="mdc"></param>
+            <param name="lastMciLookup"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.LogicalOperator">
+            <summary>使用可能な演算子の列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.LogicalOperator.And">
+            <summary>論理 AND 演算を実行します</summary>
+        </member>
+        <member name="F:Infragistics.LogicalOperator.Or">
+            <summary>論理 OR 演算を実行します</summary>
+        </member>
+        <member name="T:Infragistics.ComparisonOperator">
+            <summary>フィルタリングで使用する演算子を表す列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.Equals">
+            <summary>等価性比較を実行します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.NotEquals">
+            <summary>非等価性比較を実行します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.GreaterThan">
+            <summary>GreaterThan 比較を実行します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.GreaterThanOrEqual">
+            <summary>以上比較を実行します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.LessThan">
+            <summary>小なり比較を実行します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.LessThanOrEqual">
+            <summary>以下比較を実行します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.StartsWith">
+            <summary>文字列が比較値で始まるかどうかを評価します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DoesNotStartWith">
+            <summary>文字列が比較値で始まらないかどうかを評価します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.EndsWith">
+            <summary>文字列が比較値で終わるかどうかを評価します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DoesNotEndWith">
+            <summary>文字列が比較値で終わらないかどうかを評価します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.Contains">
+            <summary>文字列が比較値を含むかどうかを評価します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DoesNotContain">
+            <summary>文字列が比較値を含まないかどうかを評価します。文字列値の場合、大文字小文字区別フラグにより結果が影響を受けます。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeAfter">
+            <summary>DateTime オブジェクトが指定された入力の後に来るかどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeBefore">
+            <summary>DateTime オブジェクトが指定された入力の前に来るかどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeToday">
+            <summary>DateTime 値が本日かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeTomorrow">
+            <summary>DateTime 値が明日かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeYesterday">
+            <summary>DateTime 値が昨日かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeThisWeek">
+            <summary>DateTime 値が今週の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeNextWeek">
+            <summary>DateTime 値が来週の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeLastWeek">
+            <summary>DateTime 値が先週の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeThisMonth">
+            <summary>DateTime 値が今月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeLastMonth">
+            <summary>DateTime 値が先月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeNextMonth">
+            <summary>DateTime 値が来月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeThisYear">
+            <summary>DateTime 値が今年の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeLastYear">
+            <summary>DateTime 値が昨年の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeNextYear">
+            <summary>DateTime 値が来年の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeYearToDate">
+            <summary>DateTime 値が、今日の日付よりも前の今年の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeLastQuarter">
+            <summary>DateTime 値が前の四半期の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeThisQuarter">
+            <summary>DateTime 値が現在の四半期の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeNextQuarter">
+            <summary>DateTime 値が次の四半期の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeJanuary">
+            <summary>DateTime が 1 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeFebruary">
+            <summary>DateTime が 2 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeMarch">
+            <summary>DateTime が 3 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeApril">
+            <summary>DateTime が 4 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeMay">
+            <summary>DateTime が 5 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeJune">
+            <summary>DateTime が 6 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeJuly">
+            <summary>DateTime が 7 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeAugust">
+            <summary>DateTime が 8 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeSeptember">
+            <summary>DateTime が 9 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeOctober">
+            <summary>DateTime が 10 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeNovember">
+            <summary>DateTime が 11 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeDecember">
+            <summary>DateTime が 12 月の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeQuarter1">
+            <summary>DateTime 値が第 1 四半期の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeQuarter2">
+            <summary>DateTime 値が第 2 四半期の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeQuarter3">
+            <summary>DateTime 値が第 3 四半期の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.DateTimeQuarter4">
+            <summary>DateTime 値が第 4 四半期の日時かどうかを評価します。</summary>
+        </member>
+        <member name="F:Infragistics.ComparisonOperator.InOperand">
+          <summary>
+            FilterValue として提供されたリスト内の値を評価します。
+          </summary>
+        </member>
+        <member name="T:Infragistics.LinqSummaryOperator">
+            <summary>LINQ 集計を使用するかどうかを示すために集計によって使用される列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.LinqSummaryOperator.Count">
+            <summary>LINQ Count 集計を使用します。</summary>
+        </member>
+        <member name="F:Infragistics.LinqSummaryOperator.Minimum">
+            <summary>LINQ Minimum 集計を使用します。</summary>
+        </member>
+        <member name="F:Infragistics.LinqSummaryOperator.Maximum">
+            <summary>LINQ Maximum 集計を使用します。</summary>
+        </member>
+        <member name="F:Infragistics.LinqSummaryOperator.Sum">
+            <summary>LINQ Sum 集計を使用します。</summary>
+        </member>
+        <member name="F:Infragistics.LinqSummaryOperator.Average">
+            <summary>LINQ Average 集計を使用します。</summary>
+        </member>
+        <member name="T:Infragistics.SummaryExecution">
+            <summary>集計をいつ計算するかを決定するために使用する列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.SummaryExecution.PriorToFilteringAndPaging">
+            <summary>集計は、ページングとフィルタリングの前に実行されます。</summary>
+        </member>
+        <member name="F:Infragistics.SummaryExecution.AfterFilteringBeforePaging">
+            <summary>集計は、ページングの前、フィルタリングの後に実行されます。</summary>
+        </member>
+        <member name="F:Infragistics.SummaryExecution.AfterFilteringAndPaging">
+            <summary>集計は、ページングとフィルタリングの後に実行されます。</summary>
+        </member>
+        <member name="T:Infragistics.EvaluationStage">
+            <summary>条件フォーマッティング データを収集する場合をリストする列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.EvaluationStage.None">
+            <summary>GatherData は呼び出されません。</summary>
+        </member>
+        <member name="F:Infragistics.EvaluationStage.PriorToFilteringAndPaging">
+            <summary>フィルタリングとページングの前に GatherData が呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.EvaluationStage.AfterFilteringBeforePaging">
+            <summary>フィルタリングの後、ページングの前に GatherData が呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.EvaluationStage.AfterFilteringAndPaging">
+            <summary>フィルタリングの後、ページングの後に GatherData が呼び出されます。</summary>
+        </member>
+        <member name="T:Infragistics.HandleableEventArgs">
+            <summary>ユーザーがイベントを処理済みとしてマークするイベントのイベント引数。</summary>
+        </member>
+        <member name="P:Infragistics.HandleableEventArgs.Handled">
+            <summary>イベントが処理されたかどうかを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.HandleableObjectGenerationEventArgs">
+            <summary>DataManager に新しいデータ オブジェクトに対するリクエストがある場合に使用されるイベント引数。</summary>
+        </member>
+        <member name="P:Infragistics.HandleableObjectGenerationEventArgs.NewObject">
+            <summary>デフォルト コンストラクターを使用してオブジェクトの新しいインスタンスを作成するのではなく、DataManager で使用されるオブジェクトのインスタンスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.HandleableObjectGenerationEventArgs.ObjectType">
+            <summary>DataManager が処理しているオブジェクトの <see cref="T:System.Type" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.HandleableObjectGenerationEventArgs.CollectionType">
+            <summary>基本コレクションで含む <see cref="T:System.Type" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.DataAcquisitionEventArgs">
+            <summary>DataManager がそのデータを処理しているときに使用するイベント引数。</summary>
+        </member>
+        <member name="P:Infragistics.DataAcquisitionEventArgs.DataSource">
+            <summary>データ マネージャーに適用する IList を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DataAcquisitionEventArgs.EnablePaging">
+            <summary>DataManager でページされたデータが必要であるかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DataAcquisitionEventArgs.PageSize">
+            <summary>DataManager で必要な行の最大数を取得します。</summary>
+            <remarks>EnablePaging は、true の場合に主に使用されます。</remarks>
+        </member>
+        <member name="P:Infragistics.DataAcquisitionEventArgs.CurrentPage">
+            <summary>現在のページ インデックスを取得します</summary>
+        </member>
+        <member name="P:Infragistics.DataAcquisitionEventArgs.CurrentSort">
+            <summary>適用されるコレクション <see cref="T:Infragistics.SortContext" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DataAcquisitionEventArgs.GroupByContext">
+            <summary>データに適用する GroupBy を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DataAcquisitionEventArgs.Filters">
+            <summary>適用されるフィルターを含むコレクションを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.InvalidEnumeratorException">
+            <summary>IEnumerable の GetEnumerator メソッドを <see cref="T:System.Exception" /> で null を返すときにスローされる <see cref="T:Infragistics.DataManagerBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.InvalidEnumeratorException.#ctor">
+            <summary><see cref="T:Infragistics.InvalidEnumeratorException" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.InvalidEnumeratorException.#ctor(System.String)">
+            <summary><see cref="T:Infragistics.InvalidEnumeratorException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+        </member>
+        <member name="M:Infragistics.InvalidEnumeratorException.#ctor(System.String,System.Exception)">
+            <summary><see cref="T:Infragistics.InvalidEnumeratorException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+            <param name="innerException">内部例外。</param>
+        </member>
+        <member name="T:Infragistics.DataSourceDoesNotSupportIListException">
+            <summary>IEnumerable の GetEnumerator メソッドを <see cref="T:System.Exception" /> で null を返すときにスローされる <see cref="T:Infragistics.DataManagerBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.DataSourceDoesNotSupportIListException.#ctor">
+            <summary><see cref="T:Infragistics.DataSourceDoesNotSupportIListException" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.DataSourceDoesNotSupportIListException.#ctor(System.String)">
+            <summary><see cref="T:Infragistics.DataSourceDoesNotSupportIListException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+        </member>
+        <member name="M:Infragistics.DataSourceDoesNotSupportIListException.#ctor(System.String,System.Exception)">
+            <summary><see cref="T:Infragistics.DataSourceDoesNotSupportIListException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+            <param name="innerException">内部例外。</param>
+        </member>
+        <member name="T:Infragistics.DataObjectTypeMismatchException">
+            <summary>IEnumerable の GetEnumerator メソッドを <see cref="T:System.Exception" /> で null を返すときにスローされる <see cref="T:Infragistics.DataManagerBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.DataObjectTypeMismatchException.#ctor">
+            <summary><see cref="T:Infragistics.DataObjectTypeMismatchException" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.DataObjectTypeMismatchException.#ctor(System.String)">
+            <summary><see cref="T:Infragistics.DataObjectTypeMismatchException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+        </member>
+        <member name="M:Infragistics.DataObjectTypeMismatchException.#ctor(System.String,System.Exception)">
+            <summary><see cref="T:Infragistics.DataObjectTypeMismatchException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+            <param name="innerException">内部例外。</param>
+        </member>
+        <member name="T:Infragistics.RequireEmptyConstructorException">
+            <summary>IEnumerable の GetEnumerator メソッドを <see cref="T:System.Exception" /> で null を返すときにスローされる <see cref="T:Infragistics.DataManagerBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.RequireEmptyConstructorException.#ctor">
+            <summary><see cref="T:Infragistics.RequireEmptyConstructorException" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.RequireEmptyConstructorException.#ctor(System.String)">
+            <summary><see cref="T:Infragistics.RequireEmptyConstructorException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+        </member>
+        <member name="M:Infragistics.RequireEmptyConstructorException.#ctor(System.String,System.Exception)">
+            <summary><see cref="T:Infragistics.RequireEmptyConstructorException" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="message">表示されるメッセージ。</param>
+            <param name="innerException">内部例外。</param>
+        </member>
+        <member name="T:Infragistics.DataManagerProvider">
+            <summary>カスタム DataManager を作成する情報を提供する抽象クラス。</summary>
+        </member>
+        <member name="M:Infragistics.DataManagerProvider.ResolveDataManagerType">
+            <summary>間接的に作成できるように 表す DataManager の型を返します。</summary>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.ComparisonCondition">
+            <summary><see cref="T:Infragistics.ComparisonOperator" /> 演算子に基づてる <see cref="T:Infragistics.ComparisonConditionBase" /> オブジェクトを表します。</summary>
+        </member>
+        <member name="T:Infragistics.ComparisonConditionBase">
+            <summary>フィルタリングのための ComparisonConditions の基本クラス。</summary>
+        </member>
+        <member name="T:Infragistics.IFilterCondition">
+            <summary>フィルタリングに参加できるオブジェクトを定義するインターフェイス。</summary>
+        </member>
+        <member name="T:Infragistics.IExpressConditions">
+            <summary>適用する式を生成するためにフィルタリングによって使用されるインターフェイス。</summary>
+        </member>
+        <member name="M:Infragistics.IExpressConditions.GetCurrentExpression(Infragistics.FilterContext,System.Object)">
+            <summary>指定した <see cref="T:Infragistics.FilterContext" /> に基づいて式を作成します。</summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.IExpressConditions.GetCurrentExpression">
+            <summary>式を作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.IFilterCondition.Parent">
+            <summary>このオブジェクトの最終的な親である <see cref="T:Infragistics.IRecordFilter" /> オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.ComparisonConditionBase.GetCurrentExpression(Infragistics.FilterContext,System.Object)">
+            <summary>入力されたコンテキストを使用して、この <see cref="T:Infragistics.ComparisonConditionBase" /> の現在の式を生成します。</summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.ComparisonConditionBase.GetCurrentExpression">
+            <summary>この <see cref="T:Infragistics.ComparisonConditionBase" /> の現在の式を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.ComparisonConditionBase.OnPropertyChanged(System.String)">
+            <summary>PropertyChanged イベントを発生させます。</summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:Infragistics.ComparisonConditionBase.Parent">
+            <summary>このオブジェクトの最終的な親である <see cref="T:Infragistics.IRecordFilter" /> オブジェクト。</summary>
+        </member>
+        <member name="E:Infragistics.ComparisonConditionBase.PropertyChanged">
+            <summary>このオブジェクトのプロパティが変更される生成されるイベント。</summary>
+        </member>
+        <member name="M:Infragistics.ComparisonCondition.GetCurrentExpression(Infragistics.FilterContext,System.Object)">
+            <summary>入力されたコンテキストを使用して、この <see cref="T:Infragistics.ComparisonConditionBase" /> の現在の式を生成します。</summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.ComparisonCondition.GetCurrentExpression">
+            <summary>この <see cref="T:Infragistics.ComparisonConditionBase" /> の現在の式を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.ComparisonCondition.Operator">
+            <summary>適用する <see cref="T:Infragistics.ComparisonCondition" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.ComparisonCondition.FilterValue">
+            <summary>フィルターを作成するために使用する値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.ComparisonCondition.CaseSensitive">
+            <summary>この用語から作成するフィルターは大文字と小文字を区別するかどうかを取得または設定します。</summary>
+            <remarks>この値は、文字列の列のみに使用されます。</remarks>
+        </member>
+        <member name="T:Infragistics.ConditionCollection">
+            <summary><see cref="P:Infragistics.ConditionCollection.LogicalOperator" /> によってバインドされる条件のグループを表す、<see cref="T:Infragistics.IFilterCondition" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="T:Infragistics.IGroupFilterConditions">
+            <summary>他の IFilterCondition オブジェクトを含むことができるオブジェクトを説明し、そのすべての式を生成するインターフェイス。</summary>
+        </member>
+        <member name="P:Infragistics.IGroupFilterConditions.LogicalOperator">
+            <summary>このグループによってリストされるすべての条件を結合するために使用する <see cref="P:Infragistics.IGroupFilterConditions.LogicalOperator" />。</summary>
+        </member>
+        <member name="E:Infragistics.IGroupFilterConditions.CollectionItemChanged">
+            <summary>コレクションの中の項目が変更されたときに発生するイベント。</summary>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.RemoveItem(System.Int32)">
+            <summary>指定したインデックスにある項目を削除します。</summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.RemoveItemSilently(Infragistics.IFilterCondition)">
+            <summary>イベントを発生しないで指定されたインデックスで項目を削除します。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.AddItem(System.Int32,Infragistics.IFilterCondition)">
+            <summary>指定したインデックスに項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.ResetItems">
+            <summary>このコレクションからすべての項目を削除します</summary>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.InsertItem(System.Int32,Infragistics.IFilterCondition)">
+            <summary>指定されたインデックスでコレクションに項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.ResetItemsSilently">
+            <summary>イベントを発生せずにすべての項目をコレクションから削除します。</summary>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.GetCurrentExpression">
+            <summary>この <see cref="T:Infragistics.ConditionCollection" /> の現在の式を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.GetCurrentExpression(Infragistics.FilterContext,System.Object)">
+            <summary>入力されたコンテキストを使用して、この <see cref="T:Infragistics.ConditionCollection" /> の現在の式を生成します。</summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.OnCollectionItemChanged">
+            <summary>CollectionItemChanged イベントを発生させます。</summary>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.OnPropertyChanged(System.String)">
+            <summary><see cref="E:Infragistics.ConditionCollection.PropertyChanged" /> イベントを発生します。</summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.ClearSilently">
+            <summary>イベントを発生せずにコレクションのすべてのイベントを削除します。</summary>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.AddItemSilently(Infragistics.IFilterCondition)">
+            <summary>イベントを発生せずにコレクションに要素を追加します。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.GetLookupKeys">
+            <summary>コレクション内の各オブジェクトを持つキーのリストを取得します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.ConditionCollection.CanRehydrate(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>キーで検索して、すべてのキーがコレクション内にあり、またオブジェクトと同じ量であることを決定します。そうでない場合、False を返します。Control Persistence Framework は、すでにコレクションにあるオブジェクトは再利用しません。</summary>
+            <param name="lookupKeys"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.ConditionCollection.Parent">
+            <summary>このオブジェクトを含む <see cref="T:Infragistics.IRecordFilter" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.ConditionCollection.LogicalOperator">
+            <summary>このコレクションですべての <see cref="T:Infragistics.IFilterCondition" /> を組み合わせるのに使用される <see cref="P:Infragistics.ConditionCollection.LogicalOperator" /> を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.ConditionCollection.CollectionItemChanged">
+            <summary>コレクションの中の項目が変更されたときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.ConditionCollection.PropertyChanged">
+            <summary>このオブジェクトのプロパティが変更される生成されるイベント。</summary>
+        </member>
+        <member name="T:Infragistics.CustomComparisonCondition">
+            <summary>カスタム式オブジェクトに基づく <see cref="T:Infragistics.ComparisonConditionBase" /> オブジェクトを表します。</summary>
+        </member>
+        <member name="M:Infragistics.CustomComparisonCondition.GetCurrentExpression">
+            <summary>この <see cref="T:Infragistics.ComparisonConditionBase" /> の現在の式を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.CustomComparisonCondition.GetCurrentExpression(Infragistics.FilterContext,System.Object)">
+            <summary>入力されたコンテキストを使用して、この <see cref="T:Infragistics.ComparisonConditionBase" /> の現在の式を生成します。</summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.CustomComparisonCondition.Expression">
+            <summary>フィルタリング ステートメントで使用する Expression を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.CustomComparisonCondition.FilterValue">
+            <summary>フィルターを作成するために使用する値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.CustomComparisonCondition.FilterOperand">
+            <summary>文字列で FilterOperand のタイプを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.IRecordFilter">
+            <summary>IRecordFilter インターフェイスは、フィルターを構築する条件のコレクションを格納するオブジェクトを定義するために使用されます</summary>
+        </member>
+        <member name="P:Infragistics.IRecordFilter.FieldName">
+            <summary>フィルターが適用される基本データ オブジェクトのプロパティ。</summary>
+        </member>
+        <member name="P:Infragistics.IRecordFilter.ObjectType">
+            <summary>フィルターが適用されるオブジェクトの Type。</summary>
+        </member>
+        <member name="P:Infragistics.IRecordFilter.ObjectTypedInfo">
+            <summary>オブジェクトのタイプと任意の PropertyDescriptors。</summary>
+        </member>
+        <member name="P:Infragistics.IRecordFilter.FieldType">
+            <summary>評価されるプロパティの Type。</summary>
+        </member>
+        <member name="P:Infragistics.IRecordFilter.Conditions">
+            <summary>オブジェクトに適用される Conditions のコレクション。</summary>
+        </member>
+        <member name="T:Infragistics.RecordFilterCollection">
+            <summary>現在のフィルターを作成するのに組み合わされる <see cref="T:Infragistics.IRecordFilter" /> オブジェクトの CollectionBase。</summary>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.GetCurrentExpression(Infragistics.FilterContext)">
+            <summary>オブジェクトの現在の値に基づいて <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <param name="context">作成される式で使用される <see cref="T:Infragistics.FilterContext" /> オブジェクト。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.GetCurrentExpression">
+            <summary>オブジェクトの現在の値に基づいて <see cref="T:System.Linq.Expressions.Expression" /> を作成します。</summary>
+            <remarks>このオブジェクトでは使用されません。</remarks>
+            <exception cref="T:System.NotImplementedException">このメソッドを使用すると発生します。</exception>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.AddItemSilently(Infragistics.IRecordFilter)">
+            <summary>イベントを発生せずにコレクションに要素を追加します。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.AddItem(System.Int32,Infragistics.IRecordFilter)">
+            <summary>指定したインデックスに項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.RemoveItem(System.Int32)">
+            <summary>指定したインデックスにある項目を削除します。</summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.ResetItems">
+            <summary>このコレクションからすべての項目を削除します</summary>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.InsertItem(System.Int32,Infragistics.IRecordFilter)">
+            <summary>指定されたインデックスでコレクションに項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.OnCollectionItemChanged">
+            <summary><see cref="E:Infragistics.RecordFilterCollection.CollectionItemChanged" /> イベントを発生します。</summary>
+        </member>
+        <member name="M:Infragistics.RecordFilterCollection.OnPropertyChanged(System.String)">
+            <summary><see cref="E:Infragistics.RecordFilterCollection.PropertyChanged" /> イベントを発生します。</summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="P:Infragistics.RecordFilterCollection.LogicalOperator">
+            <summary><see cref="T:Infragistics.RecordFilterCollection" /> のすべての用語を結合するために使用する <see cref="P:Infragistics.RecordFilterCollection.LogicalOperator" />。</summary>
+        </member>
+        <member name="E:Infragistics.RecordFilterCollection.CollectionItemChanged">
+            <summary>コレクションの中の項目が変更されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.RecordFilterCollection.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.RecordFilterCollection" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.IRule">
+            <summary>データ処理時にデータを集めるためにデータ バインディングに使用するインターフェイスを定義します。</summary>
+        </member>
+        <member name="M:Infragistics.IRule.GatherData(System.Linq.IQueryable)">
+            <summary>条件に値を派生できるようにクエリにアクセスを許可します。</summary>
+        </member>
+        <member name="P:Infragistics.IRule.RuleExecution">
+            <summary>GatherData が評価する必要があるデータ バインディングのステージを設定します。</summary>		
+        </member>
+        <member name="T:Infragistics.IBindableItem">
+            <summary>オブジェクトはデータソースから作成されたかどうかを説明するインターフェイス。</summary>
+        </member>
+        <member name="P:Infragistics.IBindableItem.IsDataBound">
+            <summary>オブジェクトはデータソースから作成されたかどうかを決定する値を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.IProvideDataItems`1">
+            <summary>オブジェクトのコレクションを説明するインターフェイス。</summary>
+            <typeparam name="T">提供されるオブジェクトのタイプ。</typeparam>
+        </member>
+        <member name="M:Infragistics.IProvideDataItems`1.GetDataItem(System.Int32)">
+            <summary>指定したインデックスにある項目を解決します。</summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.IProvideDataItems`1.CreateItem">
+            <summary>デフォルトの基本データ オブジェクトを持つ新しいオブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.IProvideDataItems`1.CreateItem(System.Object)">
+            <summary>入力したデータ オブジェクトを使用して新しいオブジェクトを作成します。</summary>
+            <param name="dataItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.IProvideDataItems`1.AddItem(`0)">
+            <summary>コレクションに新しいオブジェクトを追加します。</summary>
+            <param name="addedObject"></param>
+        </member>
+        <member name="M:Infragistics.IProvideDataItems`1.RemoveItem(`0)">
+            <summary>コレクションからオブジェクトを削除します。</summary>
+            <param name="removedObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.IProvideDataItems`1.RemoveRange(System.Collections.Generic.IList{`0})">
+            <summary>指定した範囲の項目をコレクションから削除します。</summary>
+            <param name="itemsToRemove"></param>
+        </member>
+        <member name="M:Infragistics.IProvideDataItems`1.InsertItem(System.Int32,`0)">
+            <summary>指定されたインデックスでコレクションに項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="insertedObject"></param>
+        </member>
+        <member name="P:Infragistics.IProvideDataItems`1.DataCount">
+            <summary>コレクションのオブジェクト数を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.IFilteredCollectionView">
+            <summary>データソースにフィルタリング情報を提供する方法を説明するインターフェイス。</summary>
+        </member>
+        <member name="P:Infragistics.IFilteredCollectionView.CanFilter">
+            <summary>フィルタリングが特定のデータ ソースでサポートされるかどうか。</summary>
+        </member>
+        <member name="P:Infragistics.IFilteredCollectionView.FilterConditions">
+            <summary>データ ソースに適用する FilterConditions のコレクション。</summary>
+        </member>
+        <member name="T:Infragistics.ISupportLinqSummaries">
+            <summary>LINQ 集計構造を使用できる集計を指定するために使用されるインターフェイス。</summary>
+        </member>
+        <member name="P:Infragistics.ISupportLinqSummaries.SummaryType">
+            <summary>使用する LINQ 集計を指定する <see cref="T:Infragistics.LinqSummaryOperator" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.ISupportLinqSummaries.SummaryContext">
+            <summary>集計を構築するために集計フレームワークで使用される <see cref="P:Infragistics.ISupportLinqSummaries.SummaryContext" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.SummaryCalculatorBase">
+            <summary>Summary フレームワークのために SummaryCalculators の基本クラスを提供します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryCalculatorBase.SummaryExecution">
+            <summary>集計がいつ適用されるかを示す <see cref="P:Infragistics.SummaryCalculatorBase.SummaryExecution" /> を取得します。</summary>
+            <remarks>オーバーライドすると、個々の集計を評価するタイミングを示すために使用できます。   集計を実行するタイミングに応じて、評価の最終結果が変わることがあります。</remarks>
+        </member>
+        <member name="T:Infragistics.SynchronousSummaryCalculator">
+            <summary>通常のデータバインディング中に実行する集計。</summary>
+        </member>
+        <member name="M:Infragistics.SynchronousSummaryCalculator.Summarize(System.Linq.IQueryable,System.String)">
+            <summary>クエリによって提供されるレコードから集計情報を計算します。</summary>
+            <param name="data">現在使用できるデータを提供する LINQ。</param>
+            <param name="fieldKey">処理対象のフィールドの名前。</param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.SummaryDefinition">
+            <summary>適用する集計のタイプを説明するクラス。</summary>
+        </member>
+        <member name="F:Infragistics.SummaryDefinition.ColumnKeyProperty">
+            <summary><see cref="P:Infragistics.SummaryDefinition.ColumnKey" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryDefinition.ColumnKey">
+            <summary>このフィルターに適用する列のキーを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryDefinition.SummaryOperand">
+            <summary>実行する集計を指定する <see cref="T:Infragistics.SummaryOperandBase" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.SummaryDefinitionCollection">
+            <summary><see cref="T:Infragistics.SummaryDefinition" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.SummaryDefinitionCollection.GetDefinitionsByKey(System.String)">
+            <summary>そのキー値に基づいて特定の列に適用される、<see cref="T:Infragistics.SummaryDefinition" /> のコレクションを返します。</summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.SummaryDefinitionCollection.GetDefinitionsBySummaryExecution(Infragistics.SummaryExecution)">
+            <summary>データバインド中のいつ集計を適用するかに基づいて、<see cref="T:Infragistics.SummaryDefinition" /> のコレクションを返します。</summary>
+            <param name="summaryExecution"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.SummaryDefinitionCollection.GetDefinitionsBySummaryExecution(Infragistics.SummaryExecution,System.Boolean)">
+            <summary>データバインド中のいつ集計を適用するかに基づいて、<see cref="T:Infragistics.SummaryDefinition" /> のコレクションを返します。</summary>
+            <param name="summaryExecution"></param>
+            <param name="includeNulls"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.SummaryDefinitionCollection.AddItemSilently(Infragistics.SummaryDefinition)">
+            <summary>イベントを発生せずにコレクションに要素を追加します。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="T:Infragistics.SummaryOperandBase">
+            <summary>表示のために必要な情報が格納された、集計フレームワーク中で使用されるオペランドの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.SummaryOperandBase.#ctor">
+            <summary><see cref="T:Infragistics.SummaryOperandBase" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.SummaryOperandBase.SelectionDisplayLabelProperty">
+            <summary><see cref="P:Infragistics.SummaryOperandBase.SelectionDisplayLabel" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.SummaryOperandBase.RowDisplayLabelProperty">
+            <summary><see cref="P:Infragistics.SummaryOperandBase.RowDisplayLabel" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.SummaryOperandBase.FormatStringProperty">
+            <summary><see cref="P:Infragistics.SummaryOperandBase.FormatString" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.DefaultSelectionDisplayLabel">
+            <summary>この <see cref="T:Infragistics.SummaryOperandBase" /> のドロップ ダウンに表示するデフォルトのテキストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.DefaultRowDisplayLabel">
+            <summary>この <see cref="T:Infragistics.SummaryOperandBase" /> を選択するときに SummaryRow に表示するデフォルトのテキストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.SelectionDisplayLabel">
+            <summary>この <see cref="T:Infragistics.SummaryOperandBase" /> のドロップダウンで表示する文字列を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.SelectionDisplayLabelResolved">
+            <summary>SummaryRow に表示される値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.RowDisplayLabel">
+            <summary>この <see cref="T:Infragistics.SummaryOperandBase" /> を選択するときに SummaryRow に表示する文字列を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.RowDisplayLabelResolved">
+            <summary>SummaryRow に表示される値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.FormatString">
+            <summary>この集計の値に適用される書式文字列を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.SummaryCalculator">
+            <summary>集計を計算するために使用される <see cref="P:Infragistics.SummaryOperandBase.SummaryCalculator" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.LinqSummaryOperator">
+            <summary>このオペランドに関連付けられる演算子を取得します。</summary>						
+        </member>
+        <member name="P:Infragistics.SummaryOperandBase.IsApplied">
+            <summary>この集計オペランドに対して集計を処理すべきかどうかを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.SummaryResult">
+            <summary>実行される集計に関する情報を含むオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.SummaryResult.#ctor(Infragistics.SummaryDefinition,System.Object)">
+            <summary><see cref="T:Infragistics.SummaryResult" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="definition">この結果を生成するために使用された <see cref="P:Infragistics.SummaryResult.SummaryDefinition" />。</param>
+            <param name="value">結果の生成された値。</param>
+        </member>
+        <member name="P:Infragistics.SummaryResult.SummaryDefinition">
+            <summary>結果を生成するために使用された <see cref="P:Infragistics.SummaryResult.SummaryDefinition" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryResult.Value">
+            <summary>最後に評価されたときに <see cref="P:Infragistics.SummaryResult.SummaryDefinition" /> によって生成された値を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.SummaryResultCollection">
+            <summary>集計データを表示するために使用される <see cref="T:Infragistics.SummaryResult" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="P:Infragistics.SummaryResultCollection.Item(Infragistics.SummaryOperandBase)">
+            <summary>特定の <see cref="T:Infragistics.SummaryOperandBase" /> の <see cref="T:Infragistics.SummaryResult" /> を取得します。</summary>
+            <param name="op"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.DataManager.Properties.Resources">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.DataManager.Properties.Resources.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.DataManager.Properties.Resources.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+    </members>
+</doc>

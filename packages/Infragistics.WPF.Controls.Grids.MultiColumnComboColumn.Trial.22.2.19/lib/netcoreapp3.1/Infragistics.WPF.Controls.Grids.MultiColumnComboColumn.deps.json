@@ -1,0 +1,165 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Infragistics.WPF.Controls.Grids.MultiColumnComboColumn/1.0.0": {
+        "dependencies": {
+          "Infragistics.WPF": "1.0.0",
+          "Infragistics.WPF.Controls.Editors.XamComboEditor": "1.0.0",
+          "Infragistics.WPF.Controls.Grids.XamGrid": "1.0.0",
+          "Infragistics.WPF.Controls.Menus.XamMenu": "1.0.0",
+          "Infragistics.WPF.DataManager": "1.0.0"
+        },
+        "runtime": {
+          "Infragistics.WPF.Controls.Grids.MultiColumnComboColumn.dll": {}
+        }
+      },
+      "Infragistics.WPF/1.0.0": {
+        "runtime": {
+          "Infragistics.WPF.dll": {}
+        },
+        "resources": {
+          "de/Infragistics.WPF.resources.dll": {
+            "locale": "de"
+          },
+          "es/Infragistics.WPF.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Infragistics.WPF.resources.dll": {
+            "locale": "fr"
+          },
+          "ja/Infragistics.WPF.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Infragistics.WPF.Controls.Editors.XamComboEditor/1.0.0": {
+        "dependencies": {
+          "Infragistics.WPF": "1.0.0",
+          "Infragistics.WPF.DataManager": "1.0.0"
+        },
+        "runtime": {
+          "Infragistics.WPF.Controls.Editors.XamComboEditor.dll": {}
+        },
+        "resources": {
+          "de/Infragistics.WPF.Controls.Editors.XamComboEditor.resources.dll": {
+            "locale": "de"
+          },
+          "es/Infragistics.WPF.Controls.Editors.XamComboEditor.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Infragistics.WPF.Controls.Editors.XamComboEditor.resources.dll": {
+            "locale": "fr"
+          },
+          "ja/Infragistics.WPF.Controls.Editors.XamComboEditor.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Infragistics.WPF.Controls.Grids.XamGrid/1.0.0": {
+        "dependencies": {
+          "Infragistics.WPF": "1.0.0",
+          "Infragistics.WPF.Controls.Menus.XamMenu": "1.0.0",
+          "Infragistics.WPF.DataManager": "1.0.0"
+        },
+        "runtime": {
+          "Infragistics.WPF.Controls.Grids.XamGrid.dll": {}
+        },
+        "resources": {
+          "de/Infragistics.WPF.Controls.Grids.XamGrid.resources.dll": {
+            "locale": "de"
+          },
+          "es/Infragistics.WPF.Controls.Grids.XamGrid.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Infragistics.WPF.Controls.Grids.XamGrid.resources.dll": {
+            "locale": "fr"
+          },
+          "ja/Infragistics.WPF.Controls.Grids.XamGrid.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Infragistics.WPF.Controls.Menus.XamMenu/1.0.0": {
+        "dependencies": {
+          "Infragistics.WPF": "1.0.0"
+        },
+        "runtime": {
+          "Infragistics.WPF.Controls.Menus.XamMenu.dll": {}
+        },
+        "resources": {
+          "de/Infragistics.WPF.Controls.Menus.XamMenu.resources.dll": {
+            "locale": "de"
+          },
+          "es/Infragistics.WPF.Controls.Menus.XamMenu.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Infragistics.WPF.Controls.Menus.XamMenu.resources.dll": {
+            "locale": "fr"
+          },
+          "ja/Infragistics.WPF.Controls.Menus.XamMenu.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Infragistics.WPF.DataManager/1.0.0": {
+        "dependencies": {
+          "Infragistics.WPF": "1.0.0"
+        },
+        "runtime": {
+          "Infragistics.WPF.DataManager.dll": {}
+        },
+        "resources": {
+          "de/Infragistics.WPF.DataManager.resources.dll": {
+            "locale": "de"
+          },
+          "es/Infragistics.WPF.DataManager.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Infragistics.WPF.DataManager.resources.dll": {
+            "locale": "fr"
+          },
+          "ja/Infragistics.WPF.DataManager.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Infragistics.WPF.Controls.Grids.MultiColumnComboColumn/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infragistics.WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infragistics.WPF.Controls.Editors.XamComboEditor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infragistics.WPF.Controls.Grids.XamGrid/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infragistics.WPF.Controls.Menus.XamMenu/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infragistics.WPF.DataManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

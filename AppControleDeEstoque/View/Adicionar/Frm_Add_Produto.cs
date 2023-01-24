@@ -127,6 +127,5 @@ namespace AppControleDeEstoque.View
             Combos.GetCategorias(cboCategoria,"S");
 
         }
-
     }
 }

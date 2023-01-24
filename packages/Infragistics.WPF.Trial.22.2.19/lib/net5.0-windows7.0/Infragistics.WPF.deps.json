@@ -1,0 +1,37 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Infragistics.WPF/1.0.0": {
+        "runtime": {
+          "Infragistics.WPF.dll": {}
+        },
+        "resources": {
+          "de/Infragistics.WPF.resources.dll": {
+            "locale": "de"
+          },
+          "es/Infragistics.WPF.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Infragistics.WPF.resources.dll": {
+            "locale": "fr"
+          },
+          "ja/Infragistics.WPF.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Infragistics.WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

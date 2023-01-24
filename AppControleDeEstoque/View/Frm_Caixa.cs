@@ -15,7 +15,7 @@ namespace AppControleDeEstoque
 {
     public partial class Frm_Caixa : Form
     {
-
+        
         public Frm_Caixa()
         {
 
@@ -49,20 +49,80 @@ namespace AppControleDeEstoque
             {
                 MessageBox.Show("Produto não cadastrado.");
 
+                txbCodBarras.Clear();
+
             }
             else
             {
 
+                txbQtd.Focus();
                 string sql = "";
-                sql += " use CaixaPDV Select COD,CODBARRAS,NOME,PRECO,QUANTIDADE,DCRPRODUTO from Produto Where CODBARRAS =" + txbCodBarras.Text;
-                lblPrecoUnitario.Text = Convert.ToString(o.GetValorDecimal(sql, 3));
-                lblQuantidade.Text = Convert.ToString(o.GetValorInt(sql,4));
-                lblDescProduto.Text = o.GetValorString(sql,5);
+                sql = " use CaixaPDV exec BuscaProduto " + txbCodBarras.Text;
+                txbCodBarras.Clear();
+                
+                
+                
+
+                //sql += " use CaixaPDV Select COD,CODBARRAS,NOME,PRECO,QUANTIDADE,DCRPRODUTO from Produto Where CODBARRAS =" + txbCodBarras.Text;
+                //lblPrecoUnitario.Text = Convert.ToString(o.GetValorDecimal(sql, 3));
+                //lblQuantidade.Text = Convert.ToString(o.GetValorInt(sql,4));
+                //lblDescProduto.Text = o.GetValorString(sql,5);
 
             }
         }
 
-        private void txbCodBarras_TextChanged(object sender, EventArgs e)
+     
+
+        private void Frm_Caixa_Load(object sender, EventArgs e)
+        {
+            
+            LimparCampos();
+            ConfigurarGrade();
+            PopularGrade();
+        }
+
+        private void ConfigurarGrade()
+        {
+            ListVenda.Columns.Add("Código de Barras", 100).TextAlign = HorizontalAlignment.Center;
+            ListVenda.Columns.Add("Descrição", 500);
+            ListVenda.Columns.Add("QTD UN",60).TextAlign = HorizontalAlignment.Center;
+            ListVenda.Columns.Add("VLR UN", 90).TextAlign = HorizontalAlignment.Right;
+            ListVenda.Columns.Add("VLR Total",90).TextAlign= HorizontalAlignment.Right;
+
+            ListVenda.View = System.Windows.Forms.View.Details;
+            ListVenda.FullRowSelect = true;
+            ListVenda.GridLines = true;
+            ListVenda.MultiSelect = false;
+
+        }
+        private void PopularGrade()
+        {
+            var listaProdutos = Produto.GetListaProdutos();
+
+            foreach (Produto produto in listaProdutos)
+            {
+                ListVenda.Items.Add(new ListViewItem(new String[] {
+
+                    produto.CodBarras.ToString(), 
+                    produto.Descricao,
+                    produto.Quantidade.ToString(),
+                    produto.Preco }));
+            }
+        }
+        private void LimparCampos()
+        {
+            //lblDesconto.Text = "";
+            //lblDescProduto.Text = "";
+            //lblPrecoUnitario.Text = "";
+            //lblQtdTotalItens.Text = "";
+            //lblQuantidade.Text = "";
+            //lblTotalPorProduto.Text = "";
+            //lblTroco.Text = "";
+            //lblValorRecebido.Text = "";
+            //lblTotal.Text = "";
+        }
+
+        private void txbCodBarras_TextChanged_1(object sender, EventArgs e)
         {
 
         inicio:
@@ -71,37 +131,25 @@ namespace AppControleDeEstoque
                 if (Sistema.FinalizarVenda == false)
 
                     BuscarProduto();
-                    txbCodBarras.Text = "";
-                    
+                
+
 
                 goto inicio;
 
 
             }
-
         }
 
-        private void Frm_Caixa_Load(object sender, EventArgs e)
-        {
-            LimparCampos();
-        }
+       
 
-        private void LimparCampos()
+        private void txbQtd_KeyDown(object sender, KeyEventArgs e)
         {
-            lblDesconto.Text = "";
-            lblDescProduto.Text = "";
-            lblPrecoUnitario.Text = "";
-            lblQtdTotalItens.Text = "";
-            lblQuantidade.Text = "";
-            lblTotalPorProduto.Text = "";
-            lblTroco.Text = "";
-            lblValorRecebido.Text = "";
-            lblTotal.Text = "";
-        }
+            //ação ao pressionar a tecla enter
+            if (e.KeyValue == 13)
+            {
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            }
+            
         }
     }
 }

@@ -43,8 +43,29 @@
     <Reference Include="DataGridExtensions, Version=2.5.14.0, Culture=neutral, PublicKeyToken=43de855f87de903a, processorArchitecture=MSIL">
       <HintPath>..\packages\DataGridExtensions.2.5.14\lib\net452\DataGridExtensions.dll</HintPath>
     </Reference>
+    <Reference Include="DataGridViewExtensions, Version=1.0.6153.38638, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataGridViewExtensions.1.0.6153.38638\lib\net452\DataGridViewExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF, Version=22.2.20222.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Trial.22.2.19\lib\net40\InfragisticsWPF.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF.Controls.Editors.XamComboEditor, Version=22.2.20222.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Controls.Editors.XamComboEditor.Trial.22.2.19\lib\net40\InfragisticsWPF.Controls.Editors.XamComboEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF.Controls.Grids.MultiColumnComboColumn, Version=22.2.20222.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Controls.Grids.MultiColumnComboColumn.Trial.22.2.19\lib\net40\InfragisticsWPF.Controls.Grids.MultiColumnComboColumn.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF.Controls.Grids.XamGrid, Version=22.2.20222.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Controls.Grids.XamGrid.Trial.22.2.19\lib\net40\InfragisticsWPF.Controls.Grids.XamGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF.Controls.Menus.XamMenu, Version=22.2.20222.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Menus.Trial.22.2.19\lib\net40\InfragisticsWPF.Controls.Menus.XamMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF.DataManager, Version=22.2.20222.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.DataManager.Trial.22.2.19\lib\net40\InfragisticsWPF.DataManager.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>

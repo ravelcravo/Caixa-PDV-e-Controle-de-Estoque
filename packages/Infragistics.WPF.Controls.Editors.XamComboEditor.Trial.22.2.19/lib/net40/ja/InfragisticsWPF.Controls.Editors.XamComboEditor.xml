@@ -1,0 +1,2300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF.Controls.Editors.XamComboEditor</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> のオートメーション ピア。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.#ctor(Infragistics.Controls.Editors.Primitives.ComboCellsPanel)">
+            <summary>ComboCellsPanelAutomationPeer クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">この自動ピアを制御する <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" />。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.GetClassNameCore">
+            <summary>このコントロールが説明する文字列を要求するフレームワークの起動をオーバーライドします。</summary>
+            <returns>このコントロールの名前を説明する文字列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.Row_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>Row の PropertyChanged イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.SetValue(System.String)">
+            <summary>コントロールの値を設定します。</summary>
+            <param name="value">設定する値。プロバイダーは、値を適切なデータ型に変換します。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.AddToSelection">
+            <summary>現在の要素を選択された項目のコレクションに追加します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.RemoveFromSelection">
+            <summary>現在の項目を選択された項目のコレクションから削除します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.Select">
+            <summary>既存の選択をクリアし、現在の要素を選択します。</summary>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.IsReadOnly">
+            <summary>コントロールの値が読み取り専用かどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>値が読み取り専用の場合、true。変更可能な場合、false。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.Value">
+            <summary>コントロールの値を取得します。</summary>
+            <value></value>
+            <returns>コントロールの値。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.IsSelected">
+            <summary>項目が選択されているかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>要素が選択されている場合は True。それ以外は False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboCellsPanelAutomationPeer.SelectionContainer">
+            <summary><see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> を実装し、呼び出しオブジェクトのコンテナーとして動作する UI 自動化プロバイダーを取得します。</summary>
+            <value></value>
+            <returns>UI 自動化プロバイダー。</returns>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2">
+            <summary>スクリーン リーダーおよびプログラムによるユーザー操作を有効する ComboEditorBase の自動ピア。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.#ctor(Infragistics.Controls.Editors.ComboEditorItemControl)">
+            <summary>ComboEditorItemControlAutomationPeer クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">この自動ピアを制御する <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" />。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.GetClassNameCore">
+            <summary>このコントロールが説明する文字列を要求するフレームワークの起動をオーバーライドします。</summary>
+            <returns>このコントロールの名前を説明する文字列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.SetValue(System.String)">
+            <summary>コントロールの値を設定します。</summary>
+            <param name="value">設定する値。プロバイダーは、値を適切なデータ型に変換します。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.AddToSelection">
+            <summary>現在の要素を選択された項目のコレクションに追加します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.RemoveFromSelection">
+            <summary>現在の項目を選択された項目のコレクションから削除します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.Select">
+            <summary>既存の選択をクリアし、現在の要素を選択します。</summary>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.IsReadOnly">
+            <summary>コントロールの値が読み取り専用かどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>値が読み取り専用の場合、true。変更可能な場合、false。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.Value">
+            <summary>コントロールの値を取得します。</summary>
+            <value></value>
+            <returns>コントロールの値。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.IsSelected">
+            <summary>項目が選択されているかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>要素が選択されている場合は True。それ以外は False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.ComboEditorItemControlAutomationPeer`2.SelectionContainer">
+            <summary><see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> を実装し、呼び出しオブジェクトのコンテナーとして動作する UI 自動化プロバイダーを取得します。</summary>
+            <value></value>
+            <returns>UI 自動化プロバイダー。</returns>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2">
+            <summary>スクリーン リーダーおよびプログラムによるユーザー操作を有効する ComboEditorBase の自動ピア。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.#ctor(Infragistics.Controls.Editors.ComboEditorBase{`0,`1})">
+            <summary>XamComboEditorAutomationPeer クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">この自動ピアが制御する ComboEditorBase。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.GetClassNameCore">
+            <summary>このコントロールが説明する文字列を要求するフレームワークの起動をオーバーライドします。</summary>
+            <returns>このコントロールの名前を説明する文字列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.RaiseExpandCollapseStatePropertyChangedEvent(System.Windows.Automation.ExpandCollapseState,System.Windows.Automation.ExpandCollapseState)">
+            <summary>ExpandCollapseStatePropertyChangedEvent を発生させます。</summary>
+            <param name="oldValue"><c>true</c> に設定する場合、古い値。</param>
+            <param name="newValue"><c>true</c> に設定されている場合は、新しい値。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.OwningComboEditor_DropDownOpened(System.Object,System.EventArgs)">
+            <summary>XamWebComboEditor と同じように、OwningComboEditor プロパティの DropDownOpened イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.OwningComboEditor_DropDownClosed(System.Object,System.EventArgs)">
+            <summary>XamWebComboEditor と同じように、OwningComboEditor プロパティの DropDownClosed イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.GetSelection">
+            <summary>選択されている各子要素の UI 自動化プロバイダーを取得します。</summary>
+            <returns>UI 自動化プロバイダーの配列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.Collapse">
+            <summary>コントロールの子孫であるすべてのノード、コントロールまたはコンテンツを非表示にします。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.Expand">
+            <summary>コントロールの子であるノード、コントロールまたはコンテンツを表示します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.SetValue(System.String)">
+            <summary><see cref="T:System.Windows.Automation.Provider.IValueProvider" /> オブジェクトの値を設定します。</summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.CanSelectMultiple">
+            <summary>UI 自動化プロバイダーによって 2 つ以上の子要素を同時に選択できるかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>複数選択が許可される場合は、True。それ以外は、False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.IsSelectionRequired">
+            <summary>UI 自動化プロバイダーによって少なくとも 1 つの子要素を選択する必要があるかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>選択が必要な場合は、True。それ以外は、False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.ExpandCollapseState">
+            <summary>コントロールの状態 (展開または縮小) を取得します。</summary>
+            <value></value>
+            <returns>コントロールの状態 (展開または縮小) 。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.IsReadOnly">
+            <summary><see cref="T:System.Windows.Automation.Provider.IValueProvider" /> メンバーが編集可能かどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamComboEditorAutomationPeer`2.Value">
+            <summary><see cref="T:System.Windows.Automation.Provider.IValueProvider" /> オブジェクトの値を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboEditorItem">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamComboEditor" /> クラス内の選択可能な項目を実装します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboEditorItemBase`1">
+            <summary>ComboEditorBase クラス内の選択可能な項目を実装します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemBase`1.#ctor(System.Object)">
+            <summary>ComboEditorItemBase クラスの新しいインスタンスを初期化します。</summary>
+            <param name="data">ビジネス オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemBase`1.OnSelectionChanged">
+            <summary>IsSelected プロパティが変更されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemBase`1.SetSelected(System.Boolean)">
+            <summary>項目の選択状態を設定します。</summary>
+            <param name="isSelected">項目を選択するかどうかを指定します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemBase`1.OnElementAttached(`0)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> が <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> にアタッチされるときに呼び出されます。</summary>
+            <param name="element"><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemBase`1.OnElementReleased(`0)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> が <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> から削除するときに呼び出されます。</summary>
+            <param name="element"><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" />。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.Data">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> に保持されるビジネス オブジェクトを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.IsSelected">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> が選択されたかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.IsFocused">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> にフォーカスがあるかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.Control">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> にアタッチされる <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> を取得または設定します。</summary>
+            <remarks>ItemsPanel のビューポートにある場合にのみ Control は ComboEditorItem と関連付けられます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.IsEnabled">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> が有効かどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.Style">
+            <summary>この項目を表す <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> に適用されるスタイルを取得または設定します。注: この項目に設定されるスタイルは、<see cref="T:Infragistics.Controls.Editors.XamComboEditor" /> に設定されたスタイルをオーバーライドします。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.MeasureRaised">
+            <summary>Measure メソッドを呼び出したときに、基となるコントロールの Measure が発生したかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemBase`1.IsDataBound">
+            <summary>オブジェクトがデータソースから作成されたかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItem.#ctor(System.Object,Infragistics.Controls.Editors.XamComboEditor)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="data">ビジネス オブジェクト。</param>
+            <param name="xamWebComboEditor">ComboEditor への参照。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItem.OnSelectionChanged">
+            <summary>IsSelected プロパティが変更されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItem.CreateInstanceOfRecyclingElement">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> のインスタンスを作成します。</summary>
+            <returns>新しいインスタンス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItem.OnElementAttached(Infragistics.Controls.Editors.ComboEditorItemControl)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> が <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> にアタッチされるときに呼び出されます。</summary>
+            <param name="element"><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItem.OnElementReleased(Infragistics.Controls.Editors.ComboEditorItemControl)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> が <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> から削除するときに呼び出されます。</summary>
+            <param name="element"><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" />。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItem.ComboEditor">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> を保持する <see cref="T:Infragistics.Controls.Editors.XamComboEditor" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItem.MeasureRaised">
+            <summary>Measure を呼び出したときにメジャー メソッドが発生したかどうかを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboEditorItemCollection">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> オブジェクトを含む内部使用のコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemCollection.#ctor(Infragistics.IProvideDataItems{Infragistics.Controls.Editors.ComboEditorItem})">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemCollection" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="provider">IProvideDataItems インターフェイスを実装するオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboEditorItemControl">
+            <summary>Customer オブジェクトの視覚表示のために使用されるコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.OnApplyTemplate">
+            <summary>テンプレートが適用される時に呼び出されます。</summary>
+            <remarks>
+            <p class="body">OnApplyTemplate は FrameworkElement によって公開される .NET framework メソッドです。このクラスは、テンプレートがコントロールに適用される時は必ずコントロール テンプレートからフォーカス サイトを取得するためにこれをオーバーライドします。</p>
+            </remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>プロパティ値を変更すると呼び出されます。</summary>
+            <param name="e">変更されたプロパティ値に関する情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>MouseLeftButtonDown イベントが発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.OnCreateAutomationPeer">
+            <summary>派生クラス内で実装される場合、Silverlight オートメーション インフラストラクチャーのためのクラス固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.MeasureOverride(System.Windows.Size)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> の「計測」パスの動作を提供します。</summary>
+            <param propertyName="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。値として Infinity の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.EnsureVisualStates">
+            <summary>IsSelected プロパティと IsFocused プロパティに基づき、VisualState を変更します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.GoToState(System.Boolean,System.String)">
+            <summary>新しい VisualState を設定します。</summary>
+            <param name="useTransitions">トランジションが使用されるかどうかを指定します。</param>
+            <param name="stateName">新しい VisualState の名前。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.OnAttached(Infragistics.Controls.Editors.ComboEditorItem)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> が <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> にアタッチされるときに呼び出されます。</summary>
+            <param name="comboEditorItem"><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> にアタッチされている <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.OnReleased(Infragistics.Controls.Editors.ComboEditorItem)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> が <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> を離すときに呼び出されます。</summary>
+            <param name="comboEditorItem"><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> から解放される <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorItemControl.OnPropertyChanged(System.String)">
+            <summary>PropertyChanged イベントを発生させます。</summary>
+            <param name="propName">プロパティ名。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemControl.Item">
+            <summary>親 ComboBoxItem オブジェクトを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemControl.DelayRecycling">
+            <summary>オブジェクトがリサイクルされるかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorItemControl.OwnerPanel">
+            <summary>このコントロールを所有するパネルを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorItemControl.PropertyChanged">
+            <summary>このオブジェクトのプロパティが変更される生成されるイベント。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ComboEditorItemValueProxy.ValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ComboEditorItemValueProxy.Value" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.CustomValueEnteredActions">
+            <summary>ユーザーが元の ItemsSource に存在しないコンボ エディターにデータを入力するとき、どのアクションが発生するかを指定できるようにする列挙型。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.CustomValueEnteredActions.Ignore">
+            <summary>ユーザーが無効なデータを入力するのを防ぎます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.CustomValueEnteredActions.Allow">
+            <summary>データの入力を許可します。ただし、項目は選択されず、元の ItemsSource はそのままになります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.CustomValueEnteredActions.Add">
+            <summary>データが元の ItemsSource に追加され、選択に有効なデータになります。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.RowType">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> でサポートされるすべての行の種類が格納された列挙型。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.RowType.DataRow">
+            <summary>データのレコードを表す行。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.RowType.HeaderRow">
+            <summary>データ行のグループのヘッダーを表す行。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.FilterMode">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> でサポートされるすべてのフィルター処理モードが格納された列挙型。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FilterMode.FilterOnPrimaryColumnOnly">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> は、プライマリ列がコントロールの TextBox に入力されたテキストで始まる項目のみを含めることで、ドロップダウン リスト内の項目をフィルター処理します。</summary>
+            <remarks>「プライマリ列」とは、コントロールの DisplayMemberPath プロパティに設定された値に対応する列です。</remarks>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FilterMode.FilterOnAllColumns">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> は、コントロールの TextBox に入力されたテキストがいずれかのテキスト列に含まれる項目のみを含めることで、ドロップダウン リスト内の項目をフィルター処理します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.MultiColumnComboEditorCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> に適用する使用可能なコマンドの列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.MultiColumnComboEditorCommand.ClearSelection">
+            <summary>現在選択されている項目のリストをクリアします。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboColumnFixedState">
+            <summary>列が固定されているか、固定されている場合、どちら側が固定されているかを説明する列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnFixedState.NotFixed">
+            <summary>列は固定されません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnFixedState.Left">
+            <summary>列は左側に固定されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnFixedState.Right">
+            <summary>列は右側に固定されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboColumnWidthType">
+            <summary>Column の幅のタイプを説明する Enum。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnWidthType.Auto">
+            <summary>列の幅は列の最大ヘッダーまたは列のセルに変更されます。注: 大きいコンテンツをスクロールして表示するときに、列の幅が大きくなる場合があります。ただし、減少することはありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnWidthType.InitialAuto">
+            <summary>列の幅は列の最大ヘッダーまたは列のセルに変更されます。ただし、グリッドの最初の読み込み時にだけ発生します。または、ユーザーがサイズ変更するために列ヘッダーの端をいつダブル クリックするか。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnWidthType.SizeToHeader">
+            <summary>列の幅は列ヘッダーに変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnWidthType.SizeToCells">
+            <summary>列の幅は列の最大セルに変更されます。注: 大きいコンテンツをスクロールして表示するときに、列の幅が大きくなる場合があります。ただし、減少することはありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnWidthType.Star">
+            <summary>列の幅はドロップダウンのグリッドの残りスペースを埋めます。1 つ以上の列が star 値を持つ場合、残りの幅は列で均等に分割されます。他の列がスペースのほとんどを使っている場合、列の幅は 0 に設定します。ドロップダウングリッドの幅が Infinity の場合、列は ComboColumnWidthType.Auto の幅を持つことになります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumnWidthType.Numeric">
+            <summary>列の幅は指定された値に基づいて変更します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboItemAddingEventArgs`1">
+            <summary>ComboEditorBase の ItemAdding イベントで使用されるオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemAddingEventArgs`1.#ctor(`0)">
+            <summary>ComboItemAddingEventArgs オブジェクトの新しいインスタンスを作成します。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemAddingEventArgs`1.Item">
+            <summary>ComboEditorBase ドロップダウンに追加される項目。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboItemAddedEventArgs`1">
+            <summary>ComboEditorBase の ItemAdded イベントで使用されるオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemAddedEventArgs`1.#ctor(`0)">
+            <summary>ComboItemAddedEventArgs オブジェクトの新しいインスタンスを作成します。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemAddedEventArgs`1.Item">
+            <summary>ComboEditorBase ドロップダウンに追加済みの項目。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ValidateInputTextEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.SpecializedTextBox" /> の SpecializedTextBox ValidateInputText イベントで使用されるオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ValidateInputTextEventArgs.#ctor(System.String)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ValidateInputTextEventArgs" /> オブジェクトの新しいインスタンスを作成します。</summary>
+            <param name="text"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ValidateInputTextEventArgs.TextToValidate">
+            <summary>検証するテキスト。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ValidateInputTextEventArgs.IsValid">
+            <summary>テキストが有効かどうか。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SelectionChangedEventArgs">
+          <summary>ComboEditorBase の SelectionChanged イベントに使用されるオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SelectionChangedEventArgs.#ctor(System.Collections.IList,System.Collections.IList)">
+          <summary>SelectionChangedEventArgs オブジェクトの新しいインスタンスを作成します。</summary>
+          <param name="addedItems">このイベントで選択された項目。</param>
+          <param name="removedItems">このイベントで選択が解除された項目。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectionChangedEventArgs.AddedItems">
+          <summary>選択された項目を含むリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectionChangedEventArgs.RemovedItems">
+          <summary>選択が解除された項目を含むリストを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboItemFilter">
+            <summary>項目のフィルター方法を説明するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemFilter.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboItemFilter" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemFilter.GetCurrentExpression">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboItemFilter" /> の現在の式を生成します。</summary>
+            <returns>新しい式。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemFilter.GetCurrentExpression(Infragistics.FilterContext,System.Object)">
+            <summary>入力されたコンテキストを使用して、この <see cref="T:Infragistics.Controls.Editors.ComboItemFilter" /> の現在の式を生成します。</summary>
+            <param name="context">コンテキスト パラメーター。</param>
+            <returns>新しい式。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemFilter.OnPropertyChanged(System.String)">
+            <summary>このオブジェクトに対して <see cref="E:Infragistics.Controls.Editors.ComboItemFilter.PropertyChanged" /> イベントを発生させます。</summary>
+            <param name="propertyName">変更されたプロパティの propertyName。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemFilter.Dispose(System.Boolean)">
+            <summary><see cref="T:Infragistics.Collections.CollectionBase`1" /> によって使用されるアンマネージ リソースを解放し、マネージ リソースをオプションで解放します。</summary>
+            <param name="disposing">マネージ リソースとアンマネージ リソースを両方とも解放する場合は true、アンマネージ リソースのみを解放する場合は false。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboItemFilter.Dispose">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboItemFilter" /> に使用されたマネージ リソースとアンマネージ リソースを解放します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemFilter.Conditions">
+            <summary>この列に適用するフィルター条件のコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemFilter.LogicalOperator">
+          <summary>
+            Conditions プロパティのすべての条件を結合するために使用される論理演算子を取得または設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemFilter.ObjectType">
+            <summary>処理されているオブジェクトの Type を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemFilter.FieldName">
+            <summary>フィルターされているプロパティのフィールド名を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemFilter.FieldType">
+            <summary>FieldName プロパティの Type を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemFilter.ObjectTypedInfo">
+            <summary>オブジェクトのタイプと任意の PropertyDescriptors。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboItemFilter.Field">
+            <summary>ItemsFilter に関連付けられた DataField を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboItemFilter.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.ComboItemFilter" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ItemsPanel">
+            <summary>仮想化された垂直リストに <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> コントロールを配置するパネル。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2">
+            <summary>ComboEditorItemBase オブジェクトを含むパネル。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ItemsPanel" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.MeasureOverride(System.Windows.Size)">
+            <summary>派生クラスでオーバーライドされるとき、子要素で必要なレイアウトのサイズを測定し、FrameworkElement 派生クラスのサイズを決定します。</summary>
+            <param name="availableSize">この要素が子要素に設定できる利用可能なサイズ。値として Infinity の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns>子要素のサイズの計算に基づいて、レイアウト時にこの要素が決定した必要サイズ。 </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.ArrangeOverride(System.Windows.Size)">
+            <summary>派生クラスでオーバーライドされるとき、子要素を配置し、FrameworkElement 派生クラスのサイズを決定します。</summary>
+            <param name="finalSize">この要素が要素自体とその子を配列するために使用する親の中の最終領域。</param>
+            <returns>使用される実際のサイズ。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.ReleaseItem(Infragistics.ISupportRecycling)">
+            <summary>アタッチされた ComboEditorItem を削除します。</summary>
+            <param name="comboEditorItem">ComboEditorItem</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.ThrowoutUnusedItems(System.Collections.Generic.List{`0})">
+            <summary>未使用の項目を削除します。</summary>
+            <param name="previousVisibleItems"><see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> オブジェクトのリスト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.UpdateScrollInfo(System.Int32,System.Windows.Size)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ItemsPanel" /> の ScollInfo を更新します。水平/垂直スクロールバーの表示状態、またはそのビューポートのサイズなど。</summary>
+        </member>
+      <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.ReduceWidthWithRootBorderThickness(System.Double)">
+        <summary>ルート境界線要素の太さによって指定した幅を減らします。</summary>
+        <param name="width">幅。</param>
+        <returns>ルート境界線要素の太さによって減らされた幅。</returns>
+      </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.RenderItem``2(``0,System.Windows.Size)">
+            <summary>行のコントロールを作成して、パネルの子として追加します。</summary>
+            <param name="comboEditorItem">描画される ComboEditorItem。</param>
+            <param name="availableSize"></param>
+            <returns>新しい必要なサイズ。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.ArrangeItem(System.Windows.FrameworkElement,System.Double,System.Double,System.Double)">
+            <summary>指定された項目をパネルに配置します。</summary>
+            <param name="elem"></param>
+            <param name="left"></param>
+            <param name="top"></param>
+            <param name="width"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.OnControlAttachedToItem(`1)">
+            <summary>メジャーが呼び出される前に、コントロールが項目に付加されたときに発生します。</summary>
+            <param name="cntrl"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.UpdateHorizontalScrollBar(System.Windows.Controls.Primitives.ScrollBar,System.Windows.Size)">
+            <summary>水平にどれだけの項目分スクロールできるかに基づいて水平のスクロールバーを更新します。</summary>
+            <param name="horizBar"></param>
+            <param name="finalSize"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.ComboEditor">
+            <summary>親 ComboEditorBase への参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.FixedRowsTop">
+            <summary>Viewport の上に現在固定されている行を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.UseAvailableWidthToMeasureItem">
+            <summary>項目が有効な幅または無限大に計測するかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ItemsPanelBase`2.VisibleItems">
+            <summary>現在の表示される ComboEditorItem オブジェクトを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboCell">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> での標準 Cell オブジェクト。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboCellBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> でのすべてのセル オブジェクトの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellBase.#ctor(Infragistics.Controls.Editors.ComboRowBase,Infragistics.Controls.Editors.ComboColumn)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクト。</param>
+            <param propertyName="column"><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が表す <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellBase.ApplyStyle">
+            <summary>その <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> に Cell の解決されたスタイルを適用します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellBase.CreateCellBindingConverter">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に付加される <see cref="T:System.Windows.Data.IValueConverter" /> を作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellBase.EnsureCurrentState">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellBase.OnElementAttached(Infragistics.Controls.Editors.ComboCellControlBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> が <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> にアタッチされるときに呼び出されます。</summary>
+            <param propertyName="element"><see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellBase.OnElementReleased(Infragistics.Controls.Editors.ComboCellControlBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> が <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> から削除するときに呼び出されます。</summary>
+            <param propertyName="element"><see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" />。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.Row">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboRowBase" />。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.Column">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> が表す <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.Control">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> に添付される <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> を取得します。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel" /> のビューポートにある場合のみに Control は Cell と関連付けられます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.Style">
+            <summary>すべての <see cref="P:Infragistics.Controls.Editors.ComboCellBase.Style" /> オブジェクトに使用する <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.ResolveStyle">
+            <summary>アタッチされているときに <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> に適用される Style を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.BindingMode">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> をデータにバンドするときに適用される <see cref="P:Infragistics.Controls.Editors.ComboCellBase.BindingMode" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.MeasuringSize">
+            <summary>再計測する必要がある場合、セルのサイズを保存するために使用されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.RecyclingElementType">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> のために作成するコントロールの Type を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellBase.RecyclingIdentifier">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboCellBase.RecyclingElementType" /> が指定されていない場合、このプロパティはリサイクル可能な要素を識別する方法を提供します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCell.#ctor(Infragistics.Controls.Editors.ComboRowBase,Infragistics.Controls.Editors.ComboColumn)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCell" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboCell" /> オブジェクト。</param>
+            <param propertyName="column"><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が表す <see cref="T:Infragistics.Controls.Editors.ComboCell" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCell.CreateInstanceOfRecyclingElement">
+            <summary>オブジェクトを表す <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> の新しいインスタンスを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCell.CreateCellBindingConverter">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboCell" /> に付加される <see cref="T:System.Windows.Data.IValueConverter" /> を作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCell.ResolveStyle">
+            <summary>アタッチされているときに <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> に適用される Style を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboCellControl">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCell" /> の視覚的表現。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboCellControlBase">
+            <summary>すべての <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> コントロールの基本コントロール クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.AttachContent">
+            <summary>コンテンツが Control にアタッチされるときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.EnsureContent">
+            <summary>コントロールが計測されるたびに呼び出されます。必要がある場合、コントロールをそのコンテンツに合わせて調整できます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.EnsureVisualStates">
+            <summary>セル コントロールの VisualState を変更します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.GoToState(System.Boolean,System.String)">
+            <summary>新しい VisualState を設定します。</summary>
+            <param name="useTransitions">トランジションが使用されるかどうかを指定します。</param>
+            <param name="stateName">新しい VisualState の名前。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.OnAttached(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> が <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> にアタッチされるときに呼び出されます。</summary>
+            <param propertyName="cell"><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> にアタッチされている <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.OnReleased(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> が <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> を離すときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.OnLoaded">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> が Loaded のときに発生されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.MeasureOverride(System.Windows.Size)">
+            <summary>セルが正しく測定されたことを保証できるようにします。</summary>
+            <param name="availableSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControlBase.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>プロパティ値を変更すると呼び出されます。</summary>
+            <param name="e">変更されたプロパティ値に関する情報。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellControlBase.ContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> の <see cref="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase" /> を解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellControlBase.Cell">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControl.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>MouseLeftButtonDown イベントが発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControl.AttachContent">
+            <summary>コンテンツが Control にアタッチされるときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControl.EnsureContent">
+            <summary>コントロールが計測されるたびに呼び出されます。必要がある場合、コントロールをそのコンテンツに合わせて調整できます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboCellControl.EnsureVisualStates">
+            <summary>IsSelected プロパティと IsFocused プロパティに基づき、VisualState を変更します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboCellControl.ContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> の <see cref="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase" /> を解決します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ComboCellsCollection">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCell" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsCollection.#ctor(Infragistics.Controls.Editors.ComboColumnCollection,Infragistics.Controls.Editors.ComboRowBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsCollection" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="columns"><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsCollection" />に関連付けられた <see cref="T:Infragistics.Controls.Editors.ComboColumnCollection" />。</param>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsCollection" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboRowBase" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsCollection.GetCount">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> で <see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsCollection" /> の総数を返します。</summary>
+            <returns>セルの合計数。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsCollection.IndexOf(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> のインデックスを取得します。</summary>
+            <param propertyName="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsCollection.GetItem(System.Int32)">
+            <summary>指定されたインデックスで <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> 項目を返します。</summary>
+            <param propertyName="index">取得するセルのインデックス。</param>
+            <returns>指定されたインデックスの ComboCellBase オブジェクト。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsCollection.Item(Infragistics.Controls.Editors.ComboColumn)">
+            <summary>対応する <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> の <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> を返します。</summary>
+            <param propertyName="column">参照に使用される列。</param>
+            <returns>対応する <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> の <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。Cell が存在しない場合、1 つ作成されます。列が存在しない場合、null が返されます。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsCollection.Item(System.String)">
+            <summary>対応する <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> の <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> を返します。</summary>
+            <param propertyName="key">参照に使用される列のキー。</param>
+            <returns>対応する <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> の <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。Cell が存在しない場合、1 つ作成されます。列が存在しない場合、null が返されます。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsCollection.Row">
+            <summary>このコレクションが表す Row を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboHeaderCell">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> のヘッダーで指定された列を表すセル。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderCell.#ctor(Infragistics.Controls.Editors.ComboRowBase,Infragistics.Controls.Editors.ComboColumn)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> オブジェクト。</param>
+            <param propertyName="column"><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が表す <see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderCell.CreateInstanceOfRecyclingElement">
+            <summary>オブジェクトを表す <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> の新しいインスタンスを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderCell.EnsureCurrentState">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboHeaderCell.ResolveStyle">
+            <summary>アタッチされているときに <see cref="T:Infragistics.Controls.Editors.ComboHeaderCellControl" /> に適用される Style を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboHeaderCellControl">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> の視覚的表現。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderCellControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderCellControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderCellControl.AttachContent">
+            <summary>コンテンツが Control にアタッチされるときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderCellControl.EnsureContent">
+            <summary>コントロールが計測されるたびに呼び出されます。必要がある場合、コントロールをそのコンテンツに合わせて調整できます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderCellControl.MeasureOverride(System.Windows.Size)">
+            <summary>セルが正しく測定されたことを保証できるようにします。</summary>
+            <param name="availableSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCell">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> で列選択のためのチェックボックス列を表すセル。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCell.#ctor(Infragistics.Controls.Editors.ComboRowBase,Infragistics.Controls.Editors.ComboColumn)">
+            <summary><see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCell" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCell" /> オブジェクト。</param>
+            <param propertyName="column"><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が表す <see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCell" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCell.CreateInstanceOfRecyclingElement">
+            <summary>オブジェクトを表す <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> の新しいインスタンスを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.RowSelectionCheckBoxCell.RecyclingIdentifier">
+            <summary>RecyclingElementTypeが指定されていない場合、このプロパティはリサイクル可能な要素を識別する方法を提供します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl">
+            <summary><see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCell" /> の視覚的表現。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl.AttachContent">
+            <summary>コンテンツが Control にアタッチされるときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl.OnReleased(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary>今後使わないものをクリーンアップします。</summary>
+            <param name="cell"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl.MeasureOverride(System.Windows.Size)">
+            <summary>セルが正しく測定されたことを保証できるようにします。</summary>
+            <param name="availableSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>MouseLeftButtonDown イベントが発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxCellControl.OnApplyTemplate">
+            <summary>テンプレートが適用される時に呼び出されます。</summary>
+            <remarks>
+            <p class="body">OnApplyTemplate は FrameworkElement によって公開される .NET framework メソッドです。このクラスは、テンプレートがコントロールに適用される時は必ずコントロール テンプレートからフォーカス サイトを取得するためにこれをオーバーライドします。</p>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCell">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> のヘッダーで <see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxColumn" /> 列を表すセル。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCell.#ctor(Infragistics.Controls.Editors.ComboRowBase,Infragistics.Controls.Editors.ComboColumn)">
+            <summary><see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCell" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> オブジェクト。</param>
+            <param propertyName="column"><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が表す <see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCell.CreateInstanceOfRecyclingElement">
+            <summary>オブジェクトを表す <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> の新しいインスタンスを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCell.EnsureCurrentState">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCell.ResolveStyle">
+            <summary>アタッチされているときに <see cref="T:Infragistics.Controls.Editors.ComboHeaderCellControl" /> に適用される Style を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCellControl">
+            <summary><see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCell" /> の視覚的表現。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCellControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCellControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxHeaderCellControl.MeasureOverride(System.Windows.Size)">
+            <summary>セルが正しく測定されたことを保証できるようにします。</summary>
+            <param name="availableSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.CheckboxComboColumn">
+            <summary>データを表すために <see cref="T:System.Windows.Controls.CheckBox" /> 要素を使用する <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboColumn">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> にバインドされた、元になるデータ内のフィールドを表す抽象オブジェクト。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.KeyProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.Key" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.ValueConverterProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.ValueConverter" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.ValueConverterParameterProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.ValueConverterParameter" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.MinimumWidthProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.MinimumWidth" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.MaximumWidthProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.MaximumWidth" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.HeaderTextProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.HeaderText" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.WidthProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.Width" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboColumn.VisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.Visibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumn.OnVisibilityChanged">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> の Visibility が変更されたときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumn.GenerateCell(Infragistics.Controls.Editors.ComboRowBase)">
+            <summary>このメソッドは、渡された行のタイプに基づいて新しい <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトを作成します。</summary>
+            <param propertyName="row">セルが作成される行。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumn.GenerateHeaderCell(Infragistics.Controls.Editors.ComboRowBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> の新しいインスタンスを返します。</summary>
+            <param propertyName="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumn.GenerateDataCell(Infragistics.Controls.Editors.ComboRowBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCell" /> の新しいインスタンスを返します。</summary>
+            <param propertyName="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumn.GenerateContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase" /> の <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのコンテンツを生成するのに使用される新しい <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.Key">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を識別する文字列を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.DataType">
+            <summary>列データが派生される DataType。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.IsAutoGenerated">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が定義済みか、基本データに基づいて <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> で作成するかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.ValueConverter">
+            <summary>列で値を表示する <see cref="T:System.Windows.Data.IValueConverter" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.ValueConverterParameter">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumn.ValueConverter" /> プロパティで使用するパラメーターを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.CellStyle">
+            <summary>この <see cref="T:System.Windows.Style" /> ですべての <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> オブジェクトのために使用する <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.ActualWidth">
+            <summary>列の実際の幅を取得します。</summary>
+            <remarks>注: この値は列が描画される時のみ使用できます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.MinimumWidth">
+            <summary>列の最小幅を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.MaximumWidth">
+            <summary>列の最大幅を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.HeaderText">
+            <summary>ヘッダーに表示されるテキストを取得または設定します。</summary>
+            <remarks><see cref="P:Infragistics.Controls.Editors.ComboColumn.HeaderTemplate" /> が設定された場合、このプロパティへの影響はありません。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.HeaderTextResolved">
+            <summary>列を表す文字列を取得します。HeaderText プロパティが設定されていない場合、列のキーが返されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.HeaderTemplate">
+            <summary><see cref="T:System.Windows.DataTemplate" /> のヘッダーのコンテンツを定義する <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.HeaderStyle">
+            <summary>この <see cref="T:System.Windows.Style" /> ですべての <see cref="T:Infragistics.Controls.Editors.ComboHeaderCellControl" /> オブジェクトのために使用する <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.Width">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> の <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.WidthResolved">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> に適用されている <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.Visibility">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> の表示を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.DataField">
+            <summary>この特定の <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> と関連つけられた <see cref="P:Infragistics.Controls.Editors.ComboColumn.DataField" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.ComboEditor">
+            <summary>この列を所有する <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.IsFixed">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> の左側または右側に固定/固定解除されるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumn.IsFixable">
+            <summary>列が固定できるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.CheckboxComboColumn.GenerateContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider" /> の <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのコンテンツを生成するのに使用される新しい <see cref="T:Infragistics.Controls.Editors.CheckboxComboColumn" /> を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider">
+            <summary>特定の <see cref="T:Infragistics.Controls.Editors.CheckboxComboColumn" /> に対し、<see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトの内容を提供するために使用するクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase">
+            <summary>特定の <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> に対し、<see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトの内容を提供するために使用する抽象クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase.ResolveDisplayElement(Infragistics.Controls.Editors.ComboCellBase,System.Windows.Data.Binding)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に表示される要素を設定します。</summary>
+            <param propertyName="cell">要素を表示するセル。</param>
+            <param propertyName="cellBinding">セルに適用される <see cref="T:System.Windows.Data.Binding" /> オブジェクト。注: このバインディングは null であることがあります。</param>
+            <returns>要素を表示する必要があります。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase.AdjustDisplayElement(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary>現在の状態に基づいてその表示を変更するための機会を提供するために、EnsureContent の中で呼び出されます。</summary>
+            <param name="cell"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase.ApplyFormatting(System.Object,Infragistics.Controls.Editors.ComboColumn,System.Globalization.CultureInfo)">
+            <summary>表示要素によって設定される値の更新を <see cref="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase" /> に許可します。</summary>
+            <param propertyName="value">基本データの元のデータ値。</param>
+            <param propertyName="column">フォーマットを決定するために使用されるプロパティを持つ <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</param>
+            <param propertyName="culture"></param>
+            <returns><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に表示する必要がある値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase.ResolveBinding(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> のために使用するバインディングを作成します。</summary>
+            <returns>バインディングが作成できない場合、null が返されます。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase.ResolveBindingInternal(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> のために使用するバインディングを作成します。</summary>
+            <returns>バインディングが作成できない場合、null が返されます。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider" />の新しいインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider.AdjustDisplayElement(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary>現在の状態に基づいてその表示を変更するための機会を提供するために、EnsureContent の中で呼び出されます。</summary>
+            <param name="cell"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider.ResolveDisplayElement(Infragistics.Controls.Editors.ComboCellBase,System.Windows.Data.Binding)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に表示される要素を設定します。</summary>
+            <param propertyName="cell">要素を表示するセル。</param>
+            <param propertyName="cellBinding">セルに適用される <see cref="T:System.Windows.Data.Binding" /> オブジェクト。注: このバインディングは null であることがあります。</param>
+            <returns>要素を表示する必要があります。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboColumnCollection">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトの ObservableCollection。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnCollection.#ctor(Infragistics.Controls.Editors.XamMultiColumnComboEditor)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnCollection" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="comboEditor"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnCollection.RegisterFixedAdornerColumn(Infragistics.Controls.Editors.ComboColumn,System.Boolean)">
+            <summary>指定された <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を固定された列として登録します。</summary>
+            <param propertyName="column"></param>
+            <param propertyName="first">列を最初のインデックス位置に挿入するかどうかを指定します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnCollection.UnregisterFixedAdornerColumn(Infragistics.Controls.Editors.ComboColumn)">
+            <summary>指定された <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を固定列として登録解除します。</summary>
+            <param propertyName="column"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnCollection.InvalidateColumnsCollections(System.Boolean)">
+            <summary>列が Fixed、Visible、または Hidden であるかどうかを決定します。</summary>
+            <param propertyName="fullInvalidate"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>元になるコレクションが変更されたときに発生します。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnCollection.FixedAdornerColumns">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> で最初に表示して固定する <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトのコレクション。注: この列は一般的に <see cref="P:Infragistics.Controls.Editors.ComboColumnCollection.RowSelectionCheckBoxColumn" /> のような基となるデータ ソースのフィールドを表さない列です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnCollection.FixedColumnsLeft">
+            <summary>左側に固定されている <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトのコレクションを取得します。/&gt;</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnCollection.FixedColumnsRight">
+            <summary>右側に固定されている <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトのコレクションを取得します。/&gt;</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnCollection.Item(System.String)">
+            <summary>指定されたキーを持つ <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を取得します。</summary>
+            <param propertyName="key"></param>
+            <returns>指定されたキーを持つ列。1 つ以上の <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が同じキーを持つ場合、最初の Column が返されます。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnCollection.FillerColumn">
+            <summary>行の空き領域を埋めるために使用される列を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnCollection.VisibleColumns">
+            <summary>非表示でない <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトの読み取り専用リストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnCollection.StarColumns">
+            <summary>スターであり、ある幅を持つ <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトの読み取り専用リストを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboColumnTypeMapping">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> で特定のデータ型および特定の列タイプの間のマッピングを定義するオブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnTypeMapping.ColumnType">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumnTypeMapping.DataType" /> と関連付けられる列のタイプを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnTypeMapping.DataType">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboColumnTypeMapping.ColumnType" /> と関連付けられるデータ型を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboColumnTypeMappingsCollection">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnTypeMapping" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnTypeMappingsCollection.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnTypeMappingsCollection" /> オブジェクトの新しいインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnTypeMappingsCollection.OnItemAdded(System.Int32,Infragistics.Controls.Editors.ComboColumnTypeMapping)">
+            <summary>Item が指定されたインデックスに追加されるときに発生します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnTypeMappingsCollection.RemoveItem(System.Int32)">
+            <summary>指定したインデックスにある項目を削除します。</summary>
+            <param propertyName="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnTypeMappingsCollection.ResetItems">
+            <summary>このコレクションからすべての項目を削除します</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboColumnWidth">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトの Width を指定するために使用するオブジェクト。</summary>	
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboColumnWidth.#ctor(System.Double,System.Boolean)">
+            <summary>ComboColumnWidthType.Numeric タイプを持つ <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> 構造の新しいインスタンスを初期化します</summary>
+            <param propertyName="value">列の幅。</param>
+            <param propertyName="isStar">ComboColumnWidth が Star または Numeric の Type を持つかどうか。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnWidth.SizeToHeader">
+            <summary>SizeToHeader <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> のインスタンスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnWidth.SizeToCells">
+            <summary>SizeToCells <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> のインスタンスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnWidth.Auto">
+            <summary>Auto <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> のインスタンスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnWidth.InitialAuto">
+            <summary>InitialAuto <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> のインスタンスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnWidth.Star">
+            <summary>Star <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> のインスタンスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnWidth.Value">
+            <summary>ComboColumnWidth プロパティの値を取得します。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Editors.ComboColumnWidthType" />.Auto : 1 を返します。<see cref="T:Infragistics.Controls.Editors.ComboColumnWidthType" />.SizeToCells : 1 を返します。<see cref="T:Infragistics.Controls.Editors.ComboColumnWidthType" />.SizeToHeader : 1 を返します。<see cref="T:Infragistics.Controls.Editors.ComboColumnWidthType" />.Numeric : 列の幅を返します。<see cref="T:Infragistics.Controls.Editors.ComboColumnWidthType" />.Star : 他のすべての Star 列と比較したパーセントを返します。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboColumnWidth.WidthType">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnWidthType" /> の <see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.FillerComboColumn">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> での残りスペースを塗りつぶす <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FillerComboColumn.GenerateContentProvider">
+            <summary>この列はコンテンツを生成しません。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.FillerComboColumn.WidthResolved">
+            <summary><see cref="T:Infragistics.Controls.Editors.FillerComboColumn" /> の幅は常に * です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.FillerComboColumn.IsFixable">
+            <summary><see cref="T:Infragistics.Controls.Editors.FillerComboColumn" /> は固定できません。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.FixedComboColumnsCollection">
+            <summary>特定の方向に固定する <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> オブジェクトを含むコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FixedComboColumnsCollection.#ctor(Infragistics.Controls.Editors.ComboColumnFixedState)">
+            <summary><see cref="T:Infragistics.Controls.Editors.FixedComboColumnsCollection" /> の新しいインスタンスを作成します。</summary>
+            <param propertyName="direction"><see cref="T:Infragistics.Controls.Editors.ComboColumnFixedState" /> がコレクションに追加されたときに設定する <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FixedComboColumnsCollection.AddItem(System.Int32,Infragistics.Controls.Editors.ComboColumn)">
+            <summary>指定したインデックスに項目を追加します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FixedComboColumnsCollection.InsertItem(System.Int32,Infragistics.Controls.Editors.ComboColumn)">
+            <summary>指定したインデックスに項目を追加します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FixedComboColumnsCollection.RemoveItem(System.Int32)">
+            <summary>指定したインデックスにある項目を削除します。</summary>
+            <param propertyName="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FixedComboColumnsCollection.ResetItems">
+            <summary>このコレクションからすべての項目を削除します</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FixedComboColumnsCollection.AddItemSilently(Infragistics.Controls.Editors.ComboColumn)">
+            <summary>IsFixed プロパティを設定せずにコレクションに <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を追加します。</summary>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.FixedComboColumnsCollection.RemoveItemSilently(Infragistics.Controls.Editors.ComboColumn)">
+            <summary>IsFixed プロパティを設定せずにコレクションから <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を削除します。</summary>
+            <param propertyName="item"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.FixedComboColumnsCollection.Direction">
+            <summary>項目をこのコレクションに追加したときに設定される <see cref="T:Infragistics.Controls.Editors.ComboColumnFixedState" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.DateComboColumn">
+            <summary>Date データを表す <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.TextComboColumn">
+            <summary>データを表すために <see cref="T:System.Windows.Controls.TextBlock" /> 要素を使用する <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.TextComboColumn.TextWrappingProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.TextComboColumn.TextWrapping" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.TextComboColumn.FormatStringProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.TextComboColumn.FormatString" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.TextComboColumn.GenerateContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.TextComboColumn" /> の <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのコンテンツを生成するのに使用される新しい <see cref="T:Infragistics.Controls.Editors.Primitives.TextComboColumnContentProvider" /> を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.TextComboColumn.TextBlockStyle">
+            <summary>編集モードに入っていない場合、<see cref="T:System.Windows.Style" /> でデータを表示する <see cref="T:System.Windows.Controls.TextBlock" /> に適用する <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.TextComboColumn.TextWrapping">
+            <summary><see cref="P:Infragistics.Controls.Editors.TextComboColumn.TextWrapping" /> を <see cref="T:System.Windows.Controls.TextBlock" /> の <see cref="T:System.Windows.Controls.TextBox" /> および <see cref="T:Infragistics.Controls.Editors.TextComboColumn" /> に適用するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.TextComboColumn.FormatString">
+            <summary>列ですべてのセルに適用する書式文字列を取得または設定します。</summary>
+            <remarks>注: <see cref="P:Infragistics.Controls.Editors.ComboColumn.ValueConverter" /> プロパティが優先されます。<para>このプロパティを XAML で設定するには、値は「{}」で始まる必要があります。例えば、FormatString=&quot;{}{0:C}&quot;</para>
+            </remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.DateComboColumn.GenerateContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.DateComboColumn" /> の <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのコンテンツを生成するのに使用される新しい <see cref="T:Infragistics.Controls.Editors.Primitives.DateComboColumnContentProvider" /> を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.DateComboColumnContentProvider">
+            <summary>特定の <see cref="T:Infragistics.Controls.Editors.ImageComboColumn" /> に対し、<see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトの内容を提供するために使用するクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.TextComboColumnContentProvider">
+            <summary>特定の <see cref="T:Infragistics.Controls.Editors.TextComboColumn" /> に対し、<see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトの内容を提供するために使用するクラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TextComboColumnContentProvider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.TextComboColumnContentProvider" />の新しいインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TextComboColumnContentProvider.ResolveDisplayElement(Infragistics.Controls.Editors.ComboCellBase,System.Windows.Data.Binding)">
+            <summary>セルは編集モードではないときに、<see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に表示される要素を設定します。</summary>
+            <param propertyName="cell">要素を表示するセル。</param>
+            <param propertyName="cellBinding">セルに適用される <see cref="T:System.Windows.Data.Binding" /> オブジェクト。注: このバインディングは null であることがあります。</param>
+            <returns>要素を表示する必要があります。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TextComboColumnContentProvider.ApplyFormatting(System.Object,Infragistics.Controls.Editors.ComboColumn,System.Globalization.CultureInfo)">
+            <summary>表示要素によって設定される値の更新を <see cref="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase" /> に許可します。</summary>
+            <param propertyName="value">基本データの元のデータ値。</param>
+            <param propertyName="column">フォーマットを決定するために使用されるプロパティを持つ <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</param>
+            <param propertyName="culture"></param>
+            <returns><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に表示する必要がある値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.DateComboColumnContentProvider.ApplyFormatting(System.Object,Infragistics.Controls.Editors.ComboColumn,System.Globalization.CultureInfo)">
+            <summary>表示要素によって設定される値の更新を <see cref="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase" /> に許可します。</summary>
+            <param propertyName="value">基本データの元のデータ値。</param>
+            <param propertyName="column">フォーマットを決定するために使用されるプロパティを持つ <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</param>
+            <param propertyName="culture"></param>
+            <returns><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に表示する必要がある値。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ImageComboColumn">
+            <summary>データを表すために <see cref="T:System.Windows.Controls.Image" /> 要素を使用する <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ImageComboColumn.GenerateContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider" /> の <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのコンテンツを生成するのに使用される新しい <see cref="T:Infragistics.Controls.Editors.CheckboxComboColumn" /> を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ImageComboColumn.ImageHeightProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ImageComboColumn.ImageHeight" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ImageComboColumn.ImageWidthProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ImageComboColumn.ImageWidth" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ImageComboColumn.ImageStyle">
+            <summary>この <see cref="T:System.Windows.Controls.Image" /> ですべての <see cref="T:Infragistics.Controls.Editors.ImageComboColumn" /> に適用する Style を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ImageComboColumn.ImageHeight">
+            <summary><see cref="T:Infragistics.Controls.Editors.ImageComboColumn" /> ですべての画像の高さを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ImageComboColumn.ImageWidth">
+            <summary><see cref="T:Infragistics.Controls.Editors.ImageComboColumn" /> ですべての画像の幅を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ImageComboColumnContentProvider">
+            <summary>特定の <see cref="T:Infragistics.Controls.Editors.ImageComboColumn" /> に対し、<see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトの内容を提供するために使用するクラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ImageComboColumnContentProvider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.CheckboxComboColumnContentProvider" />の新しいインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ImageComboColumnContentProvider.AdjustDisplayElement(Infragistics.Controls.Editors.ComboCellBase)">
+            <summary>現在の状態に基づいてその表示を変更するための機会を提供するために、EnsureContent の中で呼び出されます。</summary>
+            <param name="cell"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ImageComboColumnContentProvider.ResolveDisplayElement(Infragistics.Controls.Editors.ComboCellBase,System.Windows.Data.Binding)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に表示される要素を設定します。</summary>
+            <param propertyName="cell">要素を表示するセル。</param>
+            <param propertyName="cellBinding">セルに適用される <see cref="T:System.Windows.Data.Binding" /> オブジェクト。注: このバインディングは null であることがあります。</param>
+            <returns>要素を表示する必要があります。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ReadOnlyKeyedComboColumnCollection`1">
+            <summary>文字列の ID を使用してインデックスできる ReadOnlyCollection。</summary>
+            <typeparam propertyName="T"></typeparam>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ReadOnlyKeyedComboColumnCollection`1.#ctor(System.Collections.Generic.IList{`0})">
+            <summary><see cref="T:Infragistics.Controls.Editors.ReadOnlyKeyedComboColumnCollection`1" /> オブジェクトの新しいインスタンスを作成します。</summary>
+            <param propertyName="list"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ReadOnlyKeyedComboColumnCollection`1.Item(System.String)">
+            <summary>指定されたキーを持つ <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を取得します。</summary>
+            <param propertyName="key"></param>
+            <returns>指定されたキーを持つ列。1 つ以上の <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> が同じキーを持つ場合、最初の Column が返されます。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.RowSelectionCheckBoxColumn">
+            <summary>行選択を表すために CheckBox 要素を使用する <see cref="T:Infragistics.Controls.Editors.ComboColumn" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxColumn.GenerateContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxColumn" /> の <see cref="T:Infragistics.Controls.Editors.RowSelectionCheckBoxCell" /> オブジェクトのコンテンツを生成するのに使用される新しい <see cref="T:Infragistics.Controls.Editors.Primitives.ComboColumnContentProviderBase" /> を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxColumn.GenerateHeaderCell(Infragistics.Controls.Editors.ComboRowBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderCell" /> の新しいインスタンスを返します。</summary>
+            <param propertyName="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.RowSelectionCheckBoxColumn.GenerateDataCell(Infragistics.Controls.Editors.ComboRowBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCell" /> の新しいインスタンスを返します。</summary>
+            <param propertyName="row"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorCommandBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> と関連付けられるすべてのコマンドの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorCommandBase.CanExecute(System.Object)">
+            <summary>入力されたオブジェクトでコマンドを実行する可能性があるかどうかを示します。</summary>
+            <param name="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートする場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorCommandBase.Execute(System.Object)">
+            <summary>コマンドを実行します。</summary>
+            <param name="parameter">実行される <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorCommandBase.ExecuteCommand(System.Object)">
+            <summary>指定されたコマンドを指定された <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> で実行します。</summary>
+            <param name="parameter">コマンドのパラメーター。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> オブジェクトのコマンド ソース オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorCommandSource.ResolveCommand">
+            <summary>コマンドを実行する <see cref="T:System.Windows.Input.ICommand" /> オブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorCommandSource.CommandType">
+            <summary>コマンドで実行する MultiColumnComboEditorCommand を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorClearSelectionCommand">
+            <summary>現在選択されている項目のリストをクリアするコマンド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorClearSelectionCommand.CanExecute(System.Object)">
+            <summary>オブジェクトに対してコマンドが実行できる場合 True を返します。</summary>
+            <param name="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートする場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboEditorClearSelectionCommand.ExecuteCommand(System.Object)">
+            <summary>現在選択されている項目のリストをクリアします。</summary>
+            <param name="parameter">コマンドに関連つけられたパラメーター。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock">
+            <summary>指定した文字列に一致するテキストの部分を強調表示に特化した TextBlock。内部使用のみ。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.MeasureOverride(System.Windows.Size)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock" /> の「計測」パスの動作を提供します。</summary>
+            <param name="availableSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに ComboEditorBase のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.TextProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.Text" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.Text">
+            <summary>コントロールに関連するテキストを取得または設定します。</summary>
+        </member>
+      <member name="P:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.Highlight">
+        <summary>
+          <see cref="T:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock"/> の強調表示の色を決定します。
+        </summary>
+      </member>
+      <member name="F:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.HighlightProperty">
+        <summary>
+          <see cref="P:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.Highlight"/> プロパティを識別します。
+        </summary>
+      </member>
+      <member name="M:Infragistics.Controls.Editors.Primitives.HighlightingTextBlock.OnHighlightChanged(System.Windows.Media.Brush,System.Windows.Media.Brush)">
+        <summary>
+
+        </summary>
+        <param name="oldBrush"></param>
+        <param name="newBrush"></param>
+      </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel">
+            <summary>仮想化された垂直リストに <see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> オブジェクトを配置するパネル。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel.OnControlAttachedToItem(Infragistics.Controls.Editors.Primitives.ComboCellsPanel)">
+            <summary>メジャーが呼び出される前に、コントロールが項目に付加されたときに発生します。</summary>
+            <param name="cntrl"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel.MeasureOverride(System.Windows.Size)">
+            <summary>派生クラスでオーバーライドされるとき、子要素で必要なレイアウトのサイズを測定し、FrameworkElement 派生クラスのサイズを決定します。</summary>
+            <param name="availableSize">この要素が子要素に設定できる利用可能なサイズ。値として Infinity の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns>子要素のサイズの計算に基づいて、レイアウト時にこの要素が決定した必要サイズ。 </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel.UpdateHorizontalScrollBar(System.Windows.Controls.Primitives.ScrollBar,System.Windows.Size)">
+            <summary>水平にどれだけの項目分スクロールできるかに基づいて水平のスクロールバーを更新します。</summary>
+            <param name="horizBar"></param>
+            <param name="finalSize"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel.ArrangeItem(System.Windows.FrameworkElement,System.Double,System.Double,System.Double)">
+            <summary>指定された項目をパネルに配置します。</summary>
+            <param name="elem"></param>
+            <param name="left"></param>
+            <param name="top"></param>
+            <param name="width"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel.FixedRowsTop">
+            <summary>Viewport の上に現在固定されている行を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.MultiColumnComboItemsPanel.UseAvailableWidthToMeasureItem">
+            <summary>項目が有効な幅または無限大に計測するかどうかを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel">
+            <summary>水平リストに <see cref="T:Infragistics.Controls.Editors.ComboCellControl" /> オブジェクトを配置するパネル。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.OnAttached(Infragistics.Controls.Editors.ComboRowBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> が <see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> にアタッチされるときに呼び出されます。</summary>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> にアタッチされている行。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.OnReleased(Infragistics.Controls.Editors.ComboRowBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> が <see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> を離すときに呼び出されます。</summary>
+            <param propertyName="row"><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> から削除される行。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.RenderCells(System.Double)">
+            <summary>指定されたビューポートで表示するセルを配置します。</summary>
+            <param propertyName="availableWidth">セルが配置できるスペースの合計幅。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.RenderCell(Infragistics.Controls.Editors.ComboColumn,System.Collections.ObjectModel.Collection{Infragistics.Controls.Editors.ComboCellBase},System.Double@,System.Boolean,System.Collections.ObjectModel.Collection{Infragistics.Controls.Editors.ComboCellBase},System.Boolean)">
+            <summary>指定された <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> の <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を表示します。</summary>
+            <param propertyName="column"><see cref="T:Infragistics.Controls.Editors.ComboColumn" /></param>
+            <param propertyName="starColumns">* のタイプの幅があるセルのリスト。</param>
+            <param propertyName="maxHeight">最大セルの高さ。描画されているセルの高さがその高さよりも大きいである場合、maxHeight を更新する必要があります。</param>
+            <param propertyName="insert">指定された表示セルの最初の位置にセルが追加または挿入されるかどうか。</param>
+            <param propertyName="visibleCells">描画されたセルに追加されるセルのコレクション。</param>
+            <param propertyName="isInfinite">使用可能な幅が無限であるかどうかをメソッドに通知します。</param>
+            <returns><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> が使用されている幅。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.OnCellMouseOver">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> の上にマウスが移動されたときに呼び出されます。<see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> のすべての Cell はその「MouseOver」 VisualState になります。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.OnCellMouseLeave">
+            <summary>マウスが <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> から出たときに呼び出されます。<see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> のすべての Cell はその「Normal」 VisualState になります。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.SetupStarCells(System.Double,System.Double,System.Double@,System.Collections.ObjectModel.Collection{Infragistics.Controls.Editors.ComboCellBase})">
+            <summary>開始列でループしてその幅を更新します。</summary>
+            <param propertyName="availableWidth"></param>
+            <param propertyName="currentWidth"></param>
+            <param propertyName="maxHeight"></param>
+            <param propertyName="starColumns"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.MeasureOverride(System.Windows.Size)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> の「計測」パスの動作を提供します。</summary>
+            <param propertyName="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。値として Infinity の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>水平 <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> のように隣接して表示される各 <see cref="T:System.Windows.Controls.StackPanel" /> を配置します。</summary>
+            <param propertyName="finalSize">このオブジェクトがオブジェクト自体とその子を配列するために使用する親の中の最終領域。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.OnCreateAutomationPeer">
+            <summary>派生クラス内で実装される場合、Silverlight オートメーション インフラストラクチャーのためのクラス固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.Row">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を所有する <see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> への参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.Owner">
+            <summary>このコントロールを所有する MultiColumnComboItemsPanel を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.VisibleCells">
+            <summary>現在表示されている <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.VisibleFixedLeftCells">
+            <summary>左側に固定されている <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.VisibleFixedRightCells">
+            <summary>右側に固定されている <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> オブジェクトのリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ComboCellsPanel.PreviousInvalidateHeight">
+            <summary>このパネルの MeasureOverride メソッドに渡された高さを保存するために使用されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboHeaderRow">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> のヘッダー行を表すオブジェクト。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboRowBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> の ItemsSource 内の項目を表すオブジェクトの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboRowBase.#ctor(System.Object,Infragistics.Controls.Editors.XamMultiColumnComboEditor)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="data">ビジネス オブジェクト。</param>
+            <param name="xamWebComboEditor"><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> への参照。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboRowBase.ResolveCell(Infragistics.Controls.Editors.ComboColumn)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Editors.ComboCellBase" /> に <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> を返します。</summary>
+            <param propertyName="column">セルを解決する列。</param>
+            <returns>指定された列位置にあるセル。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboRowBase.CreateInstanceOfRecyclingElement">
+            <summary>オブジェクトを表す <see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> の新しいインスタンスを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboRowBase.OnElementAttached(Infragistics.Controls.Editors.Primitives.ComboCellsPanel)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> が <see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> にアタッチされるときに呼び出されます。</summary>
+            <param name="element"><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboRowBase.OnElementReleased(Infragistics.Controls.Editors.Primitives.ComboCellsPanel)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" /> が <see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> から削除するときに呼び出されます。</summary>
+            <param name="element"><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsPanel" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboRowBase.OnSelectionChanged">
+            <summary>IsSelected プロパティが変更されるときに呼び出されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.ActualHeight">
+            <summary>行の実際の高さを取得します。</summary>
+            <remarks>注: この値は行が描画される時のみ使用できます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.Cells">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ComboCellsCollection" /> を所有する <see cref="T:Infragistics.Controls.Editors.ComboRow" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.ComboEditor">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を保持する <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.CellStyle">
+            <summary>この <see cref="T:System.Windows.Style" /> ですべての <see cref="T:Infragistics.Controls.Editors.ComboCellControlBase" /> オブジェクトのために使用する <see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.RowType">
+            <summary>この <see cref="P:Infragistics.Controls.Editors.ComboRowBase.RowType" /> の <see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.IsMouseOver">
+            <summary>マウスが現在行の上にあるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.CanScrollHorizontally">
+            <summary>行は水平にスクロールする必要があるかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRowBase.MeasureRaised">
+            <summary>Measure を呼び出したときにメジャー メソッドが発生したかどうかを取得または設定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboHeaderRow.#ctor(System.Object,Infragistics.Controls.Editors.XamMultiColumnComboEditor)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboHeaderRow" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="data">ビジネス オブジェクト。</param>
+            <param name="xamWebComboEditor"><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> への参照。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboHeaderRow.RowType">
+            <summary>この <see cref="P:Infragistics.Controls.Editors.ComboHeaderRow.RowType" /> の <see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboRow">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> の ItemsSource 内のデータ行を表すオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboRow.#ctor(System.Object,Infragistics.Controls.Editors.XamMultiColumnComboEditor)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboRow" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="data">ビジネス オブジェクト。</param>
+            <param name="xamWebComboEditor"><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> への参照。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboRow.RowType">
+            <summary>この <see cref="P:Infragistics.Controls.Editors.ComboRow.RowType" /> の <see cref="T:Infragistics.Controls.Editors.ComboRowBase" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.SpecializedTextBox">
+            <summary>内部使用のみ：基になる TextBox を使用する前にコンシューマーがテキストを事前検証するのを許可する TextBox ラッパークラス。これを使用することにより、日本語のテキストが致命的なエラーを発生するのを防ぐことができます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedTextBox.#ctor">
+            <summary>SpecializedTextBox のコンストラクター。デフォルト値を設定するためだけに使用されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedTextBox.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>System.Windows.UIElement.KeyDown イベントを発生する前に呼び出されます。</summary>
+             <param name="e">イベントについての情報を提供します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedTextBox.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>System.Windows.UIElement.LostFocus イベントを発生する前に呼び出されます。</summary>
+             <param name="e">イベントについての情報を提供します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedTextBox.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>System.Windows.UIElement.PreviewKeyDown イベントが発生する前に呼び出されます。</summary>
+            <param name="e">イベントについての情報を提供します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedTextBox.OnTextChanged(System.Windows.Controls.TextChangedEventArgs)">
+            <summary>この編集コントロールでコンテンツが変更されたときに呼び出されます。</summary>
+            <param name="e">コンテンツ変更に関連付けられた引数。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.SpecializedTextBox.AllowTextChanges">
+            <summary>テキストを変更するかどうかを指定します。これは、IME の問題を修正するためのものです。</summary>
+        </member>
+        <member name="T:Infragistics.StringToCharTypeConverter">
+            <summary>文字列を文字へ、文字を文字列へ変換する <see cref="T:System.ComponentModel.TypeConverter" />。</summary>
+        </member>
+        <member name="M:Infragistics.StringToCharTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>sourceType が文字列型の場合、True を返します。</summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.StringToCharTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>destinationType が文字列型の場合、True を返します。</summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.StringToCharTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>文字列の最初の文字を取得して、文字列を文字に変換します。</summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.StringToCharTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>文字を文字列に変換します。</summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ComboColumnWidthTypeConverter">
+            <summary>文字列から <see cref="!:ColumnWidth" /> オブジェクトに変換する Type Converter。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnWidthTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>このコンバーターは、指定されたタイプのオブジェクトを <see cref="!:ColumnWidth" /> に変換するかどうかを決定します。</summary>
+            <param propertyName="context">書式コンテキストを提供する <see cref="T:System.ComponentModel.ITypeDescriptorContext" />。</param>
+            <param propertyName="sourceType">変換元のタイプです。</param>
+            <returns>sourceType が <see cref="T:System.String" /> または指定されたタイプである場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnWidthTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>指定されたオブジェクトを <see cref="!:ColumnWidth" /> に変換します。</summary>
+            <param propertyName="context">書式コンテキストを提供する <see cref="T:System.ComponentModel.ITypeDescriptorContext" />。</param>
+            <param propertyName="culture">currentIndex カルチャとして使用する <see cref="T:System.Globalization.CultureInfo" />。</param>
+            <param propertyName="value"><see cref="!:ColumnWidth" /> に変換するオブジェクト。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnWidthTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>ColumnWidth プロパティの Strings への変換を許可します。</summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ComboColumnWidthTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>ColumnWidth オブジェクトを String に変換します。</summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns>文字列。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamComboEditor">
+            <summary>コントロール上の矢印をクリックすることによって表示または非表示にできるドロップダウン リストのある選択コントロールを表します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ComboEditorBase`2">
+            <summary>コントロール上の矢印をクリックすることによって表示または非表示にできるドロップダウン リストのある選択コントロールを表します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.#ctor">
+            <summary>ComboEditorBase クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+      <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+        <summary>マウスが要素の境界線内で移動した時に呼び出されます。</summary>
+        <param name="e">マウスの位置に関する情報を提供します。</param>
+      </member>
+      <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+        <summary>マウスが要素の境界線内で移動した時に呼び出されます。</summary>
+        <param name="e">マウスの位置に関する情報を提供します。</param>
+      </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに ComboEditorBase のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+          <summary>
+            キーボード フォーカスがこの要素のビジュアル ツリーに入るか出て行ったときに呼び出されます。
+          </summary>
+          <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>LostFocus イベントが発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>GotFocus イベントが発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnCreateAutomationPeer">
+            <summary>派生クラス内で実装される場合、Silverlight オートメーション インフラストラクチャーのためのクラス固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.AllowDropDownResizingProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.AllowDropDownResizing" /> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.IsDropDownOpenProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsDropDownOpen" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.IsTouchSupportEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsTouchSupportEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.ItemContainerStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemContainerStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.MaxDropDownHeightProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.MaxDropDownHeight" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.MinDropDownHeightProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.MinDropDownHeight" /> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.MinDropDownWidthProperty">
+            <summary>
+              <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.MinDropDownWidth" /> 依存プロパティを識別します。
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnMinDropDownWidthChanged(System.Double,System.Double)">
+            <summary>MinDropDownWidthProperty プロパティ変更ハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.MaxDropDownWidthProperty">
+            <summary>
+              <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.MaxDropDownWidth" /> 依存プロパティを識別します。
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedIndexProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedIndex" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedItemProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedItem" /> 依存プロパティを識別します。</summary>
+        </member>
+      <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedItemsProperty">
+        <summary>
+          <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedItems" /> 依存プロパティを識別します。
+        </summary>
+      </member>
+      <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.NotifySelectedItemsCollectionAfterItemsAdded(System.Collections.IList)">
+        <summary>SelectedItems.CollectionChanged イベント ハンドラーを手動的に実行します。複数項目が一度に追加される場合、実行する必要があります。この場合、パフォーマンスを向上するために CollectionChanged イベント ハンドラーを 1 度のみ実行します。</summary>
+      </member>
+      <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.IsSelectedMemberPathProperty">
+        <summary>
+          <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsSelectedMemberPath" /> 依存プロパティを識別します。
+        </summary>
+      </member>
+      <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnSelectedMemberPathChanged(System.String,System.String)">
+          <summary>IsSelectedMemberPathProperty プロパティ変更ハンドラー。</summary>
+          <param name="oldValue">古い値。</param>
+          <param name="newValue">新しい値。</param>
+      </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.ItemFiltersProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemFilters" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.ItemTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.ItemsSourceProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemsSource" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.DisplayMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.DisplayMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+      <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValuePathProperty">
+        <summary>
+          <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValuePath" /> 依存プロパティを識別します。
+        </summary>
+      </member>
+      <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValueProperty">
+        <summary>
+          <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValue" /> 依存プロパティを識別します。
+        </summary>
+      </member>
+      <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValuesProperty">
+        <summary>
+          <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValues" /> 依存プロパティを識別します。
+        </summary>
+      </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.AllowMultipleSelectionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.AllowMultipleSelection" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.CheckBoxVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.CheckBoxVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.MultiSelectValueDelimiterProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.MultiSelectValueDelimiter" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.AutoCompleteDelayProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.AutoCompleteDelay" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.CustomValueEnteredActionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.CustomValueEnteredAction" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.EmptyTextProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.EmptyText" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.EditAreaBackgroundProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.EditAreaBackground" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.DropDownButtonDisplayModeProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.DropDownButtonDisplayMode" /> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.GetStartsWithCondition(System.Type,System.String,System.String,Infragistics.CachedTypedInfo)">
+          <summary>「～で始まる」条件を取得します。</summary>
+          <param name="dataType">データのタイプ。</param>
+          <param name="fieldName">フィールドの名前。</param>
+          <param name="filterText">フィルター テキスト。</param>
+          <param name="CachedTypedInfo">キャッシュされた型指定された情報。</param>
+          <returns>CustomComparisonCondition</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.GetStartsWithCondition(System.Type,System.String,System.String)">
+          <summary>
+            「～で始まる」条件を取得します。
+          </summary>
+          <param name="dataType">データのタイプ。</param>
+          <param name="fieldName">フィールドの名前。</param>
+          <param name="filterText">フィルター テキスト。</param>
+          <returns>CustomComparisonCondition</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.EnsureDataManager">
+            <summary>このメソッドは、指定されたレベルでの DataManagerBase の作成を確認します。作成されていない場合、そのレベルで作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.InvalidateScrollPanel(System.Boolean)">
+            <summary>元のドロップダウン パネルを強制的に無効にします。</summary>
+            <param name="resetScrollPosition"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.EnsurePopupsAllowsTransparencyInSync">
+          <summary>このメソッドは、コントロールをホストするウィンドウの AllowsTransparency プロパティが True に設定される場合、ドロップダウン ポップアップの AllowsTransparency も True に設定されることを確認します。この機能は Windows 8 以前のみ適用されます。TFS214885 - Win7 でホスト ウィンドウが透明性を許可する場合、ポップアップが表示されて (IsOpen=true) 閉じた (IsOpen=false) ときに UI が更新されない問題があります。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.GenerateNewObject(System.Object)">
+            <summary>データをラップするオブジェクトの新しいインスタンスを作成するには、基本クラスのこのメソッドをオーバーライドします。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.CreateItem(System.Object,Infragistics.DataManagerBase)">
+            <summary>新しい ComboEditorItem オブジェクトを作成します。</summary>
+            <param propertyName="data"></param>
+            <param propertyName="dataManager"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.CreateItem">
+            <summary>デフォルトの基本データ オブジェクトを持つ新しいオブジェクトを作成します。</summary>
+            <returns>作成された項目。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.CreateItem(System.Object)">
+            <summary>入力したデータ オブジェクトを使用して新しいオブジェクトを作成します。</summary>
+            <param name="dataItem">ビジネス オブジェクト。</param>
+            <returns>作成された項目。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.GetDataItem(System.Int32)">
+            <summary>指定したインデックスにある項目を解決します。</summary>
+            <param name="index">インデックス。</param>
+            <returns>要求される項目。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.AddItem(`0)">
+            <summary>コレクションに新しいオブジェクトを追加します。</summary>
+            <param name="addedObject">追加される項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.RemoveItem(`0)">
+            <summary>元の ItemSource から ComboEditorItem を削除します。</summary>
+            <param propertyName="removedObject"></param>
+            <returns>ComboEditorItem が削除される場合は True を返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.RemoveItem(`0,Infragistics.DataManagerBase)">
+            <summary>元の ItemSource から ComboEditorItem を削除します。</summary>
+            <param name="removedObject">削除する ComboEditorItem。</param>
+            <param name="manager">削除を実行する Manager。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.RemoveRange(System.Collections.Generic.IList{`0})">
+            <summary>指定した範囲の項目をコレクションから削除します。</summary>
+            <param name="itemsToRemove">削除される範囲。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.InsertItem(System.Int32,`0)">
+            <summary>指定されたインデックスでコレクションに項目を追加します。</summary>
+            <param name="index">項目のインデックス。</param>
+            <param name="insertedObject">挿入される項目。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.ChangeType(System.Object,System.Type)">
+            <summary>値を指定したデータ型に変更します。</summary>
+            <param name="value"></param>
+            <param name="dataType"></param>
+            <returns>変換に成功した場合は変換値。失敗した場合は null。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.InitializeData">
+            <summary>DataManager が作成されたため、データを参照し初期化するための機会が得られます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnEditorKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>ComboEditorBase のテキストボックスにフォーカスがある間にキーが押されたときに呼び出されます。</summary>
+            <param name="e">押されたキーを表すイベント引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.GetDataManagerDataFields">
+            <summary>IEnumerable を返します。<DataField> インデクサー プロパティを表すフィールドを DataManager から除去します。</DataField>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.ScrollItemIntoView(`0,System.Boolean)">
+            <summary>指定された <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> をドロップダウンの中でスクロールして表示します。</summary>
+            <param name="item"></param>
+            <param name="toTop"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.ScrollItemIntoView(System.Object,System.Boolean)">
+            <summary>指定されたデータ項目を <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> として解決を試み、その項目をドロップダウンの中でスクロールして表示します。</summary>
+            <param name="dataItem"></param>
+            <param name="toTop"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.RegisterResources(System.String,System.Reflection.Assembly)">
+            <summary>コントロールがリソースをプルする追加の Resx を追加します。</summary>
+            <param name="name">使用されるリソースを含む組み込み resx ファイルの名前。</param>
+            <param name="assembly">resx ファイルが埋め込まれるアセンブリ。</param>
+            <remarks>ファイルの拡張子を含まないでください。ただし、アセンブリのデフォルト名前空間でプレフィックスしてください。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.UnregisterResources(System.String)">
+            <summary>以前登録した resx ファイルを削除します。</summary>
+            <param name="name">登録に使用された埋め込み resx ファイルの名前。</param>
+            <remarks>注：これは、すでにビューに存在し、文字列を表示しているコントロールには影響ありません。作成された新規コントロールにのみ影響を与えます。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnDropDownClosing">
+            <summary>DropDownClosing イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnDropDownClosed">
+            <summary>DropDownClosed イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnItemAdding(`0)">
+            <summary>ItemAdding イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnItemAdded(`0)">
+            <summary>ItemAdded イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnDropDownOpening">
+            <summary>DropDownOpening イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnDropDownOpened">
+            <summary>DropDownOpened イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnSelectionChanged(System.Collections.Generic.IList{System.Object},System.Collections.Generic.IList{System.Object})">
+            <summary>SelectionChanged イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnDataObjectRequested(Infragistics.HandleableObjectGenerationEventArgs)">
+            <summary>DataObjectRequested イベントを発生する前に呼び出されます。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.Editor_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+          <summary>エディター コントロールの LostFocus イベントを処理します。</summary>
+          <param name="sender">イベントのソース。</param>
+          <param name="e">
+            イベントのデータを含む <see cref="T:System.Windows.RoutedEventArgs" /> インスタンス。
+          </param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+          <summary>
+            <see cref="E:System.Windows.UIElement.TextInput" /> イベントを発生する前に呼び出します。
+          </summary>
+          <param name="e">
+            イベント データがある <see cref="T:System.Windows.Input.TextCompositionEventArgs" />。
+          </param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnPropertyChanged(System.String)">
+            <summary>プロパティが ComboEditorBase オブジェクトで変更されるときに発生されます。</summary>
+            <param name="propertyName">変更されたプロパティ名。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.FinishedLoadingPersistence">
+            <summary>読み込んだ後で、オブジェクトが操作の実行を許可します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.ParseEnum(System.String,System.Type)">
+          <summary>文字列から列挙型を解析します。最初に大文字と小文字に相対して実行しようとします。失敗する場合、大文字と小文字を区別しないで実行します。</summary>
+          <param name="text"></param>
+          <param name="typeOfTheEnum"></param>
+          <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.AllowDropDownResizing">
+          <summary>
+            エンド ユーザーがドロップ ダウン パネルを編集できるかどうかを取得または設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsDropDownOpen">
+            <summary>選択可能なドロップダウンが開いているかどうかを示す値を取得または設定します。</summary>                       
+        </member>
+      <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.GetRootBorderWidth">
+        <summary>ルート要素の右左境界線の幅を取得します。</summary>
+        <returns>ルート要素の右左境界線の幅の合計を返します。</returns>
+      </member>
+      <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.GetRootBorderHeight">
+        <summary>ルート要素の上下境界線の高さを取得します。</summary>
+        <returns>ルート要素の上下境界線の高さの合計を返します。</returns>
+      </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsTouchSupportEnabled">
+            <summary>タッチ サポートがこのコントロールで有効かどうかを返すか、設定します。</summary><seealso cref="F:Infragistics.Controls.Editors.ComboEditorBase`2.IsTouchSupportEnabledProperty" /></member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemContainerStyle">
+            <summary>このコンボのドロップダウンにあるすべての <see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> に適用されるスタイルを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.MaxDropDownHeight">
+            <summary>この ComboEditorBase が取り得る最大の高さを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.MinDropDownHeight">
+          <summary>この ComboEditorBase で可能な最小の高さを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.MinDropDownWidth">
+          <summary>この ComboEditorBase のドロップダウンの最小幅を取得または設定します。</summary>
+          <value>この ComboEditorBase のドロップダウンの最小幅。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.MaxDropDownWidth">
+          <summary>この ComboEditorBase のドロップダウンの最大幅を取得または設定します。</summary>
+          <value>この ComboEditorBase のドロップダウンの最大幅。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedIndex">
+            <summary>この ComboEditorBase 内の選択されている項目のインデックスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedItem">
+            <summary>この ComboEditorBase にある選択されているデータ項目を取得または設定します。<para>注: 項目は、<see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> タイプではないデータ モデルです。</para>
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedItems" -->
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsSelectedMemberPath">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamComboEditor" /> の <see cref="!:XamComboEditor.SelectedItems" /> を生成するために <see cref="!:XamComboEditor.ItemsSource" /> オブジェクトのプロパティへのパスを取得または設定します。値は、項目が選択されたかチェックされたかどうかを決定するために使用される各データ項目のブール値プロパティ パス名であることに注意してください。
+          </summary>
+          <value>IsSelected メンバー パス。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemFilters">
+            <summary>フィルター処理がオンのときに適用される <see cref="T:Infragistics.Controls.Editors.ComboItemFilter" /> を取得または設定します。<para>注: 設定されていない場合、デフォルトは StartsWith フィルターになります。</para>
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemTemplate">
+            <summary>ドロップダウンの 各 <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> に適用される DataTemplate を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.ItemsSource">
+            <summary>各項目のコンテンツを作成するコレクションを取得または設定します。</summary>               
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.DisplayMemberPath">
+            <summary>オブジェクトの視覚的表現として使用されるソース オブジェクトの値へのパスを取得または設定します。</summary>               
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValuePath">
+          <summary>
+            選択した値を取得するパスを取得または設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValue">
+          <summary>
+            選択した値を取得または設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.SelectedValues">
+          <summary>
+            選択された値を取得または設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.Items">
+            <summary>コントロールのコンテンツを生成するコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.AllowMultipleSelection">
+            <summary>エンド ユーザーが同時に複数の項目を選択できるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.CheckBoxVisibility">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboEditorItemControl" /> のドロップダウンにチェックボックスを表示するかどうかを取得または設定します。</summary>               
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.MultiSelectValueDelimiter">
+            <summary>ComboEditorBase 内の SelectedItems を分割するために使用する文字を取得または設定します。<para>AllowMultipleSelection が True の場合に限り、これが適用されます。</para>
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.AutoCompleteDelay">
+            <summary>テキスト ボックスにテキストが入力された後に、ComboEditorBase コントロールがドロップダウンに一致する可能性のある項目のリストを生成するまでの最小時間 (ミリ秒) を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.CustomValueEnteredAction">
+            <summary>元の ItemsSource に存在しないコンボ エディターにデータを入力するときに発生するアクションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.EmptyText">
+            <summary>エディターで何も選択されていないときに表示するテキストを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.EditAreaBackground">
+            <summary>コントロールが編集可能なときにテキスト領域に適用される色を制御します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.DropDownButtonDisplayMode">
+          <summary>
+            ドロップダウン ボタンを表示すべき時期を指定します。デフォルトは <b>Always</b> です。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.DataManager">
+            <summary>ComboEditorBase の <see cref="T:Infragistics.DataManagerBase" /> への参照を取得します。</summary>
+        </member>
+      <member name="F:Infragistics.Controls.Editors.ComboEditorBase`2.IsEditableResolvedProperty">
+        <summary>
+          読み取り専用 <see cref="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsEditableResolved"/> 依存プロパティを識別します。
+        </summary>
+      </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.DataCount">
+            <summary>コレクションのオブジェクト数を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.IsBoundToPrimitiveTypeData">
+          <summary>エディターがプリミティブ型 (文字列/列挙型) の項目を持つ ItemsSource にバインドされるかどうかを取得または設定します。ItemsSource が null の場合、null を返します。</summary>
+        </member>
+      <member name="M:Infragistics.Controls.Editors.ComboEditorBase`2.OnDataManagerUnhooked">
+        <summary>データ マネージャーがフック解除するときに呼び出されます。</summary>
+      </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.DropDownClosing">
+            <summary>IsDropDownOpen プロパティが True から False に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.DropDownClosed">
+            <summary>IsDropDownOpen プロパティが True から False に変更されて、ドロップダウンが閉じたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.ItemAdding">
+            <summary>ComboEditorBase の元の ComboEditorItemCollection に項目が追加されようとしているときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.ItemAdded">
+            <summary>ComboEditorBase の元の ComboEditorItemCollection に項目が追加されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.DropDownOpening">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.DropDownOpened">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されて、ドロップダウンが開いたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.SelectionChanged">
+            <summary>ComboEditorBase の選択が変更されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.DataObjectRequested">
+            <summary>ComboEditorBase で新しいデータ オブジェクトを作成する必要があるときに、このイベントが発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.ComboEditorBase`2.PropertyChanged">
+            <summary>プロパティが ComboEditorBase で変更されるときに発生します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.PropertiesToIgnore">
+            <summary>PersistenceManager がプロパティを保存するときに保存しないプロパティの List 取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ComboEditorBase`2.PriorityProperties">
+            <summary>オブジェクトの他のプロパティを調べようとする前に、適用する必要のあるプロパティのリストを取得します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamComboEditor.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamComboEditor" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamComboEditor.GenerateNewObject(System.Object)">
+            <summary>指定したデータで <see cref="T:Infragistics.Controls.Editors.ComboEditorItem" /> オブジェクトの新しいインスタンスを作成します。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+      <member name="M:Infragistics.Controls.Editors.XamComboEditor.OnDataManagerUnhooked">
+        <summary>データ マネージャーがフック解除するときに呼び出されます。</summary>
+      </member>
+      <member name="M:Infragistics.Controls.Editors.XamComboEditor.OnPropertyChanged(System.String)">
+        <summary>
+          プロパティが ComboEditorBase オブジェクトで変更されるときに発生されます。
+        </summary>
+        <param name="propertyName">
+          変更されたプロパティ名。
+        </param>
+      </member>
+        <member name="F:Infragistics.Controls.Editors.XamComboEditor.AllowFilteringProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamComboEditor.AllowFiltering" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamComboEditor.AutoCompleteProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamComboEditor.AutoComplete" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamComboEditor.IsEditableProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamComboEditor.IsEditable" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamComboEditor.OpenDropDownOnTypingProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamComboEditor.OpenDropDownOnTyping" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamComboEditor.AllowFiltering">
+            <summary>編集モードのときにエディターが項目をフィルターするかどうかを示す値を取得または設定します。</summary>               
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamComboEditor.AutoComplete">
+            <summary>ユーザーが入力している間にコンボがデータ ソースを検索し、現在の入力と一致するの残りのテキストをハイライトするかどうかを取得または設定します。</summary>               
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamComboEditor.IsEditable">
+            <summary>XamComboEditor において、選択用にエンド ユーザーがコンボへ入力することを許可するかどうかを取得または設定します。<para>注: AllowFilter および AutoComplete が正しく動作するのに true に設定する必要があります。</para>
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamComboEditor.OpenDropDownOnTyping">
+            <summary>ユーザーが入力を開始したときに DropDown を開くかどうかを取得または設定します。</summary>               
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.DropDownClosing">
+            <summary>IsDropDownOpen プロパティが True から False に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.DropDownClosed">
+            <summary>IsDropDownOpen プロパティが True から False に変更されて、ドロップダウンが閉じたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.ItemAdding">
+            <summary>ComboEditorBase の元の ComboEditorItemCollection に項目が追加されようとしているときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.ItemAdded">
+            <summary>ComboEditorBase の元の ComboEditorItemCollection に項目が追加されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.DropDownOpening">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.DropDownOpened">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されて、ドロップダウンが開いたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.SelectionChanged">
+            <summary>ComboEditorBase の選択が変更されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamComboEditor.DataObjectRequested">
+            <summary>ComboEditorBase で新しいデータ オブジェクトを作成する必要があるときに、このイベントが発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor">
+            <summary>関連付けられているプロパティを複数列のグリッドに配置のように表示する、データ項目のドロップダウン リストを持つ選択コントロールを表します。ドロップダウン リストは、コントロール上の矢印をクリックすることによって表示または非表示にできます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamMultiColumnComboEditor.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.AutoGenerateColumnsProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.AutoGenerateColumns" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FilterModeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FilterMode" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.Footer" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.SelectedItemsResetButtonVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.SelectedItemsResetButtonVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.ColumnWidthProperty">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnWidth" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamMultiColumnComboEditor.GenerateColumnForField(Infragistics.DataField)">
+            <summary>指定された <see cref="T:Infragistics.DataField" /> の列を返します。</summary>
+            <param propertyName="field"><see cref="T:Infragistics.DataField" />。</param>
+            <returns><see cref="T:Infragistics.Controls.Editors.ComboColumn" /> のタイプに基づく <see cref="T:Infragistics.DataField" />。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamMultiColumnComboEditor.OnApplyTemplate">
+          <summary>
+            新しいテンプレートが適用されたときに XamMultiColumnComboEditor のビジュアル ツリーを作成します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamMultiColumnComboEditor.GenerateNewObject(System.Object)">
+            <summary>指定したデータで <see cref="T:Infragistics.Controls.Editors.ComboRow" /> オブジェクトの新しいインスタンスを作成します。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamMultiColumnComboEditor.InitializeData">
+            <summary>DataManager が作成されたため、データを参照し初期化するための機会が得られます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamMultiColumnComboEditor.OnDropDownOpening">
+            <summary>DropDownOpening イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamMultiColumnComboEditor.OnEditorKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>ComboEditorBase のテキストボックスにフォーカスがある間にキーが押されたときに呼び出されます。</summary>
+            <param name="e">押されたキーを表すイベント引数。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.AutoGenerateColumns">
+            <summary>指定されていない場合、この <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> の列が作成されるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.Columns">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnCollection" /> を所有する <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.ColumnTypeMappings">
+            <summary><see cref="T:Infragistics.Controls.Editors.ComboColumnTypeMapping" /> で <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> オブジェクトのコレクションを取得します。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> の列の AutoGeneration では、指定されたデータ型を指定された Column タイプにマップするために、このコレクションを使用します。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FilterMode">
+            <summary>指定されていない場合、この <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> の列が作成されるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.Footer">
+            <summary>ドロップダウン パネルの下部にある領域の内容となるオブジェクトを取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterProperty" /><seealso cref="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterTemplateProperty" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterTemplate">
+            <summary>ドロップダウン パネルの下部に表示される内容を配置するために使用する DataTemplate を取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterTemplateProperty" /><seealso cref="F:Infragistics.Controls.Editors.XamMultiColumnComboEditor.FooterProperty" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.LocalizedStrings">
+            <summary>コントロール テンプレートによって使用されるローカライズされた文字列のディクショナリを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.SelectedItemsResetButtonVisibility">
+            <summary>エンドユーザーが現在選択されている項目のリストをリセットできるボタンをコントロールの UI に表示するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamMultiColumnComboEditor.ColumnWidth">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> の各 <see cref="T:Infragistics.Controls.Editors.ComboColumn" /> に適用される Width を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.DropDownClosing">
+            <summary>IsDropDownOpen プロパティが True から False に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.DropDownClosed">
+            <summary>IsDropDownOpen プロパティが True から False に変更されて、ドロップダウンが閉じたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.ItemAdding">
+            <summary>ComboEditorBase の元の ComboEditorItemCollection に項目が追加されようとしているときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.ItemAdded">
+            <summary>ComboEditorBase の元の ComboEditorItemCollection に項目が追加されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.DropDownOpening">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.DropDownOpened">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されて、ドロップダウンが開いたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.SelectionChanged">
+            <summary>ComboEditorBase の選択が変更されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamMultiColumnComboEditor.DataObjectRequested">
+            <summary>ComboEditorBase で新しいデータ オブジェクトを作成する必要があるときに、このイベントが発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Properties.Resources">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Properties.Resources.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Properties.Resources.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+    </members>
+</doc>

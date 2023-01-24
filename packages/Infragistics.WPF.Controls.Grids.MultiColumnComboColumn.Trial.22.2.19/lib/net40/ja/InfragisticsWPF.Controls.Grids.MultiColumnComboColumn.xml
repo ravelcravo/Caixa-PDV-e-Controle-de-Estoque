@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF.Controls.Grids.MultiColumnComboColumn</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.Controls.Grids.MultiColumnComboColumn">
+            <summary><see cref="T:Infragistics.Controls.Grids.Column" /> のコンテンツとして <see cref="T:Infragistics.Controls.Editors.XamMultiColumnComboEditor" /> を作成する <see cref="T:Infragistics.Controls.Grids.Cell" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Grids.MultiColumnComboColumn.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Grids.MultiColumnComboColumn" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Grids.MultiColumnComboColumn.GenerateContentProvider">
+            <summary>この <see cref="T:Infragistics.Controls.Grids.Column" /> の <see cref="T:Infragistics.Controls.Grids.Cell" /> オブジェクトのコンテンツを生成するのに使用される新しい <see cref="T:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider" /> を生成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="F:Infragistics.Controls.Grids.MultiColumnComboColumn.ItemsSourceProperty">
+            <summary><see cref="P:Infragistics.Controls.Grids.MultiColumnComboColumn.ItemsSource" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Grids.MultiColumnComboColumn.DisplayMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Grids.MultiColumnComboColumn.DisplayMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Grids.MultiColumnComboColumn.AutoGenerateColumnsProperty">
+            <summary><see cref="P:Infragistics.Controls.Grids.MultiColumnComboColumn.AutoGenerateColumns" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Grids.MultiColumnComboColumn.SelectedValuePathProperty">
+            <summary><see cref="P:Infragistics.Controls.Grids.MultiColumnComboColumn.SelectedValuePath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Grids.MultiColumnComboColumn.RequiresFullRedrawOnEditorStyleUpdate">
+            <summary><see cref="T:Infragistics.Controls.Grids.MultiColumnComboColumn" />.EditorStyle が変更したときに、完全の再描画するために <see cref="M:Infragistics.Controls.Grids.XamGrid.ResetPanelRows(System.Boolean)" /> を呼び出すかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Grids.MultiColumnComboColumn.AllowCellEditorValueChangedFiltering">
+            <summary>セル エディターの値が変更された直後にフィルターが適用されるかどうかを示す値を取得します。</summary>
+            <value>セル エディターの値が変更された直後にフィルターが適用される場合は <c>True</c>。そうでない場合は <c>False</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Grids.MultiColumnComboColumn.ItemsSource">
+            <summary>これは、各セルのコンボ ボックスの内容のために表示する項目です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Grids.MultiColumnComboColumn.DisplayMemberPath">
+            <summary>これは、コンボ ボックスの表示値として使われる ItemSource からのキーです。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Grids.MultiColumnComboColumn.AutoGenerateColumns">
+            <summary>true の場合、コンボ ボックスが ItemSource プロパティに基づいて列を自動生成します。そうでなければ、Columns プロパティ内の列を使用します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Grids.MultiColumnComboColumn.SelectedValuePath">
+            <summary>これは、コンボ ボックスの選択された項目の値として使われる ItemSource からのキーです。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Grids.MultiColumnComboColumn.Columns">
+            <summary>ユーザーがコンボ ボックスにどの列を表示するかを指定できるようにし、それは <see cref="P:Infragistics.Controls.Grids.MultiColumnComboColumn.AutoGenerateColumns" /> 依存プロパティが ture に設定されている場合は無視されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider">
+            <summary><see cref="T:Infragistics.Controls.Grids.Cell" /> に所有する <see cref="T:Infragistics.Controls.Grids.MultiColumnComboColumn" /> オブジェクトにコンテンツを提供するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider" />の新しいインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider.ResolveDisplayElement(Infragistics.Controls.Grids.Cell,System.Windows.Data.Binding)">
+            <summary>セルは編集モードではないときに、<see cref="T:Infragistics.Controls.Grids.Cell" /> に表示される要素を設定します。</summary>
+            <param name="cell"></param>
+            <param name="cellBinding"></param>
+            <returns>要素を表示する必要があります。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider.ResolveValueFromEditor(Infragistics.Controls.Grids.Cell)">
+            <summary>セルの基本のデータを更新するのに、エディター コントロールの値を解決します。</summary>
+            <param name="cell"></param>
+            <returns>セルに表示される値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider.ResolveEditorControl(Infragistics.Controls.Grids.Cell,System.Object,System.Double,System.Double,System.Windows.Data.Binding)">
+            <summary>セルは編集モードだときに、<see cref="T:Infragistics.Controls.Grids.Cell" /> に表示されるエディター コントロールを設定します。</summary>
+            <param name="cell"></param>
+            <param name="editorValue"></param>
+            <param name="availableWidth"></param>
+            <param name="availableHeight"></param>
+            <param name="editorBinding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Grids.Primitives.MultiColumnComboColumnContentProvider.EditorRemoved">
+            <summary>エディターがセルから削除されるときに発生します。</summary>
+        </member>
+    </members>
+</doc>

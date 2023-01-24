@@ -1,0 +1,14 @@
+﻿<FileList>
+<File Reference="InfragisticsWPF.Controls.Editors.XamComboEditor.dll">
+<ToolboxItems VSCategory="Infragistics 22.2 WPF" BlendCategory="Infragistics 22.2 WPF" UIFramework="WPF">
+<Item Type="Infragistics.Controls.Editors.XamComboEditor" />
+<Item Type="Infragistics.Controls.Editors.XamMultiColumnComboEditor" />
+</ToolboxItems>
+</File>
+<File Reference="Infragistics.WPF.Controls.Editors.XamComboEditor.dll">
+<ToolboxItems VSCategory="Infragistics 22.2 WPF" BlendCategory="Infragistics 22.2 WPF" UIFramework="WPF">
+<Item Type="Infragistics.Controls.Editors.XamComboEditor" />
+<Item Type="Infragistics.Controls.Editors.XamMultiColumnComboEditor" />
+</ToolboxItems>
+</File>
+</FileList>

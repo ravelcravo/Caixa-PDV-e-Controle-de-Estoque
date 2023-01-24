@@ -191,6 +191,8 @@
             // 
             // cboCategoria
             // 
+            this.cboCategoria.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboCategoria.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboCategoria.FormattingEnabled = true;
             this.cboCategoria.Location = new System.Drawing.Point(310, 415);
             this.cboCategoria.Name = "cboCategoria";

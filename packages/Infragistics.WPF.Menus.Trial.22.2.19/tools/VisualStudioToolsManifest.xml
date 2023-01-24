@@ -1,0 +1,18 @@
+﻿<FileList>
+<File Reference="InfragisticsWPF.Controls.Menus.XamMenu.dll">
+<ToolboxItems VSCategory="Infragistics 22.2 WPF" BlendCategory="Infragistics 22.2 WPF" UIFramework="WPF">
+<Item Type="Infragistics.Controls.Menus.XamContextMenu" />
+<Item Type="Infragistics.Controls.Menus.XamMenu" />
+<Item Type="Infragistics.Controls.Menus.XamMenuItem" />
+<Item Type="Infragistics.Controls.Menus.XamMenuSeparator" />
+</ToolboxItems>
+</File>
+<File Reference="Infragistics.WPF.Controls.Menus.XamMenu.dll">
+<ToolboxItems VSCategory="Infragistics 22.2 WPF" BlendCategory="Infragistics 22.2 WPF" UIFramework="WPF">
+<Item Type="Infragistics.Controls.Menus.XamContextMenu" />
+<Item Type="Infragistics.Controls.Menus.XamMenu" />
+<Item Type="Infragistics.Controls.Menus.XamMenuItem" />
+<Item Type="Infragistics.Controls.Menus.XamMenuSeparator" />
+</ToolboxItems>
+</File>
+</FileList>

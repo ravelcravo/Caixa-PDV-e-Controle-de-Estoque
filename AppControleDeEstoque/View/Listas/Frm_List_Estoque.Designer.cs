@@ -54,7 +54,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 47);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(221, 24);
             this.label1.TabIndex = 5;
@@ -63,7 +64,8 @@
             // lblTotalRows
             // 
             this.lblTotalRows.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalRows.Location = new System.Drawing.Point(230, 47);
+            this.lblTotalRows.ForeColor = System.Drawing.Color.White;
+            this.lblTotalRows.Location = new System.Drawing.Point(227, 23);
             this.lblTotalRows.Name = "lblTotalRows";
             this.lblTotalRows.Size = new System.Drawing.Size(221, 24);
             this.lblTotalRows.TabIndex = 6;
@@ -86,24 +88,29 @@
             // 
             // GridResultado
             // 
+            this.GridResultado.AllowUserToAddRows = false;
+            this.GridResultado.AllowUserToDeleteRows = false;
+            this.GridResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GridResultado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GridResultado.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.GridResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridResultado.Location = new System.Drawing.Point(12, 83);
+            this.GridResultado.Location = new System.Drawing.Point(12, 60);
             this.GridResultado.Name = "GridResultado";
-            this.GridResultado.Size = new System.Drawing.Size(1014, 490);
+            this.GridResultado.Size = new System.Drawing.Size(1014, 513);
             this.GridResultado.TabIndex = 8;
-            this.GridResultado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridResultado_CellClick_1);
             // 
             // Frm_List_Estoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1038, 632);
             this.Controls.Add(this.GridResultado);
             this.Controls.Add(this.btNovo);
             this.Controls.Add(this.lblTotalRows);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btBuscar);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1038, 632);
             this.MinimumSize = new System.Drawing.Size(1038, 632);
