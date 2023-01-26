@@ -128,7 +128,7 @@
   <ItemGroup>
     <Compile Include="Controller\DAL_Produtos.cs" />
     <Compile Include="Model\Combos.cs" />
-    <Compile Include="Model\Grid.cs" />
+    <Compile Include="Model\Gridd.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\Sistema.cs" />
     <Compile Include="Model\Venda.cs" />
