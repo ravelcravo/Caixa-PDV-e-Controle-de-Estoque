@@ -49,17 +49,17 @@ namespace AppControleDeEstoque.View
 
             try
             {
-                Gridd.MontarGrid(GridResultado, "use CaixaPDV select '' as ' ', COD AS Cód, CODBARRAS as [Código de Barras], Nome as [Nome do Produto],PRECO as Preço,QUANTIDADE AS Quantidade,DCRPRODUTO as Descrição, datcadastro as [Data de Cadastro] from Produto");
+                Gridd.MontarGrid(GridResultado, "use CaixaPDV select '' as ' ', COD AS Cód, CODBARRAS as [Código de Barras],DCRPRODUTO as Descrição ,PRECO as Preço,QUANTIDADE AS Quantidade, datcadastro as [Data de Cadastro] from Produto order by Quantidade");
                 Gridd.AlturaLinha(GridResultado, 30);
 
-                GridResultado.Columns[0].Width = 30;
-                GridResultado.Columns[1].Width = 50;
-                GridResultado.Columns[2].Width = 100;
-                GridResultado.Columns[3].Width = 100;
-                GridResultado.Columns[4].Width = 50;
-                GridResultado.Columns[5].Width = 50;
+                GridResultado.Columns[0].Width = 20;
+                GridResultado.Columns[1].Width = 30;
+                GridResultado.Columns[2].Width = 70;
+                GridResultado.Columns[3].Width = 130;
+                GridResultado.Columns[4].Width = 40;
+                GridResultado.Columns[5].Width = 30;
                 GridResultado.Columns[6].Width = 160;
-                GridResultado.Columns[7].Width = 140;
+
 
 
                 lblTotalRows.Text = GridResultado.RowCount.ToString();

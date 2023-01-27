@@ -15,14 +15,14 @@ namespace AppControleDeEstoque.Controller
     {
         Conexao o = new Conexao();
 
-        public bool AddProduto(string codBarras, string nome, string preco,int qtd, string dcrProduto)
+        public bool AddProduto(string codBarras, string nome, string preco,int qtd, string dcrProduto,string categoria)
         {
             try
             {
 
                 string sql = "";
 
-                sql = "insert into CaixaPDV..Produto (CODBARRAS,NOME,PRECO,QUANTIDADE,DCRPRODUTO,DATCADASTRO) values(" + codBarras + " ,'" + nome + "'," + preco + "," + qtd + ",'" + dcrProduto + "',GETDATE())";
+                sql = "insert into CaixaPDV..Produto (CODBARRAS,NOME,PRECO,QUANTIDADE,DCRPRODUTO,DATCADASTRO,STAPRODUTO,CATEGORIA) values(" + codBarras + " ,'" + nome + "'," + preco + "," + qtd + ",'" + dcrProduto + "',GETDATE(),1,'" + categoria  + "')";
 
                 o.ExecSql(sql);
 

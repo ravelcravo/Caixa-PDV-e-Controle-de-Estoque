@@ -65,6 +65,7 @@
             this.txbCodBarras.Size = new System.Drawing.Size(454, 31);
             this.txbCodBarras.TabIndex = 3;
             this.txbCodBarras.Text = "";
+            this.txbCodBarras.TextChanged += new System.EventHandler(this.txbCodBarras_TextChanged);
             // 
             // txbNomeProduto
             // 

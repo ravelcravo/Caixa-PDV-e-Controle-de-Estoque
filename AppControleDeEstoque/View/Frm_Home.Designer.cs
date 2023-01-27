@@ -212,7 +212,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(984, 99);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Aluno do 5º Período de Análise e Desenvolvimento de Sitemas";
+            this.label4.Text = "Aluno do 5º Período de Análise e Desenvolvimento de Sistemas";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3

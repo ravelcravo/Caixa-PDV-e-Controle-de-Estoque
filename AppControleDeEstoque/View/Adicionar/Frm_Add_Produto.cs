@@ -35,7 +35,7 @@ namespace AppControleDeEstoque.View
 
             try
             {
-                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text.Replace(",", ".")), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text));
+                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text.Replace(",", ".")), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text),cboCategoria.Text);
 
                 LimparCampos();
             }
@@ -51,7 +51,7 @@ namespace AppControleDeEstoque.View
         {
             try
             {
-                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text.Replace(",",".")), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text));
+                dal.AddProduto(Convert.ToString(txbCodBarras.Text), Convert.ToString(txbNomeProduto.Text), Convert.ToString(txbPrecoProduto.Text.Replace(",",".")), Convert.ToInt32(txbQtdProdutoCadastrar.Text), Convert.ToString(txbDescricaoProduto.Text),cboCategoria.Text);
 
                 LimparCampos();
                 Close();
@@ -99,6 +99,7 @@ namespace AppControleDeEstoque.View
                 txbQtdProdutoCadastrar.Focus();
                 return false;
             }
+           
             if (txbCodBarras.Text == "")
             {
                 MessageBox.Show("Informe o código de barras do produto.");
@@ -126,6 +127,17 @@ namespace AppControleDeEstoque.View
         {
             Combos.GetCategorias(cboCategoria,"S");
 
+        }
+
+        private void txbCodBarras_TextChanged(object sender, EventArgs e)
+        {
+            if (txbCodBarras.Text.Length > 13)
+            {
+                MessageBox.Show("O código de barras deve conter no max 13 carateres");
+                txbCodBarras.Clear();
+                txbCodBarras.Focus();
+                return;
+            }
         }
     }
 }

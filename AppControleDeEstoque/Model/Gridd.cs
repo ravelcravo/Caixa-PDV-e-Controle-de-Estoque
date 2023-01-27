@@ -23,13 +23,13 @@ namespace AppControleDeEstoque.Model
             da.Fill(ds);
             grid.DataSource = ds;
             grid.DataMember = ds.Tables[0].TableName;
-            
+
             //for (int row = 0; row < grid.Rows.Count - 1; row++)
             //{
             //    Bitmap bmp = new Bitmap(Application.StartupPath + "\\Data\\AirPlaneData\\" + dt.Rows[row][4]);
             //    ((DataGridViewImageCell)grid.Rows[row].Cells[5]).Value = bmp;
             //}
-
+            o.desconectar();
         }
 
         public static void AlturaLinha(System.Windows.Forms.DataGridView grid,int altura)
